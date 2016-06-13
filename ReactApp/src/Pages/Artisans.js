@@ -4,9 +4,11 @@ import {List, ListItem} from 'material-ui/List';
 import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
 
+import {red500, brown500} from 'material-ui/styles/colors';
 import EmailIcon from 'material-ui/svg-icons/communication/email';
 import EmailOutlineIcon from 'material-ui/svg-icons/communication/mail-outline';
 
+import CustomTitle from '../Cards/CustomTitle';
 
 const i18n_strings = {
   fr: {
@@ -26,10 +28,8 @@ export default class ArtisansPage extends React.Component {
     return (
       <div>
 
-        <h1>{strings.intro.title}</h1>
-        <p>
-          {strings.intro.text}
-        </p>
+        <CustomTitle title={strings.intro.title}
+                     desc={strings.intro.text} />
 
         <Card>
           <CardTitle title="Mains Unies"
