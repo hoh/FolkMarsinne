@@ -71,9 +71,9 @@ export default class IndexPage extends React.Component {
           <div style={{height: 200}} />
         </div>
 
-        <WelcomeCard />
+        <WelcomeCard lang={this.props.lang} />
         <p />
-        <EventsCard />
+        <EventsCard lang={this.props.lang} />
       </div>
     );
   }

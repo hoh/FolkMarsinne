@@ -14,6 +14,8 @@ import ActivitiesPage from './Pages/Activities';
 import ArtisansPage from './Pages/Artisans';
 import TicketsPage from './Pages/Tickets';
 import AccessPage from './Pages/Access';
+import AccomodationPage from './Pages/Accomodation';
+import VolunteerPage from './Pages/Volunteer';
 import ContactPage from './Pages/Contact';
 
 const pagesMap = {
@@ -22,8 +24,9 @@ const pagesMap = {
   artisans: ArtisansPage,
   activities: ActivitiesPage,
   tickets: TicketsPage,
+  accomodation: AccomodationPage,
   access: AccessPage,
-  volunteer: ContactPage,
+  volunteer: VolunteerPage,
   contact: ContactPage,
 };
 

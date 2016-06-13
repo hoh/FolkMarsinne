@@ -17,7 +17,7 @@ const style = {
   display: 'inline-block',
   color: white,
   backgroundColor: cyan50,
-  fontFamily: "'Dancing Script', cursive",
+  fontFamily: '\'Dancing Script\', cursive',
   fontSize: 18
 };
 
@@ -26,25 +26,42 @@ const paperStyle = {
   marginTop: 35,
 };
 
+const i18n_strings = {
+  fr: {
+    title: 'Festival Folk à Marsinne, Belgique',
+    desc: 'Le festival accueille durant trois jours concerts, bals, théâtre de rue et de marionnettes, luthiers, artisans. Découvrez tous les ingrédients du plus ancien festival de musique traditionnelle de Wallonie !',
+    buttons: {
+      progam: 'Programmation',
+      volunteer: 'Devenir bénévole',
+    }
+  },
+  en: {
+    title: 'Folk Festival in Marsinne, Belgium',
+    desc: 'The only one of its kind in Wallonia, the three-day long Folk Festival of Marsinne features balls, concerts, dancing workshops, a free stage, sessions, street and puppet theatre, as well as a market for instrument makers and craftsmen.',
+    buttons: {
+      progam: 'Program',
+      volunteer: 'volunteer',
+    }
+  }
+}
+
 class WelcomeCard extends React.Component {
 	render() {
+    var strings = i18n_strings[this.props.lang];
+
 		return (
       <Card>
-        <CardTitle title="Trois jours de festival, les 9-10-11 septembre 2016"
+        <CardTitle title={strings.title}
                    subtitle="25ème édition du Folk Festival de Marsinne" />
         <CardText>
-          <p>
-            Bienvenue sur le site du Folk Festival de Marsinne, organisé par l&apos;a.s.b.l. Musiques et Traditions!
-          </p>
-          <p>
-            Ce festival accueille durant trois jours concerts, bals, théâtre de rue et de marionnettes, luthiers, artisans. Découvrez tous les ingrédients du plus ancien festival de musique traditionnelle de Wallonie !
-          </p>
-
-          <RaisedButton label="Programmation" primary={true} style={{margin: 12}} />
-          <RaisedButton label="Animations" secondary={true} style={{margin: 12}} />
-          <RaisedButton label="Tickets" style={{margin: 12}} backgroundColor={grey500}/>
-          <RaisedButton label="Devenir Bénévole" primary={true} style={{margin: 12}} />
+          {strings.desc}
         </CardText>
+
+        {/*<RaisedButton label={strings.buttons.progam} primary={true} style={{margin: 12}} />
+        <RaisedButton label="Animations" secondary={true} style={{margin: 12}} />
+        <RaisedButton label="Tickets" style={{margin: 12}} backgroundColor={grey500}/>
+        <RaisedButton label={strings.buttons.volunteer} primary={true} style={{margin: 12}} />
+        */}
       </Card>
 		);
 	}

@@ -12,6 +12,8 @@ import Album from 'material-ui/svg-icons/av/album';
 import Directions from 'material-ui/svg-icons/maps/directions';
 import PersonOutline from 'material-ui/svg-icons/social/person-outline';
 import ChatBubble from 'material-ui/svg-icons/communication/chat-bubble';
+import LocalHotel from 'material-ui/svg-icons/maps/local-hotel';
+import LocalDining from 'material-ui/svg-icons/maps/local-dining';
 
 
 class Navbar extends React.Component {
@@ -40,11 +42,15 @@ class Navbar extends React.Component {
         </div>
         <Divider />
 
+        <MenuItem onTouchTap={() => this.props.onPageChange('tickets')} leftIcon={<AddShoppingCart />}>Tickets</MenuItem>
+        <Divider />
         <MenuItem onTouchTap={() => this.props.onPageChange('program')} leftIcon={<AvQueueMusic />}>Programmation</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('activities')} leftIcon={<RemoveRedEye />}>Animations</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('artisans')} leftIcon={<ThumbsUpDown />}>Artisans</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('tickets')} leftIcon={<AddShoppingCart />}>Tickets</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('artisans')} leftIcon={<LocalDining />}>Alimentation</MenuItem>
+        <Divider />
         <MenuItem onTouchTap={() => this.props.onPageChange('access')} leftIcon={<Directions />}>Accès</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('accomodation')} leftIcon={<LocalHotel />}>Hébergement</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('volunteer')} leftIcon={<PersonOutline />}>Bénévoles</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('contact')} leftIcon={<ChatBubble />}>Contact</MenuItem>
       </Drawer>
