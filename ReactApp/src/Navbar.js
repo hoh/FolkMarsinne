@@ -4,6 +4,7 @@ import MenuItem from 'material-ui/MenuItem';
 import Divider from 'material-ui/Divider';
 import FlatButton from 'material-ui/FlatButton';
 
+import AvQueueMusic from 'material-ui/svg-icons/av/queue-music';
 import RemoveRedEye from 'material-ui/svg-icons/image/remove-red-eye';
 import AddShoppingCart from 'material-ui/svg-icons/action/add-shopping-cart';
 import ThumbsUpDown from 'material-ui/svg-icons/action/thumbs-up-down';
@@ -39,8 +40,9 @@ class Navbar extends React.Component {
         </div>
         <Divider />
 
-        <MenuItem onTouchTap={() => this.props.onPageChange('program')} leftIcon={<RemoveRedEye />}>Programmation</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('activities')} leftIcon={<ThumbsUpDown />}>Animations</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('program')} leftIcon={<AvQueueMusic />}>Programmation</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('activities')} leftIcon={<RemoveRedEye />}>Animations</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('artisans')} leftIcon={<ThumbsUpDown />}>Artisans</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('tickets')} leftIcon={<AddShoppingCart />}>Tickets</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('access')} leftIcon={<Directions />}>Accès</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('volunteer')} leftIcon={<PersonOutline />}>Bénévoles</MenuItem>
