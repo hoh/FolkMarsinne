@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import CustomTitle from '../Cards/CustomTitle';
 
 
 export default class AccessPage extends React.Component {
@@ -7,9 +8,10 @@ export default class AccessPage extends React.Component {
   render() {
     return (
       <div>
+        <CustomTitle title="Accéder au festival" />
 
         <Card>
-          <CardTitle title="Accéder au festival"
+          <CardTitle title="Site du festival"
                      subtitle="" />
           <CardText>
             <p>
@@ -25,7 +27,7 @@ export default class AccessPage extends React.Component {
             </p>
           </CardText>
         </Card>
-
+        <p/>
         <Card>
           <CardTitle title="En transport en commun"
                      subtitle="" />
@@ -49,7 +51,7 @@ export default class AccessPage extends React.Component {
             </ul>
           </CardText>
         </Card>
-
+        <p/>
         <Card>
           <CardTitle title="En voiture"
                      subtitle="" />

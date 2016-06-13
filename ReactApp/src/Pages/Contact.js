@@ -6,30 +6,32 @@ import Paper from 'material-ui/Paper';
 import EmailIcon from 'material-ui/svg-icons/communication/email';
 import EmailOutlineIcon from 'material-ui/svg-icons/communication/mail-outline';
 
+import CustomTitle from '../Cards/CustomTitle';
+
 
 export default class ContactPage extends React.Component {
 
   render() {
     return (
       <div>
+        <CustomTitle title="Contact"
+                   subtitle="Contacter l'équipe du festival" />
 
         <Card>
-          <CardTitle title="Contact"
+          <CardTitle title="Association"
                      subtitle="" />
           <CardText>
-            <p>
-              Le Folk Festival Marsinne est organisé par l'association
-              <b> Musique et Traditions</b>.
-              <pre>
-                Musique et Traditions A.S.B.L.<br/>
-                Rue de la Médaille 17<br/>
-                4218 Couthuin-Héron<br/>
-                Belgique<br/>
-              </pre>
-            </p>
+            Le Folk Festival Marsinne est organisé par l'association
+            <b> Musique et Traditions</b>.
+            <pre>
+              Musique et Traditions A.S.B.L.<br/>
+              Rue de la Médaille 17<br/>
+              4218 Couthuin-Héron<br/>
+              Belgique<br/>
+            </pre>
           </CardText>
         </Card>
-
+        <p/>
         <Card>
           <CardTitle title="Informations générales"
                      subtitle="" />
@@ -46,7 +48,7 @@ export default class ContactPage extends React.Component {
            />
           </List>
         </Card>
-
+        <p/>
         <Card>
           <CardTitle title="Contacter une équipe"
                      subtitle="" />

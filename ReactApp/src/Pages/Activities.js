@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import CustomTitle from '../Cards/CustomTitle';
 
 
 const i18n_strings = {
@@ -32,10 +33,8 @@ export default class ActivitiesPage extends React.Component {
     return (
       <div>
 
-        <Card>
-          <CardTitle title={strings.title}
-                     subtitle="" />
-        </Card>
+        <CustomTitle title={strings.title} />
+
         <Card>
           <CardTitle title={strings.mabotte.title}
                      subtitle="" />

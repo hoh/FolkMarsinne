@@ -6,16 +6,17 @@ import Paper from 'material-ui/Paper';
 import EmailIcon from 'material-ui/svg-icons/communication/email';
 import EmailOutlineIcon from 'material-ui/svg-icons/communication/mail-outline';
 
+import CustomTitle from '../Cards/CustomTitle';
+
 
 export default class VolunteerPage extends React.Component {
 
   render() {
     return (
       <div>
-
+        <CustomTitle title="Bénévolat"
+                   subtitle="" />
         <Card>
-          <CardTitle title="Bénévolat"
-                     subtitle="" />
           <CardText>
             Bientôt disponible...
           </CardText>
