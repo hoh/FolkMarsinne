@@ -42,14 +42,15 @@ export default class App extends Component {
                 <Navbar docked={false}
                         open={this.state.open}
                         onPageChange={::this.handlePageChange}
-                        onRequestChange={this.handleNavbarRequest} />
+                        onRequestChange={this.handleNavbarRequest}
                         onLanguageChange={::this.handleLanguage} />
 
                 <AppBar
                   title="Folk Festival Marsinne"
                   iconClassNameRight="muidocs-icon-navigation-expand-more"
                   onLeftIconButtonTouchTap={this.handleToggle}
-                  titleStyle={{fontFamily: "'Dancing Script', cursive", fontSize: 30}}
+                  titleStyle={{fontFamily: '\'Dancing Script\', cursive',
+                               fontSize: 30}}
                   />
 
                   {(() => {
@@ -122,12 +123,12 @@ export default class App extends Component {
   handleNavbarRequest = (open) => this.setState({open: false});
 
   handleLanguage = (code) => {
-    console.log("Switch to language", code);
+    console.log('Switch to language', code);
     this.setState({lang: code});
   };
 
   handlePageChange = (pageName) => {
-    console.log("handlePageChange")
+    console.log('handlePageChange')
     this.setState({page: pageName});
     if (this.state.mobile == true)
       this.setState({open: false});
