@@ -12,6 +12,7 @@ import IndexPage from './Pages/Index';
 import ProgramPage from './Pages/Program';
 import ActivitiesPage from './Pages/Activities';
 import ArtisansPage from './Pages/Artisans';
+import FoodPage from './Pages/Food';
 import TicketsPage from './Pages/Tickets';
 import AccessPage from './Pages/Access';
 import AccomodationPage from './Pages/Accomodation';
@@ -22,6 +23,7 @@ const pagesMap = {
   index: IndexPage,
   program: ProgramPage,
   artisans: ArtisansPage,
+  food: FoodPage,
   activities: ActivitiesPage,
   tickets: TicketsPage,
   accomodation: AccomodationPage,

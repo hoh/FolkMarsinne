@@ -47,7 +47,7 @@ class Navbar extends React.Component {
         <MenuItem onTouchTap={() => this.props.onPageChange('program')} leftIcon={<AvQueueMusic />}>Programmation</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('activities')} leftIcon={<RemoveRedEye />}>Animations</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('artisans')} leftIcon={<ThumbsUpDown />}>Artisans</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('artisans')} leftIcon={<LocalDining />}>Alimentation</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('food')} leftIcon={<LocalDining />}>Alimentation</MenuItem>
         <Divider />
         <MenuItem onTouchTap={() => this.props.onPageChange('access')} leftIcon={<Directions />}>Accès</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('accomodation')} leftIcon={<LocalHotel />}>Hébergement</MenuItem>
