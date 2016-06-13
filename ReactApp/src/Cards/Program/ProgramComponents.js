@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {blue100} from 'material-ui/styles/colors';
+import {blue100, red100, cyan500, teal400, amber800, pink500, purple500} from 'material-ui/styles/colors';
 
 
 const programTableStyle = {
@@ -19,19 +19,33 @@ const programHourStyle = {
 };
 
 const programCellStyle = {
-  border: '1px solid black',
+  border: '1px solid white',
   borderCollapse: 'collapse',
   width: '20%',
   backgroundColor: blue100,
   paddingLeft: '0.4em',
+  textAlign: 'left',
+};
+
+const eventColors = {
+  bal: cyan500,
+  concert: teal400,
+  theatre: amber800,
+  learn: pink500,
+  free: purple500,
 };
 
 
 class BandPlaying extends React.Component {
   render() {
+    var kind = this.props.kind;
+    var cellStyle = Object.assign({}, programCellStyle, {
+      backgroundColor: eventColors[kind]
+    });
+
 		return (
-      <td style={programCellStyle} rowSpan={this.props.duration}>
-        <a href="#">{this.props.name}</a>
+      <td style={cellStyle} rowSpan={this.props.duration}>
+        <a style={{color: 'white', textDecoration: 'none'}} href="#">{this.props.name}</a>
       </td>
     )
   }

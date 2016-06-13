@@ -43,7 +43,7 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {open: false, mobile: true, page: 'index', lang: 'fr'};
+    this.state = {open: false, mobile: false, page: 'index', lang: 'fr'};
   }
 
   render() {
