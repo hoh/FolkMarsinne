@@ -3,7 +3,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 
-import {red500, white} from 'material-ui/styles/colors';
+import {red500, red700, brown500, white} from 'material-ui/styles/colors';
 
 import Navbar from './Navbar';
 import AppBar from 'material-ui/AppBar';
@@ -29,7 +29,9 @@ const pagesMap = {
 
 const muiTheme = getMuiTheme({
   palette: {
-    //primary1Color: red500
+    primary1Color: red500,
+    primary2Color: red700,
+    accent1Color: brown500,
   },
   appBar: {
     height: 50,
@@ -41,7 +43,7 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {open: false, mobile: false, page: 'index', lang: 'fr'};
+    this.state = {open: false, mobile: true, page: 'index', lang: 'fr'};
   }
 
   render() {
