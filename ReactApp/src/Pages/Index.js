@@ -6,9 +6,10 @@ import Avatar from 'material-ui/Avatar';
 import Paper from 'material-ui/Paper';
 import Divider from 'material-ui/Divider';
 import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import {Card, CardTitle, CardText} from 'material-ui/Card';
 
-import {red500, brown500, transparent, white} from 'material-ui/styles/colors';
+import {red500, brown500, grey500, cyan500, transparent, white} from 'material-ui/styles/colors';
 
 import WelcomeCard from '../Cards/WelcomeCard';
 import EventsCard from '../Cards/EventsCard';
@@ -38,15 +39,33 @@ const bands = [
   {name: 'Le Théâtre Mabotte', num: 22},
 ]
 
+const i18n_strings = {
+  fr: {
+    buttons: {
+      progam: 'Programme',
+      volunteer: 'Devenir bénévole',
+    }
+  },
+  en: {
+    buttons: {
+      progam: 'Program',
+      volunteer: 'volunteer',
+    }
+  }
+}
+
 
 export default class IndexPage extends React.Component {
 
   render() {
+    var strings = i18n_strings[this.props.lang];
+
     return (
       <div>
 
         <Card>
-          <div style={{display: 'block', paddingTop: '20px', paddingBottom: '20px'}}>
+          <div style={{display: 'block', paddingTop: '20px', paddingBottom: '20px',
+                       marginBottom: '0px'}}>
             {bands.map((band) =>
               <FlatButton label={band.name} key={band.num}
                           primary={band.num % 2} secondary={(band.num % 2) - 1}
@@ -56,19 +75,30 @@ export default class IndexPage extends React.Component {
           </div>
         </Card>
 
-        <div style={{fontFamily: "'Dancing Script', cursive",
-                     textAlign: 'center',}}>
+        <div style={{fontFamily: '\'Dancing Script\', cursive',
+                     textAlign: 'center',
+                     background: 'url("/static/marsinne-bw.png")',
+                     backgroundSize: 'cover',
+                     margin: 0,
+                   }}>
+          <div style={{backgroundColor: 'rgba(255, 255, 255, 0.7)'}}>
 
-          <h1 style={{fontSize: 55,
-                      marginTop: 50,
-                      color: red500 }}>
-            Folk Festival Marsinne 2016
-          </h1>
-          <h2 style={{fontSize: 35, color: brown500}}>
-            9-10-11 Sept. 2016
-          </h2>
+            <div style={{fontSize: 55,
+                        paddingTop: 50,
+                        color: red500 }}>
+              Folk Festival Marsinne 2016
+            </div>
+            <h2 style={{fontSize: 35, color: brown500}}>
+              9-10-11 Sept. 2016
+            </h2>
 
-          <div style={{height: 200}} />
+            <div>
+              <RaisedButton label={strings.buttons.progam} primary={true} style={{margin: 12}} />
+              <RaisedButton label="Tickets" secondary={true} style={{margin: 12}} backgroundColor={cyan500}/>
+            </div>
+
+            <div style={{height: 100}} />
+          </div>
         </div>
 
         <WelcomeCard lang={this.props.lang} />

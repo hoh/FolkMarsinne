@@ -72,6 +72,8 @@ class EventsCard extends React.Component {
               <div style={paperStyle}>Podium</div>
               <span>libre</span>
             </Paper>
+          </div>
+          <div>
             <Paper style={styleTheatre} zDepth={1} circle={true}>
               <div style={paperStyle}>Théâtre</div>
               <span>et Marionnettes</span>
@@ -86,7 +88,9 @@ class EventsCard extends React.Component {
             </Paper>
           </div>
 
+          <RaisedButton label="Consulter le programme" primary={true} />
         </CardText>
+
       </Card>
 		);
 	}

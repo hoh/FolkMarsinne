@@ -56,12 +56,6 @@ class WelcomeCard extends React.Component {
         <CardText>
           {strings.desc}
         </CardText>
-
-        {/*<RaisedButton label={strings.buttons.progam} primary={true} style={{margin: 12}} />
-        <RaisedButton label="Animations" secondary={true} style={{margin: 12}} />
-        <RaisedButton label="Tickets" style={{margin: 12}} backgroundColor={grey500}/>
-        <RaisedButton label={strings.buttons.volunteer} primary={true} style={{margin: 12}} />
-        */}
       </Card>
 		);
 	}
