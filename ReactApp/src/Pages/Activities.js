@@ -27,7 +27,7 @@ const i18n_strings = {
 export default class ActivitiesPage extends React.Component {
 
   render() {
-    console.log("Activities lang", this.props.lang);
+
     var strings = i18n_strings[this.props.lang];
     return (
       <div>
