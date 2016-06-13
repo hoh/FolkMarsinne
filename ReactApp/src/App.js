@@ -15,6 +15,16 @@ import AccessPage from './Pages/Access';
 import ContactPage from './Pages/Contact';
 import ActivitiesPage from './Pages/Activities';
 
+const pagesMap = {
+  index: IndexPage,
+  program: ProgramPage,
+  activities: ActivitiesPage,
+  tickets: TicketsPage,
+  access: AccessPage,
+  volunteer: ContactPage,
+  contact: ContactPage,
+};
+
 const muiTheme = getMuiTheme({
   palette: {
     //primary1Color: red500
@@ -54,26 +64,8 @@ export default class App extends Component {
                   />
 
                   {(() => {
-                    if (this.state.page == 'index') {
-                      return (
-                        <IndexPage />
-                      )
-                    }
-                    else if (this.state.page == 'program') {
-                      return <ProgramPage />
-                    }
-                    else if (this.state.page == 'tickets') {
-                      return <TicketsPage />
-                    }
-                    else if (this.state.page == 'access') {
-                      return <AccessPage />
-                    }
-                    else if (this.state.page == 'contact') {
-                      return <ContactPage />
-                    }
-                    else if (this.state.page == 'activities') {
-                      return <ActivitiesPage />
-                    }
+                    return React.createElement(pagesMap[this.state.page],
+                                               {lang: this.state.lang});
                   })()}
               </div>
             )
@@ -86,26 +78,8 @@ export default class App extends Component {
                         />
 
                 {(() => {
-                  if (this.state.page == 'index') {
-                    return (
-                      <IndexPage />
-                    )
-                  }
-                  else if (this.state.page == 'program') {
-                    return <ProgramPage />
-                  }
-                  else if (this.state.page == 'tickets') {
-                    return <TicketsPage />
-                  }
-                  else if (this.state.page == 'access') {
-                    return <AccessPage />
-                  }
-                  else if (this.state.page == 'contact') {
-                    return <ContactPage />
-                  }
-                  else if (this.state.page == 'activities') {
-                    return <ActivitiesPage lang={this.state.lang}/>
-                  }
+                  return React.createElement(pagesMap[this.state.page],
+                                             {lang: this.state.lang});
                 })()}
 
               </div>
