@@ -7,7 +7,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import {List, ListItem} from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 
-import {black, white, cyan50, cyan500, grey500, pink500, teal400, lime500, brown500, green200, amber800, lightGreen500} from 'material-ui/styles/colors';
+import {black, white, cyan50, cyan500, grey500, pink500, teal400, lime500, brown500, green200, amber800, lightGreen500, purple500} from 'material-ui/styles/colors';
 
 const style = {
   height: 150,
@@ -27,6 +27,10 @@ var styleConcerts = Object.assign({}, style, {
 
 var styleBals = Object.assign({}, style, {
   backgroundColor: cyan500,
+});
+
+var stylePodium = Object.assign({}, style, {
+  backgroundColor: purple500,
 });
 
 var styleTheatre = Object.assign({}, style, {
@@ -63,6 +67,10 @@ class EventsCard extends React.Component {
             <Paper style={styleConcerts} zDepth={1} circle={true}>
               <div style={paperStyle}>Concerts</div>
               <span>&nbsp;</span>
+            </Paper>
+            <Paper style={stylePodium} zDepth={1} circle={true}>
+              <div style={paperStyle}>Podium</div>
+              <span>libre</span>
             </Paper>
             <Paper style={styleTheatre} zDepth={1} circle={true}>
               <div style={paperStyle}>Théâtre</div>
