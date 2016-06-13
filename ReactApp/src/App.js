@@ -10,14 +10,16 @@ import AppBar from 'material-ui/AppBar';
 
 import IndexPage from './Pages/Index';
 import ProgramPage from './Pages/Program';
+import ActivitiesPage from './Pages/Activities';
+import ArtisansPage from './Pages/Artisans';
 import TicketsPage from './Pages/Tickets';
 import AccessPage from './Pages/Access';
 import ContactPage from './Pages/Contact';
-import ActivitiesPage from './Pages/Activities';
 
 const pagesMap = {
   index: IndexPage,
   program: ProgramPage,
+  artisans: ArtisansPage,
   activities: ActivitiesPage,
   tickets: TicketsPage,
   access: AccessPage,
