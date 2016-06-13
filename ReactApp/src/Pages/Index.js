@@ -105,7 +105,7 @@ export default class IndexPage extends React.Component {
 
         <WelcomeCard lang={this.props.lang} />
         <p />
-        <EventsCard lang={this.props.lang} />
+        {/*<EventsCard lang={this.props.lang} /> */}
       </div>
     );
   }
