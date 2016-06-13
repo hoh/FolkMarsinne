@@ -93,8 +93,10 @@ export default class IndexPage extends React.Component {
             </h2>
 
             <div>
-              <RaisedButton label={strings.buttons.progam} primary={true} style={{margin: 12}} />
-              <RaisedButton label="Tickets" secondary={true} style={{margin: 12}} backgroundColor={cyan500}/>
+              <RaisedButton label={strings.buttons.progam} primary={true}
+                style={{margin: 12}} onClick={() => this.props.onPageChange('program')} />
+              <RaisedButton label="Tickets" secondary={true} style={{margin: 12}}
+                onClick={() => this.props.onPageChange('tickets')}/>
             </div>
 
             <div style={{height: 100}} />

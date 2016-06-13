@@ -74,7 +74,8 @@ export default class App extends Component {
 
                   {(() => {
                     return React.createElement(pagesMap[this.state.page],
-                                               {lang: this.state.lang});
+                                               {lang: this.state.lang,
+                                                onPageChange: ::this.handlePageChange});
                   })()}
               </div>
             )
@@ -88,7 +89,8 @@ export default class App extends Component {
 
                 {(() => {
                   return React.createElement(pagesMap[this.state.page],
-                                             {lang: this.state.lang});
+                                             {lang: this.state.lang,
+                                              onPageChange: ::this.handlePageChange});
                 })()}
 
               </div>
