@@ -14,14 +14,12 @@ export default class AccessPage extends React.Component {
           <CardTitle title="Site du festival"
                      subtitle="" />
           <CardText>
-            <p>
-              <pre>
-                Château-ferme de Marsinne<br/>
-                Rue de la Médaille 17<br/>
-                4218 Couthuin - Héron<br/>
-                Belgique
-              </pre>
-            </p>
+            <pre>
+              Château-ferme de Marsinne<br/>
+              Rue de la Médaille 17<br/>
+              4218 Couthuin - Héron<br/>
+              Belgique
+            </pre>
             <p>
               Coordonnées GPS : 50.529371,5.117713 ou 50°31'45.74"N & 5° 7'3.78"E
             </p>
