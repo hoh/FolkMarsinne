@@ -68,7 +68,7 @@ export default class IndexPage extends React.Component {
                        marginBottom: '0px'}}>
             {bands.map((band) =>
               <FlatButton label={band.name} key={band.num}
-                          primary={band.num % 2} secondary={(band.num % 2) - 1}
+                          primary={(band.num % 2) === 1} secondary={(band.num % 2) === 0}
                           labelStyle={{fontSize: 25 - Math.log(band.num) * 4}}
                           />
             )}
