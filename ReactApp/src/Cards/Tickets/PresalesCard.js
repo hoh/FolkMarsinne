@@ -4,7 +4,6 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import Paper from 'material-ui/Paper';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
-
 const priceTagStyle = {
   height: 50,
   width: 100,
@@ -61,6 +60,12 @@ export default class PresalesCard extends React.Component {
               <span>38 €</span>
             </Paper>
           </div>
+
+          <iframe id="ts-shop-iframe"
+                  style={{border: '0px none', background: 'transparent none repeat scroll 0% 0%', maxWidth: '100%'}}
+                  src={'https://shop.ticketscript.com/channel/web2/start-order/rid/D795GP7K/language/' + this.props.lang + '?referrer=http%3A%2F%2Fwww.folkfestivalmarsinne.be%2Fjoomla35%2Findex.php%2Fen%2F&amp;sourcepageurl=http%3A%2F%2Fwww.folkfestivalmarsinne.be%2Fjoomla35%2Findex.php%2Fen%2Fticket-price'}
+                  width="500" height="650" frameborder="0">
+          </iframe>
 
           <h3>Remarques</h3>
           <ul>
