@@ -11,8 +11,8 @@ export default class TicketsPage extends React.Component {
     return (
       <div>
         <CustomTitle title="Tickets" />
-        <PresalesCard />
-        <OnSiteCard />
+        <PresalesCard lang={this.props.lang} />
+        <OnSiteCard lang={this.props.lang} />
       </div>
     );
   }

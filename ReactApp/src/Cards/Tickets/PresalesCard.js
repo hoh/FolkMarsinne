@@ -14,21 +14,41 @@ const priceTagStyle = {
   display: 'inline-block',
 };
 
+const i18n_strings = {
+  fr: {
+    title: 'Préventes',
+    text: (
+      <p>
+        Le <b>Pass 3 jours</b> est disponible en prévente à un tarif
+        avantageux. Il peut être obtenu sur internet via la plateforme
+        <i> ticketscript </i> ou via le
+        <a href="http://www.acte2.be/index.php/contacts"> Centre Culturel de Huy </a>
+        (sur place ou par téléphone).
+      </p>),
+  },
+  en: {
+    title: 'Pre-sales',
+    text: (
+      <p>
+        The <b>3 days Pass</b> is available in pre-sales at a better price than
+        buying it on site. It can be obtained online via <i> ticketscript </i>
+        or at the
+        <a href="http://www.acte2.be/index.php/contacts"> Centre Culturel de Huy </a>
+        (on site or by phone).
+      </p>),
+  }
+}
 
 export default class PresalesCard extends React.Component {
 	render() {
+
+    var strings = i18n_strings[this.props.lang];
 		return (
       <Card style={{marginBottom: '1em'}}>
-        <CardTitle title="Préventes"/>
+        <CardTitle title={strings.title} />
         <CardText>
 
-          <p>
-            Le <b>Pass 3 jours</b> est disponible en prévente à un tarif
-            avantageux. Il peut être obtenu sur internet via la plateforme
-            <i> ticketscript </i> ou via le
-            <a href="http://www.acte2.be/index.php/contacts"> Centre Culturel de Huy </a>
-            (sur place ou par téléphone).
-          </p>
+          {strings.text}
 
           <div>
             <Paper zDepth={1} style={priceTagStyle}>
