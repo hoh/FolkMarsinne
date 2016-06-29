@@ -25,11 +25,11 @@ const i18n_strings = {
           vente aux caisses bracelets et jetons, contrôle, circulation,...).
           <p/>
           Il n'est pas encore possible de t'inscrire, mais reste attentif!
-          Les inscriptions seront annoncées sur cette page et sur
-          <a href='https://www.facebook.com/events/649129711905158/'>l'événement facebook du festival</a>.
+          Les inscriptions seront annoncées sur cette page et
+          sur <a href='https://www.facebook.com/events/649129711905158/'>l'événement facebook du festival</a>.
           <p/>
-          Pour toute information sur le bénévolat tu peux contacter Simon via
-          <a href='mailto:benevolat@folkfestivalmarsinne.be'>benevolat@folkfestivalmarsinne.be</a>
+          Pour toute information sur le bénévolat tu peux contacter Simon
+          via <a href='mailto:benevolat@folkfestivalmarsinne.be'>benevolat@folkfestivalmarsinne.be</a>
         </CardText>
       </div>),
     },
