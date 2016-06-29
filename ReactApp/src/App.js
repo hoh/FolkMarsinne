@@ -72,7 +72,8 @@ export default class App extends Component {
                         open={this.state.open}
                         onPageChange={::this.handlePageChange}
                         onRequestChange={this.handleNavbarRequest}
-                        onLanguageChange={::this.handleLanguage} />
+                        onLanguageChange={::this.handleLanguage}
+                        lang={this.state.lang} />
 
                 <AppBar
                   title="Folk Festival Marsinne"
