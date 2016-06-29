@@ -58,7 +58,7 @@ const i18n_strings = {
 export default class IndexPage extends React.Component {
 
   render() {
-    var strings = i18n_strings[this.props.lang];
+    var strings = i18n_strings[this.props.lang] || i18n_strings['fr'];
 
     return (
       <div>

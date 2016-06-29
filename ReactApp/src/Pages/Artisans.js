@@ -23,8 +23,8 @@ const i18n_strings = {
 export default class ArtisansPage extends React.Component {
 
   render() {
+    var strings = i18n_strings[this.props.lang] || i18n_strings['fr'];
 
-    var strings = i18n_strings[this.props.lang];
     return (
       <div>
 
