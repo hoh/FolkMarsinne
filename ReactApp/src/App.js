@@ -43,12 +43,22 @@ const muiTheme = getMuiTheme({
   },
 });
 
+function isMobile() {
+  return window.innerWidth <= 700;
+}
+
 
 export default class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {open: false, mobile: true, page: 'index', lang: 'fr'};
+    this.state = {open: false, mobile: isMobile(), page: 'index', lang: 'fr'};
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  handleResize = (e) => {
+    console.log('Resize', window.innerWidth);
+    this.setState({mobile: isMobile()});
   }
 
   render() {
