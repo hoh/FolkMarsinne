@@ -16,6 +16,22 @@ const i18n_strings = {
       title: 'Restauration',
       text: 'A partir du vendredi 19h',
     },
+    canteen: {
+      title: 'Cantine du festival',
+      subtitle: 'Plats chauds cuisinés',
+      desc: 'Située à l\'intérieur à proximité du bar, la cantine sert des plats chauds.',
+    },
+  },
+  en: {
+    intro: {
+      title: 'Catering',
+      text: 'Starting Friday at 7pm',
+    },
+    canteen: {
+      title: 'Canteen',
+      subtitle: 'Hot meals prepared prepared on site',
+      desc: 'Located indoor next to the bar, the canteen serves hot meals.',
+    },
   },
 }
 
@@ -32,11 +48,10 @@ export default class ArtisansPage extends React.Component {
                      desc={strings.intro.text} />
 
         <Card>
-          <CardTitle title="Cantine du festival"
-                     subtitle="Plats chauds" />
+          <CardTitle title={strings.canteen.title}
+                     subtitle={strings.canteen.subtitle} />
           <CardText>
-            Située à l'intérieur à proximité du bar, la cantine sert des plats
-            chauds.
+            {strings.canteen.desc}
           </CardText>
         </Card>
 

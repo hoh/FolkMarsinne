@@ -17,6 +17,12 @@ const i18n_strings = {
       text: 'Le festival héberge plusieurs artisans et autres associations',
     },
   },
+  en: {
+    intro: {
+      title: 'Artisans',
+      text: 'The festival is host to several artisans and other associations',
+    },
+  }
 }
 
 

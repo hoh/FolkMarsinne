@@ -29,21 +29,25 @@ const paperStyle = {
 const i18n_strings = {
   fr: {
     title: 'Festival Folk à Marsinne, Belgique',
+    subtitle: '25ème édition du Folk Festival de Marsinne',
     desc: 'Le festival accueille durant trois jours concerts, bals, théâtre de rue et de marionnettes, luthiers, artisans. Découvrez tous les ingrédients du plus ancien festival de musique traditionnelle de Wallonie !',
     desc2: 'Que ce soit pour le danseur invétéré ou le curieux d\'un jour, c\'est l\'endroit où se rendre pour profiter des musiques traditionnelles, dans un lieu calme et facile d\'accès. Un festival convivial, familial dans une ambiance unique et un lieu magnifique !',
     buttons: {
       progam: 'Programmation',
       volunteer: 'Devenir bénévole',
-    }
+    },
+    poster: 'Affiche 2016',
   },
   en: {
     title: 'Folk Festival in Marsinne, Belgium',
+    subtitle: '25th anniversary of the Folk Festival in Marsinne',
     desc: 'The only one of its kind in Wallonia, the three-day long Folk Festival of Marsinne features balls, concerts, dancing workshops, a free stage, sessions, street and puppet theatre, as well as a market for instrument makers and craftsmen.',
     desc2: 'Whether you are an experienced dancer, an enthusiastic music lover or a one day passer-by, this is the place to be if you want to indulge in traditional music in a peaceful and easily accessible setting. Expect to find a friendly and family-oriented festival with a unique atmosphere and set in a spectacular location.',
     buttons: {
       progam: 'Program',
       volunteer: 'volunteer',
-    }
+    },
+    poster: 'Poster 2016',
   }
 }
 
@@ -54,7 +58,7 @@ class WelcomeCard extends React.Component {
 		return (
       <Card>
         <CardTitle title={strings.title}
-                   subtitle="25ème édition du Folk Festival de Marsinne" />
+                   subtitle={strings.subtitle} />
         <CardText>
           {strings.desc}
           <p/>
@@ -64,7 +68,7 @@ class WelcomeCard extends React.Component {
           <RaisedButton label="Facebook" backgroundColor={indigo500}
             labelColor='white' linkButton={true}
             href="https://www.facebook.com/Festival-Musiques-et-Traditions-104714328025/" />
-          <RaisedButton label="Poster 2016" secondary={true}
+          <RaisedButton label={strings.poster} secondary={true}
             labelColor='white' linkButton={true}
             style={{marginLeft: 10}}
             href="http://www.folkfestivalmarsinne.be/joomla35/images/phocagallery/2016/MARSINNE2016-Affiche.jpg" />

@@ -20,6 +20,19 @@ const styles = {
   },
 };
 
+const i18n_strings = {
+  fr: {
+    friday: 'Vendredi',
+    saturday: 'Samedi',
+    sunday: 'Dimanche',
+  },
+  en: {
+    friday: 'Friday',
+    saturday: 'Saturday',
+    sunday: 'Sunday',
+  }
+}
+
 
 export default class ProgramPage extends React.Component {
 
@@ -37,6 +50,8 @@ export default class ProgramPage extends React.Component {
   }
 
   render() {
+      var strings = i18n_strings[this.props.lang] || i18n_strings['fr'];
+
       return (
         <Card>
             <div>
@@ -44,9 +59,9 @@ export default class ProgramPage extends React.Component {
                 onChange={::this.handleChange}
                 value={this.state.slideIndex}
               >
-                <Tab label="Vendredi" value={0} />
-                <Tab label="Samedi" value={1} />
-                <Tab label="Dimanche" value={2} />
+                <Tab label={strings.friday} value={0} />
+                <Tab label={strings.saturday} value={1} />
+                <Tab label={strings.sunday} value={2} />
               </Tabs>
               <SwipeableViews
                 index={this.state.slideIndex}

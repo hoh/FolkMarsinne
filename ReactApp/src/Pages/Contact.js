@@ -8,14 +8,31 @@ import EmailOutlineIcon from 'material-ui/svg-icons/communication/mail-outline';
 
 import CustomTitle from '../Cards/CustomTitle';
 
+const i18n_strings = {
+  fr: {
+    title: 'Contact',
+    subtitle: 'Contacter les organisateurs du festival',
+    general_information: 'Informations générales',
+    contact_a_team: 'Contacter une équipe',
+  },
+  en: {
+    title: 'Contact',
+    subtitle: 'Get in touch with the organizers',
+    general_information: 'General information',
+    contact_a_team: 'Contact a specific team',
+  }
+}
+
 
 export default class ContactPage extends React.Component {
 
   render() {
+    var strings = i18n_strings[this.props.lang] || i18n_strings['fr'];
+
     return (
       <div>
-        <CustomTitle title="Contact"
-                   subtitle="Contacter l'équipe du festival" />
+        <CustomTitle title={strings.title}
+                   desc={strings.subtitle} />
 
         <Card>
           <CardTitle title="Association"
@@ -33,7 +50,7 @@ export default class ContactPage extends React.Component {
         </Card>
         <p/>
         <Card>
-          <CardTitle title="Informations générales"
+          <CardTitle title={strings.general_information}
                      subtitle="" />
           <List>
             <ListItem
@@ -50,7 +67,7 @@ export default class ContactPage extends React.Component {
         </Card>
         <p/>
         <Card>
-          <CardTitle title="Contacter une équipe"
+          <CardTitle title={strings.contact_a_team}
                      subtitle="" />
 
           <List>
