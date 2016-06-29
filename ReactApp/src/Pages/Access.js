@@ -53,7 +53,16 @@ export default class AccessPage extends React.Component {
         <Card>
           <CardTitle title="En voiture"
                      subtitle="" />
+
           <CardText>
+            <h3 style={{marginTop: '0px'}}>Parking</h3>
+            Une large zone de parking totalement gratuit est prévue, ainsi que le long du chemin de remembrement (rue de Couthuin). Merci de respecter les voisins, le passage et les demandes des bénévoles responsables de la circulation. Garez-vous en épi, le plus près possible les uns des autres.
+            <p/>
+            Le parking « handicapés » est prévu dans le bout de la rue de la médaille, côté rue de Marsinne, avant les guichets.
+          </CardText>
+
+          <CardText>
+            <h3 style={{marginTop: '0px'}}>Directions</h3>
             Autoroute E42 Liège-Namur, sortie n° 8 "Huy/Héron"
             A la sortie, prendre la direction de Huy (N643 = Chaussée de Wavre direction Huy/Wanze/Héron) sur 600m.
             A la hauteur des garages Fiat, Citroën et Alfa Romeo, prendre la première à droite en direction de "Couthuin" (Rue de la Campagne).

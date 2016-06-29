@@ -89,7 +89,7 @@ export default class IndexPage extends React.Component {
               Folk Festival Marsinne 2016
             </div>
             <h2 style={{fontSize: 35, color: brown500}}>
-              9-10-11 Sept. 2016
+              9-10-11 Septembre 2016
             </h2>
 
             <div>

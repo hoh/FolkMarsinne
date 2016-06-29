@@ -61,6 +61,9 @@ export default class EventsCard extends React.Component {
 	            </TableBody>
 	          </Table>
 					</Paper>
+					<p><i>
+						Entrée gratuite pour les moins de 12 ans accompagnés d'un adulte responsable.
+					</i></p>
 
 					<h3>Remarques</h3>
           <ul>

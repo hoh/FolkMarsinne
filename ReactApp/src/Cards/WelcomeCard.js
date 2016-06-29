@@ -37,6 +37,7 @@ const i18n_strings = {
       volunteer: 'Devenir bénévole',
     },
     poster: 'Affiche 2016',
+    flyer: 'Dépliant 2016',
   },
   en: {
     title: 'Folk Festival in Marsinne, Belgium',
@@ -48,6 +49,7 @@ const i18n_strings = {
       volunteer: 'volunteer',
     },
     poster: 'Poster 2016',
+    flyer: 'Flyer 2016',
   }
 }
 
@@ -72,6 +74,10 @@ class WelcomeCard extends React.Component {
             labelColor='white' linkButton={true}
             style={{marginLeft: 10}}
             href="http://www.folkfestivalmarsinne.be/joomla35/images/phocagallery/2016/MARSINNE2016-Affiche.jpg" />
+          <RaisedButton label={strings.flyer} secondary={true}
+            labelColor='white' linkButton={true}
+            style={{marginLeft: 10}}
+            href="/static/files/MARSINNE2016-Flyer.pdf" />
         </CardText>
       </Card>
 		);

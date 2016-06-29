@@ -13,7 +13,20 @@ import CustomTitle from '../Cards/CustomTitle';
 
 const i18n_strings = {
   fr: {
-    title: 'Bénévolat',
+    title: 'Bénévoles',
+    local: {
+      title: 'Devenir bénévole',
+      subtitle: 'Participer à la vie du festival',
+      register: 'S\'inscrire',
+      text: (<div>
+        <CardText>
+          Envie de participer à la vie du festival ? Envoie un email
+          à <a href='mailto:benevolat@folkfestivalmarsinne.be'>benevolat@folkfestivalmarsinne.be</a>
+          , et nous allons te recontacter dès que les plages horaires seront
+          disponibles !
+        </CardText>
+      </div>),
+    },
     international: {
       title: 'Chantier international',
       subtitle: 'Jeunes du monde entier',
@@ -67,6 +80,26 @@ export default class VolunteerPage extends React.Component {
       <div>
         <CustomTitle title={strings.title}
                    subtitle="" />
+
+        <Card>
+         <CardHeader
+           title={strings.local.title}
+           subtitle={strings.local.subtitle}
+           avatar={null}
+         />
+         <div>
+           {strings.local.text}
+         </div>
+         <CardText>
+           <RaisedButton label={strings.local.register} primary={true}
+             labelColor='white' linkButton={true}
+             href="mailto:benevolat@folkfestivalmarsinne.be"
+             />
+         </CardText>
+        </Card>
+
+        <p/>
+
         <Card>
           <CardHeader
             title={strings.international.title}

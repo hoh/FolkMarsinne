@@ -21,7 +21,7 @@ const i18n_strings = {
     program: 'Programmation',
     activities: 'Animations',
     artisans: 'Artisans',
-    food: 'Alimentation',
+    food: 'Restauration',
     access: 'Accès',
     accomodation: 'Hébergement',
     volunteer: 'Bénévoles',

@@ -41,7 +41,7 @@ const i18n_strings = {
 export default class PresalesCard extends React.Component {
 	render() {
     var strings = i18n_strings[this.props.lang] || i18n_strings['fr'];
-    
+
 		return (
       <Card style={{marginBottom: '1em'}}>
         <CardTitle title={strings.title} />
@@ -59,6 +59,11 @@ export default class PresalesCard extends React.Component {
               <div>12-25 ans</div>
               <span>38 €</span>
             </Paper>
+
+            <Paper zDepth={1} style={priceTagStyle}>
+              <div>0-12 ans</div>
+              <span>Gratuit*</span>
+            </Paper>
           </div>
 
           <iframe id="ts-shop-iframe"
@@ -66,6 +71,10 @@ export default class PresalesCard extends React.Component {
                   src={'https://shop.ticketscript.com/channel/web2/start-order/rid/D795GP7K/language/' + this.props.lang + '?referrer=http%3A%2F%2Fwww.folkfestivalmarsinne.be%2Fjoomla35%2Findex.php%2Fen%2F&amp;sourcepageurl=http%3A%2F%2Fwww.folkfestivalmarsinne.be%2Fjoomla35%2Findex.php%2Fen%2Fticket-price'}
                   width="500" height="650" frameborder="0">
           </iframe>
+
+          <p>
+            <i>* Entrée gratuite pour les moins de 12 ans accompagnés d'un adulte responsable.</i>
+          </p>
 
           <h3>Remarques</h3>
           <ul>
