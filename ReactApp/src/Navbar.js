@@ -15,10 +15,49 @@ import ChatBubble from 'material-ui/svg-icons/communication/chat-bubble';
 import LocalHotel from 'material-ui/svg-icons/maps/local-hotel';
 import LocalDining from 'material-ui/svg-icons/maps/local-dining';
 
+const i18n_strings = {
+  fr: {
+    tickets: 'Tickets',
+    program: 'Programmation',
+    activities: 'Animations',
+    artisans: 'Artisans',
+    food: 'Alimentation',
+    access: 'Accès',
+    accomodation: 'Hébergement',
+    volunteer: 'Bénévoles',
+    contact: 'Contact',
+  },
+  en: {
+    tickets: 'Tickets',
+    program: 'Program',
+    activities: 'Entertainment',
+    artisans: 'Artisans',
+    food: 'Catering',
+    access: 'Access',
+    accomodation: 'Accomodation',
+    volunteer: 'Volunteer',
+    contact: 'Contact',
+  },
+  nl: {
+    tickets: 'Tickets',
+    program: 'Programma',
+    activities: 'Animaties',
+    artisans: 'Ambachtslieden',
+    food: 'Eten',
+    access: 'Toegang',
+    accomodation: 'Woning',
+    volunteer: 'Vrijwilligers',
+    contact: 'Contact',
+  },
+}
+
+
 
 class Navbar extends React.Component {
 
   render() {
+    var strings = i18n_strings[this.props.lang] || i18n_strings['fr'];
+
     console.log("Navbar props", this.props);
     return (
       <Drawer
@@ -42,17 +81,17 @@ class Navbar extends React.Component {
         </div>
         <Divider />
 
-        <MenuItem onTouchTap={() => this.props.onPageChange('tickets')} leftIcon={<AddShoppingCart />}>Tickets</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('tickets')} leftIcon={<AddShoppingCart />}>{strings.tickets}</MenuItem>
         <Divider />
-        <MenuItem onTouchTap={() => this.props.onPageChange('program')} leftIcon={<AvQueueMusic />}>Programmation</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('activities')} leftIcon={<RemoveRedEye />}>Animations</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('artisans')} leftIcon={<ThumbsUpDown />}>Artisans</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('food')} leftIcon={<LocalDining />}>Alimentation</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('program')} leftIcon={<AvQueueMusic />}>{strings.program}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('activities')} leftIcon={<RemoveRedEye />}>{strings.activities}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('artisans')} leftIcon={<ThumbsUpDown />}>{strings.artisans}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('food')} leftIcon={<LocalDining />}>{strings.food}</MenuItem>
         <Divider />
-        <MenuItem onTouchTap={() => this.props.onPageChange('access')} leftIcon={<Directions />}>Accès</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('accomodation')} leftIcon={<LocalHotel />}>Hébergement</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('volunteer')} leftIcon={<PersonOutline />}>Bénévoles</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('contact')} leftIcon={<ChatBubble />}>Contact</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('access')} leftIcon={<Directions />}>{strings.access}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('accomodation')} leftIcon={<LocalHotel />}>{strings.accomodation}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('volunteer')} leftIcon={<PersonOutline />}>{strings.volunteer}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('contact')} leftIcon={<ChatBubble />}>{strings.contact}</MenuItem>
       </Drawer>
     );
   }
