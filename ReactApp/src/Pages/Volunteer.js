@@ -17,13 +17,19 @@ const i18n_strings = {
     local: {
       title: 'Devenir bénévole',
       subtitle: 'Participer à la vie du festival',
-      register: 'S\'inscrire',
+      register: 'Contacter Simon',
       text: (<div>
         <CardText>
-          Envie de participer à la vie du festival ? Envoie un email
-          à <a href='mailto:benevolat@folkfestivalmarsinne.be'>benevolat@folkfestivalmarsinne.be</a>
-          , et nous allons te recontacter dès que les plages horaires seront
-          disponibles !
+          Comme chaque année, nous sommes à la recherche de bénévoles pour
+          réaliser toute une série de tâches (montage et démontage du site, vente au bar,
+          vente aux caisses bracelets et jetons, contrôle, circulation,...).
+          <p/>
+          Il n'est pas encore possible de t'inscrire, mais reste attentif!
+          Les inscriptions seront annoncées sur cette page et sur
+          <a href='https://www.facebook.com/events/649129711905158/'>l'événement facebook du festival</a>.
+          <p/>
+          Pour toute information sur le bénévolat tu peux contacter Simon via
+          <a href='mailto:benevolat@folkfestivalmarsinne.be'>benevolat@folkfestivalmarsinne.be</a>
         </CardText>
       </div>),
     },
