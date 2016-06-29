@@ -30,6 +30,11 @@ const i18n_strings = {
     friday: 'Friday',
     saturday: 'Saturday',
     sunday: 'Sunday',
+  },
+  nl: {
+    friday: 'Vrijdag',
+    saturday: 'Zaterdag',
+    sunday: 'Zondag',
   }
 }
 
@@ -68,13 +73,13 @@ export default class ProgramPage extends React.Component {
                 onChangeIndex={::this.handleChange}
               >
                 <CardText>
-                  <FridayProgram />
+                  <FridayProgram lang={this.props.lang} />
                 </CardText>
                 <div style={styles.slide}>
-                  <SaturdayProgram />
+                  <SaturdayProgram lang={this.props.lang} />
                 </div>
                 <div style={styles.slide}>
-                  <SundayProgram />
+                  <SundayProgram lang={this.props.lang} />
                 </div>
               </SwipeableViews>
             </div>
