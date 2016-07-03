@@ -22,6 +22,12 @@ const i18n_strings = {
       title: 'Artisans',
       text: 'The festival is host to several artisans and other associations',
     },
+  },
+  nl: {
+    intro: {
+      title: 'Artisans',
+      text: 'Het festival is gastheer voor verschillende ambachtslieden en andere verenigingen',
+    },
   }
 }
 
