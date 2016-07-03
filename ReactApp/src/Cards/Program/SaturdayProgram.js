@@ -45,7 +45,7 @@ const saturdayPlan = [
                             true,
                             false,
                             {name: 'Théâtre Mabotte', duration: 1, kind: 'theatre'}]},
-  {hour: '16:00', 'groups':[{name: 'Initiation bal folk', duration: 3, kind: 'learn'},
+  {hour: '16:00', 'groups':[{name: 'Initiation bal folk - Carine de Lauw', duration: 3, kind: 'learn'},
                             false,
                             {name: 'Durif - Champeval (FR)', duration: 4, kind: 'bal'},
                             false]},
