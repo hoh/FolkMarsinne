@@ -70,7 +70,7 @@ class Navbar extends React.Component {
         <MenuItem onTouchTap={() => this.props.onPageChange('index')}
                   leftIcon={<img src="/static/musicians_black.png"
                                  alt="Logo of the Festival" />}
-                  style={{color: "#999"}} >Marsinne Festival</MenuItem>
+                  style={{color: '#999'}} >Marsinne Festival</MenuItem>
         <div>
           <FlatButton label="Fr" primary={this.props.lang == 'fr'} style={{minWidth: '30px'}}
                       onClick={() => this.props.onLanguageChange('fr')} />
@@ -92,6 +92,8 @@ class Navbar extends React.Component {
         <MenuItem onTouchTap={() => this.props.onPageChange('accomodation')} leftIcon={<LocalHotel />}>{strings.accomodation}</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('volunteer')} leftIcon={<PersonOutline />}>{strings.volunteer}</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('contact')} leftIcon={<ChatBubble />}>{strings.contact}</MenuItem>
+        <Divider />
+        <img src='/static/danseurs2016.png' style={{width: '70%', padding: '15%', paddingTop: '10%', paddingBottom: '5%'}} />
       </Drawer>
     );
   }
