@@ -43,7 +43,7 @@ const i18n_strings = {
           Tu as envie de vivre un festival de l’intérieur ? De participer à son installation ?
           De rencontrer des jeunes d’autres pays et de faire partie d'une équipe ?
           Eventuellement d’avoir une entrée gratuite au festival (oui oui, ça compte aussi) ?
-          Alors le montage et le démontage de Marsinne sont fait pour toi !
+          Alors le montage et le démontage de Marsinne sont faits pour toi !
         </CardText>
 
         <CardText>
@@ -57,7 +57,7 @@ const i18n_strings = {
         <CardText>
           Le montage commence le lundi 05/09 et se termine le vendredi 09/09 avant les premiers concerts.
           Le démontage commence le lundi 12/09 et termine le jeudi 15/09.
-          Tu ne sais venir que quelque jours ? Pas de soucis, tu restes le bienvenu.
+          Tu ne sais venir que quelques jours ? Pas de soucis, tu restes le bienvenu.
           Mais sache que si les places viennent à manquer, ceux qui sont disponibles pour le
           plus de journées d’affilées auront la priorité.
         </CardText>
@@ -69,7 +69,7 @@ const i18n_strings = {
         </CardText>
 
         <CardText>
-          Tenté(e) ? N’hésite plus et rejoins nous.
+          Tenté(e) ? N’hésite plus et rejoins-nous.
         </CardText>
       </div>)
     }
@@ -120,10 +120,12 @@ export default class VolunteerPage extends React.Component {
               labelColor='white' linkButton={true}
               href="mailto:chantierjeunes@folkfestivalmarsinne.be"
               />
-            <RaisedButton label={strings.international.to_planning} secondary={true}
+            {/*
+              <RaisedButton label={strings.international.to_planning} secondary={true}
               labelColor='white' linkButton={true}
               style={{marginLeft: 10}}
               href="http://www.folkfestivalmarsinne.be/joomla35/images/phocagallery/2016/MARSINNE2016-Affiche.jpg" />
+              */}
           </CardText>
         </Card>
 

@@ -81,7 +81,7 @@ export default class PresalesCard extends React.Component {
             <li>
               Les préventes sont disponibles jusqu'au <b>3 septembre</b> inclus
               - au delà de cette date, la réservation en ligne ne sera plus
-              possible et il vous faudra acheter une votre billet sur place.
+              possible et il vous faudra acheter votre billet sur place.
             </li>
             <li>
               Les préventes peuvent être obtenues via <i>ticketscript</i>
