@@ -16,6 +16,9 @@ const programRowStyle = {
 const programHourStyle = {
   borderRight: '1px solid black',
   borderCollapse: 'collapse',
+  position: 'relative',
+  height: '30px',
+  top: '-15px',
 };
 
 const programCellStyle = {

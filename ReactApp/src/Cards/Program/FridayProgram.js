@@ -4,6 +4,7 @@ import {DayProgram} from './ProgramComponents'
 
 
 const fridayPlan = [
+  {hour: '', 'groups': []},
   {hour: '20h', 'groups': [false,
                            {name: 'Baila Tocamos', duration: 2, kind: 'bal'},
                            false, false]},
