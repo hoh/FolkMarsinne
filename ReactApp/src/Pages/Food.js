@@ -17,9 +17,9 @@ const i18n_strings = {
       text: 'A partir du vendredi 19h',
     },
     canteen: {
-      title: 'Cantine du festival',
-      subtitle: 'Plats chauds cuisinés',
-      desc: 'Située à l\'intérieur à proximité du bar, la cantine sert des plats chauds.',
+      title: 'Cuisine du festival',
+      subtitle: 'Plats chauds cuisinés sur place',
+      desc: 'Située à l\'intérieur à proximité du bar, la cuisine sert des plats chauds.',
     },
   },
   en: {
@@ -28,9 +28,20 @@ const i18n_strings = {
       text: 'Starting Friday at 7pm',
     },
     canteen: {
-      title: 'Canteen',
+      title: 'Cuisine of the festival',
       subtitle: 'Hot meals prepared prepared on site',
-      desc: 'Located indoor next to the bar, the canteen serves hot meals.',
+      desc: 'Located indoor next to the bar, the cuisine serves hot meals.',
+    },
+  },
+  nl: {
+    intro: {
+      title: 'Eten',
+      text: 'Vanaf vrijdag om 19u',
+    },
+    canteen: {
+      title: 'Keuken van het festival',
+      subtitle: 'Warme maaltijden bereid ter plaatse bereid',
+      desc: 'Gelegen indoor naast de bar, de keuken serveert warme maaltijden.',
     },
   },
 }
