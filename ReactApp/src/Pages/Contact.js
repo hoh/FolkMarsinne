@@ -40,12 +40,13 @@ export default class ContactPage extends React.Component {
           <CardText>
             Le Folk Festival Marsinne est organisé par l'association
             <b> Musique et Traditions</b>.
-            <pre>
+            <p/>
+            <Paper style={{padding: 10, width: 250}}>
               Musique et Traditions A.S.B.L.<br/>
               Rue de la Médaille 17<br/>
               4218 Couthuin-Héron<br/>
               Belgique<br/>
-            </pre>
+            </Paper>
           </CardText>
         </Card>
         <p/>
