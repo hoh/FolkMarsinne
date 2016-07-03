@@ -38,7 +38,7 @@ export default class ArtisansPage extends React.Component {
                      desc={strings.intro.text} />
 
         <Card>
-          <CardTitle title="Mains Unies"
+          <CardTitle title="Mains Unies - Mettez du Folk dans vos vacances !"
                      subtitle="" />
           <CardText>
             <img src="/static/artisans/mains-unies.jpg" width="250px"

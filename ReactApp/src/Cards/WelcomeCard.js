@@ -30,7 +30,7 @@ const i18n_strings = {
   fr: {
     title: 'Festival Folk à Marsinne, Belgique',
     subtitle: '25ème édition du Folk Festival de Marsinne',
-    desc: 'Le festival accueille durant trois jours concerts, bals, théâtre de rue et de marionnettes, luthiers, artisans. Découvrez tous les ingrédients du plus ancien festival de musique traditionnelle de Wallonie !',
+    desc: 'Le festival accueille durant trois jours concerts, bals, théâtre de marionnettes, luthiers, artisans. Découvrez tous les ingrédients du plus ancien festival de musique traditionnelle de Wallonie !',
     desc2: 'Que ce soit pour le danseur invétéré ou le curieux d\'un jour, c\'est l\'endroit où se rendre pour profiter des musiques traditionnelles, dans un lieu calme et facile d\'accès. Un festival convivial, familial dans une ambiance unique et un lieu magnifique !',
     buttons: {
       progam: 'Programmation',
