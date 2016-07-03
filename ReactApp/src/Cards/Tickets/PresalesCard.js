@@ -24,9 +24,25 @@ const i18n_strings = {
         <a href="http://www.acte2.be/index.php/contacts"> Centre Culturel de Huy </a>
         (sur place ou par téléphone).
       </p>),
+    free_for_kids: 'Entrée gratuite pour les moins de 12 ans accompagnés d\'un adulte responsable.',
+    notes_title: 'Remarques',
+    notes: (
+      <ul>
+        <li>
+          Les préventes sont disponibles jusqu'au <b>3 septembre</b> inclus
+          - au delà de cette date, la réservation en ligne ne sera plus
+          possible et il vous faudra acheter votre billet sur place.
+        </li>
+        <li>
+          Nous ne remboursons pas les préventes. En cas d’empêchement, il
+          vous faut soit avoir pris l'assurance proposée par
+          <i>ticketscript</i>, soit revendre ou donner la place.
+        </li>
+      </ul>
+    ),
   },
   en: {
-    title: 'Pre-sales',
+    title: 'Pre-Sales',
     text: (
       <p>
         The <b>3 days Pass</b> is available in pre-sales at a better price than
@@ -35,7 +51,49 @@ const i18n_strings = {
         <a href="http://www.acte2.be/index.php/contacts"> Centre Culturel de Huy </a>
         (on site or by phone).
       </p>),
+    free_for_kids: 'Free entrance for children until 12 year, with a responsible adult.',
+    notes_title: 'Notes',
+    notes: (
+      <ul>
+        <li>
+          Pre-sales for the 3 days pass are
+          available <b>until September 3rd included</b>  - after this date, you
+          can only buy tickets on site
+          at the festival. Don’t worry, we'll not be sold out!
+        </li>
+        <li>
+          We do not refund pre-sales. You can buy a cancellation insurance from Ticketscript,
+or sell / give the ticket to someone else yourself If you can’t make it.
+        </li>
+      </ul>
+    ),
+  },
+  nl: {
+    title: 'Voorverkoop',
+    text: (
+      <p>
+        De <b> 3 dagen Pass </b> is beschikbaar in voorverkoop tegen een lagere prijs dan
+        te kopen ter plaatse. Het kan online worden verkregen via de <i> ticketscript </i>
+        of via de
+        <a href="http://www.acte2.be/index.php/contacts"> Centre Culturel de Huy </a>
+        (Ter plaatse of telefonisch).
+      </p>),
+    free_for_kids: 'Gratis voor kinderen jonger dan 12 jaar, die vergezeld worden door een verantwoordelijke volwassene.',
+    notes_title: 'Opmerkingen',
+    notes: (
+      <ul>
+        <li>
+          <b>Tot en met zaterdag 3 september</b>. Na die datum zal online reservering
+          niet mogelijk zijn ; U kunt dan nog uw ticket rechtstreeks op de site kopen ..
+        </li>
+        <li>
+          Geen terugbetaling van de VVK, ofwel voorgestelde verzekering
+          langs <i>ticketscript</i> nemen, ofwel verkopen, ofwel uw ticket aan iemand geven
+        </li>
+      </ul>
+    ),
   }
+
 }
 
 export default class PresalesCard extends React.Component {
@@ -73,27 +131,11 @@ export default class PresalesCard extends React.Component {
           </iframe>
 
           <p>
-            <i>* Entrée gratuite pour les moins de 12 ans accompagnés d'un adulte responsable.</i>
+            <i>* {strings.free_for_kids}</i>
           </p>
 
-          <h3>Remarques</h3>
-          <ul>
-            <li>
-              Les préventes sont disponibles jusqu'au <b>3 septembre</b> inclus
-              - au delà de cette date, la réservation en ligne ne sera plus
-              possible et il vous faudra acheter votre billet sur place.
-            </li>
-            <li>
-              Les préventes peuvent être obtenues via <i>ticketscript</i>
-              <b> OU </b> via le <a href="http://www.acte2.be/index.php/contacts">
-              Centre Culturel de Huy</a> (sur place ou par téléphone).
-            </li>
-            <li>
-              Nous ne remboursons pas les préventes. En cas d’empêchement, il
-              vous faut soit avoir pris l'assurance proposée par
-              <i>ticketscript</i>, soit revendre ou donner la place.
-            </li>
-          </ul>
+          <h3>{strings.notes_title}</h3>
+          {strings.notes}
 
         </CardText>
       </Card>
