@@ -101,6 +101,11 @@ export default class ContactPage extends React.Component {
               secondaryText="environnement@folkfestivalmarsinne.be"
               leftIcon={<EmailOutlineIcon />}
             />
+            <ListItem
+              primaryText="Site web"
+              secondaryText="webmaster@folkfestivalmarsinne.be"
+              leftIcon={<EmailOutlineIcon />}
+            />
           </List>
         </Card>
 
