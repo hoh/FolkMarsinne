@@ -3,13 +3,13 @@ import {blue100, red100, cyan500, teal400, amber800, pink500, purple500} from 'm
 
 
 const programTableStyle = {
-  border: '1px solid black',
+  // border: '1px solid black',
   borderCollapse: 'collapse',
   width: '100%',
 };
 
 const programRowStyle = {
-  border: '1px solid black',
+  // border: '1px solid black',
   borderCollapse: 'collapse',
 };
 
@@ -17,8 +17,9 @@ const programHourStyle = {
   borderRight: '1px solid black',
   borderCollapse: 'collapse',
   position: 'relative',
-  height: '30px',
-  top: '-15px',
+  height: '40px',
+  top: '20px',
+  width: '60px',
 };
 
 const programCellStyle = {
@@ -26,8 +27,8 @@ const programCellStyle = {
   borderCollapse: 'collapse',
   width: '20%',
   backgroundColor: blue100,
-  paddingLeft: '0.4em',
-  textAlign: 'left',
+  padding: '0.4em',
+  textAlign: 'center',
 };
 
 const eventColors = {
