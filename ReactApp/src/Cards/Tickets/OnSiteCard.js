@@ -52,6 +52,97 @@ const i18n_strings = {
 			</ul>
 		),
 	},
+  en: {
+		title: 'On Site',
+		intro: (<div>
+			<p>
+				Tickers for <b>one day</b> will be available at the entry of the festival
+				only. <b>3 days passes</b> will also be available on site, but at a higher
+				price than pre-sales.
+			</p>
+			<p>
+				Only <b>cash</b> payments will be available on site, <b>NOR cards
+				or bank cheque</b>. If you have the exact amount, that’s even better !
+			</p>
+		</div>),
+		table: {
+			friday: 'Friday',
+			saturday: 'Saturday',
+			sunday: 'Sunday',
+			normal_fare: 'Normal fare',
+			fare_12_25: '12-25 yo',
+			pass_3_days: 'Pass 3 days',
+			evening: 'Evening',
+		},
+		free_for_kids: 'Free entrance for children until 12 year, with a responsible adult.',
+		notes_title: 'Notes',
+		notes: (
+			<ul>
+				<li>
+					Tickets will always be available on site — there will be enough for
+					everyone.
+				</li>
+				<li>
+					The closest ATM is 1.7 km away,
+					at <a href="http://www.bpost2.be/locations/zip_res/fr/map_zone_ins.php?ins=61028&word=couthuin">bureau de poste de Couthuin</a>:
+					<p>
+						Rue Sur Les Trixhes 3, 4216 Couthuin
+
+						&nbsp;
+						<a href="https://www.google.be/maps/place/bpost+SA/@50.5285247,5.1353813,17z/data=!4m5!3m4!1s0x0000000000000000:0xc19cd0daccb7ea38!8m2!3d50.5285473!4d5.1383507">
+							(Google Maps)
+						</a>
+					</p>
+				</li>
+			</ul>
+		),
+	},
+  nl: {
+		title: 'Ter plaatse',
+		intro: (<div>
+			<p>
+				Heb je geen ticket in voorverkoop kunnen nemen, je zult uw tickets ter
+				plaatse kunnen kopen op tarief hierboven gemeld.(Er zullen er voor
+				iedereen zijn!)
+			</p>
+			<p>
+				Voorzichtig! Betaling ter plaatse: <b>GEEN betaling met bankkaart OF bankcheques</b>,
+				indien mogelijk juist bedrag voorzien.
+			</p>
+		</div>),
+		table: {
+			friday: 'Vrijdag',
+			saturday: 'Zaterdag',
+			sunday: 'Zondag',
+			normal_fare: 'Gewoon',
+			fare_12_25: '12-25 jaar',
+			pass_3_days: '3 dagen',
+			evening: 'Avondtarief',
+		},
+		free_for_kids: 'Gratis voor kinderen jonger dan 12 jaar, die vergezeld worden door een verantwoordelijke volwassene.',
+		notes_title: 'Opmerkingen',
+		notes: (
+			<ul>
+				<li>
+					U kunt altijd tickets kopen op de site om de tarieven
+					hierboven vermeld - zal er voor elk wat wils.
+					Er zullen er voor iedereen zijn!
+				</li>
+				<li>
+					De dichtstbijzijnde geldautomaat is 1,7 km:
+					<a href="http://www.bpost2.be/locations/zip_res/fr/map_zone_ins.php?ins=61028&word=couthuin">bureau de poste de Couthuin</a>:
+					<p>
+						Rue Sur Les Trixhes 3, 4216 Couthuin
+
+						&nbsp;
+						<a href="https://www.google.be/maps/place/bpost+SA/@50.5285247,5.1353813,17z/data=!4m5!3m4!1s0x0000000000000000:0xc19cd0daccb7ea38!8m2!3d50.5285473!4d5.1383507">
+							(Google Maps)
+						</a>
+					</p>
+				</li>
+			</ul>
+		),
+	},
 }
 
 
@@ -78,7 +169,7 @@ export default class EventsCard extends React.Component {
 	            </TableHeader>
 	            <TableBody displayRowCheckbox={false}>
 	              <TableRow>
-	                <TableRowColumn>{strings.pass_3_days}</TableRowColumn>
+	                <TableRowColumn>{strings.table.pass_3_days}</TableRowColumn>
 	                <TableRowColumn>57 €</TableRowColumn>
 	                <TableRowColumn>47 €</TableRowColumn>
 	                <TableRowColumn>/</TableRowColumn>
