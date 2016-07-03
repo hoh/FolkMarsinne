@@ -21,7 +21,17 @@ const i18n_strings = {
       desc: "A traditional puppet theater from Liège has enough to delight the youngest among us. The Mabotte Theater brings together professionals who perpetuate this old tradition with talent. Brilliant! So come and join them!",
       website: "Website"
     }
-  }
+  },
+  nl: {
+    title: "Animaties 2016",
+    mabotte: {
+      title: "Poppentheater van de Mabotte (België)",
+      headline: "Luiks poppentheater (Wallonië) – Zaterdag en Zondag / BINNENPLAATS",
+      desc: "Een traditioneel Luiks poppentheater om de jongsten onder ons te verheugen ! Theater Mabotte brengt professionelen met talent die deze traditie met talent bestendigen. Met brio, dus kom meedoen!",
+      website: "Website"
+    }
+  },
+
 };
 
 
@@ -29,7 +39,7 @@ export default class ActivitiesPage extends React.Component {
 
   render() {
     var strings = i18n_strings[this.props.lang] || i18n_strings['fr'];
-    
+
     return (
       <div>
 
@@ -37,10 +47,8 @@ export default class ActivitiesPage extends React.Component {
 
         <Card>
           <CardTitle title={strings.mabotte.title}
-                     subtitle="" />
+                     subtitle={strings.mabotte.headline} />
           <CardText>
-            <p><b>{strings.mabotte.headline}</b>
-            </p>
             <p>
               {strings.mabotte.desc}
             </p>
