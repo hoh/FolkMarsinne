@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import CustomTitle from '../Cards/CustomTitle';
+import Paper from 'material-ui/Paper';
 
 
 export default class AccessPage extends React.Component {
@@ -14,14 +15,15 @@ export default class AccessPage extends React.Component {
           <CardTitle title="Site du festival"
                      subtitle="" />
           <CardText>
-            <pre>
+            <Paper style={{padding: 10, width: 200}}>
               Château-ferme de Marsinne<br/>
               Rue de la Médaille 17<br/>
               4218 Couthuin - Héron<br/>
               Belgique
-            </pre>
+            </Paper>
             <p>
-              Coordonnées GPS : 50.529371,5.117713 ou 50°31'45.74"N & 5° 7'3.78"E
+              Coordonnées GPS : <a href="geo:50.529371,5.117713">50.529371,5.117713</a> <br/>
+              (ou 50°31'45.74"N & 5° 7'3.78"E)
             </p>
           </CardText>
         </Card>
