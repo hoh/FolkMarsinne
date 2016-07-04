@@ -32,13 +32,13 @@ const i18n_strings = {
     friday: 'Friday',
     saturday: 'Saturday',
     sunday: 'Sunday',
-    all_details: 'Alle informatie over de kunstenaars',
+    all_details: 'All informations on the line-up',
   },
   nl: {
     friday: 'Vrijdag',
     saturday: 'Zaterdag',
     sunday: 'Zondag',
-    all_details: 'All informations on the line-up',
+    all_details: 'Alle informatie over de kunstenaars',
   }
 }
 
