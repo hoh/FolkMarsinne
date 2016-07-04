@@ -119,7 +119,7 @@ const sundayPlan = [
 export default class SundayProgram extends React.Component {
   render() {
 		return (
-      <DayProgram plan={sundayPlan} />
+      <DayProgram plan={sundayPlan} lang={this.props.lang} />
     );
   }
 }

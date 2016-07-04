@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
-import RaisedButton from 'material-ui/RaisedButton';
 
 import ProgramCard from '../Cards/Program/BasicProgramCard';
 import FridayProgram from '../Cards/Program/FridayProgram';
@@ -26,19 +25,16 @@ const i18n_strings = {
     friday: 'Vendredi',
     saturday: 'Samedi',
     sunday: 'Dimanche',
-    all_details: 'Tous les détails sur les artistes',
   },
   en: {
     friday: 'Friday',
     saturday: 'Saturday',
     sunday: 'Sunday',
-    all_details: 'All informations on the line-up',
   },
   nl: {
     friday: 'Vrijdag',
     saturday: 'Zaterdag',
     sunday: 'Zondag',
-    all_details: 'Alle informatie over de kunstenaars',
   }
 }
 
@@ -86,12 +82,7 @@ export default class ProgramPage extends React.Component {
                   <SundayProgram lang={this.props.lang} />
                 </div>
               </SwipeableViews>
-              <CardText>
-                <RaisedButton label={strings.all_details} primary={true}
-                  labelColor='white' linkButton={true}
-                  style={{marginLeft: 10}}
-                  href="/static/all-details.html" />
-              </CardText>
+
             </div>
         </Card>
       );

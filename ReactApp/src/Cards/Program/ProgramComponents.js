@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {blue100, red100, cyan500, teal400, amber800, pink500, purple500} from 'material-ui/styles/colors';
+import {CardText} from 'material-ui/Card';
+import RaisedButton from 'material-ui/RaisedButton';
 
 
 const programTableStyle = {
@@ -77,11 +79,31 @@ class HourRow extends React.Component {
   }
 }
 
+const i18n_strings = {
+  fr: {
+    all_details: 'Tous les détails sur les artistes',
+  },
+  en: {
+    all_details: 'All informations on the line-up',
+  },
+  nl: {
+    all_details: 'Alle informatie over de kunstenaars',
+  }
+}
+
 
 export class DayProgram extends React.Component {
   render() {
+    var strings = i18n_strings[this.props.lang] || i18n_strings['fr'];
+
     return(
       <div>
+        <CardText>
+          <RaisedButton label={strings.all_details} secondary={true}
+            labelColor='white' linkButton={true}
+            style={{marginLeft: 'auto'}}
+            href="/static/all-details.html" />
+        </CardText>
         <table style={programTableStyle}>
           <tr style={programRowStyle}>
             <th></th>

@@ -24,7 +24,7 @@ const fridayPlan = [
 export default class FridayProgram extends React.Component {
   render() {
 		return (
-      <DayProgram plan={fridayPlan} />
+      <DayProgram plan={fridayPlan} lang={this.props.lang} />
     );
   }
 }
