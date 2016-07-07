@@ -6,7 +6,7 @@ import {DayProgram} from './ProgramComponents'
 const sundayPlan = [
   {hour: '', 'groups': []},
   {hour: '11:00', 'groups':[false,
-                            {name: 'Vendée', kind: 'workshop', duration: 3, kind: 'learn'},
+                            {name: 'Vendée - Dames de Nage', kind: 'workshop', duration: 3, kind: 'learn'},
                             false,
                             false]},
   {hour: '11:30', 'groups':[false,
@@ -19,7 +19,7 @@ const sundayPlan = [
                             false]},
   {hour: '12:30', 'groups':[false,
                             false,
-                            {name: 'Suède', kind: 'workshop', duration: 3, kind: 'learn'},
+                            {name: 'Suède - Aurélie Giet & Väsen', kind: 'workshop', duration: 3, kind: 'learn'},
                             false]},
   {hour: '13:00', 'groups':[{name: 'Grand Air', kind: 'concert', duration: 2, kind: 'concert'},
                             {name: 'Dames de Nage (FR)', kind: 'bal', duration: 3, kind: 'bal'},
