@@ -100,7 +100,7 @@ const i18n_strings = {
          14:00 camping opening
          </p>
          <p>
-         16:30 opening doors for the VIP's
+         16:30 opening doors for the VIP
          </p>
          <p>
          18:30 opening doors for pre-order tickets
@@ -191,7 +191,7 @@ const i18n_strings = {
          14:00 opening van de camping
          </p>
          <p>
-         16:30 opening van de deuren voor de "VIPs" 
+         16:30 opening van de deuren voor de VIP 
          </p>
          <p>
          18:30 opening van de deuren voor de voorverkoop
