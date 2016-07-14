@@ -19,7 +19,7 @@ const i18n_strings = {
     canteen: {
       title: 'Cuisine du festival',
       desc: 'Un grand choix de restauration est proposé sur place aux festivaliers : repas chauds complets cuisinés sur place, frites, couscous, croque-monsieurs spéciaux, crêpes, ...',
-      desc2: 'Possibilité de petit-déjeuner,
+      desc2: 'Possibilité de petit-déjeuner.',
     },
   },
   en: {
