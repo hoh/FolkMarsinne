@@ -8,6 +8,34 @@ const i18n_strings = {
     title: 'Accéder au festival',
     location: 'Site du festival',
     gps: 'Coordonnées GPS',
+    horaire: {
+      title: 'Heures d\'ouvertures du festival',  
+      vendredi: (
+       <p>
+         <b>Vendredi</b>:
+         <p>
+         14h: ouverture du camping
+         </p>
+         <p>
+         16h30: ouverture des portes pour les VIP
+         </p>
+         <p>
+         18h30: ouverture des portes pour les détenteurs d'une prévente
+         </p>
+         <p>
+         19h: ouverture des caisses
+         </p>
+      </p>
+      ),
+      samedimanche: (
+      <p>
+         <b>Samedi et Dimanche</b>:
+         <p>
+         10h: ouverture des portes et des caisses
+         </p>
+      </p>
+      ),
+    },
     transport: {
       title: 'En transport en commun',
       train: (
@@ -63,6 +91,34 @@ const i18n_strings = {
     title: 'Accessing the festival',
     location: 'Festival location',
     gps: 'GPS coordinates ',
+    horaire: {
+      title: 'Festival\'s opening hours',  
+      vendredi: (
+       <p>
+         <b>Friday</b>:
+         <p>
+         14:00 camping opening
+         </p>
+         <p>
+         16:30 opening doors for the VIP's
+         </p>
+         <p>
+         18:30 opening doors for pre-order tickets
+         </p>
+         <p>
+         19:00 opening doors
+         </p>
+      </p>
+      ),
+      samedimanche: (
+      <p>
+         <b>Saturday and Sunday</b>:
+         <p>
+         10:00 opening doors
+         </p>
+      </p>
+      ),
+    },
     transport: {
       title: 'With public transporation',
       train: (
@@ -126,6 +182,34 @@ const i18n_strings = {
     title: 'Bereikbaarheid',
     location: 'Festivalterrein',
     gps: 'GPS coördinaten',
+    horaire: {
+      title: 'Festival\'s opening hours',  
+      vendredi: (
+       <p>
+         <b>Friday</b>:
+         <p>
+         14:00 opening van de camping
+         </p>
+         <p>
+         16:30 opening van de deuren voor de "VIPs" 
+         </p>
+         <p>
+         18:30 opening van de deuren voor de voorverkoop
+         </p>
+         <p>
+         19:00 opening van de kassa's
+         </p>
+      </p>
+      ),
+      samedimanche: (
+      <p>
+         <b>Saturday and Sunday</b>:
+         <p>
+         10:00 opening van de deuren
+         </p>
+      </p>
+      ),
+    },
     transport: {
       title: 'Onderweg',
       train: (
@@ -216,6 +300,14 @@ export default class AccessPage extends React.Component {
           </CardText>
         </Card>
         <p/>
+        <Card>
+          <CardTitle title={strings.horaire.title}
+                     subtitle="" />
+          <CardText>
+            {strings.horaire.vendredi}
+            {strings.horaire.samedi}
+          </CardText>
+        </Card>
         <Card>
           <CardTitle title={strings.transport.title}
                      subtitle="" />
