@@ -18,7 +18,8 @@ const i18n_strings = {
     },
     canteen: {
       title: 'Cuisine du festival',
-      desc: 'Un grand choix de restauration est proposé sur place aux festivaliers : repas chauds complets cuisinés sur place, frites, couscous, croque-monsieur spéciaux, crêpes, ... Possibilité de petit-déjeuner.',
+      desc: 'Un grand choix de restauration est proposé sur place aux festivaliers : repas chauds complets cuisinés sur place, frites, couscous, croque-monsieurs spéciaux, crêpes, ...',
+      desc2: 'Possibilité de petit-déjeuner,
     },
   },
   en: {
@@ -28,7 +29,8 @@ const i18n_strings = {
     },
     canteen: {
       title: 'Cuisine of the festival',
-      desc: 'A lot of food choice are available in the festival area (full hot meals prepared on site, french fries, ...). Breakfast also possible.',
+      desc: 'A lot of food choice are available in the festival area : full hot meals prepared on site, french fries, couscous, croque-monsieur, pancakes, ...',
+      desc2: 'Breakfast also possible.',
     },
   },
   nl: {
@@ -38,7 +40,8 @@ const i18n_strings = {
     },
     canteen: {
       title: 'Keuken van het festival',
-      desc: 'Er is een grote verscheidenheid aan maaltijden/snacks voorzien (Volledige warme maaltijden ter plaatse bereid, frieten, couscousschotels, croque-monsieur, pannenkoeken, ...). Mogelijkheid tot ontbijt.',
+      desc: 'Er is een grote verscheidenheid aan maaltijden/snacks voorzien : Volledige warme maaltijden ter plaatse bereid, frieten, couscousschotels, croque-monsieurs, pannenkoeken, ...',
+      desc2: 'Mogelijkheid tot ontbijt.',
     },
   },
 }
