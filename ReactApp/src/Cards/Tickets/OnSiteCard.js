@@ -9,7 +9,7 @@ const i18n_strings = {
 		title: 'Sur Place',
 		intro: (<div>
 			<p>
-				Les billets pour <b>une journée</b> sont à acheter sur place
+				Les tickets pour <b>une journée</b> sont à acheter sur place
 				à l'entrée du festival. Les <b>Pass 3 jours</b> y seront également
 				disponibles, mais à un tarif plus élevé qu'en prévente.
 			</p>
@@ -34,11 +34,11 @@ const i18n_strings = {
 		notes: (
 			<ul>
 				<li>
-					Vous pourrez toujours acheter vos billets sur place aux tarifs
+					Vous pourrez toujours acheter vos tickets sur place aux tarifs
 					indiqués ci-dessus — il y en aura pour tout le monde.
 				</li>
 				<li>
-					Le distributeur de billets le plus proche se trouve à 1.7 km,
+					Le distributeur de billets de banque le plus proche se trouve à 1.7 km,
 					au <a href="http://www.bpost2.be/locations/zip_res/fr/map_zone_ins.php?ins=61028&word=couthuin">bureau de poste de Couthuin</a>:
 					<p>
 						Rue Sur Les Trixhes 3, 4216 Couthuin
@@ -56,8 +56,8 @@ const i18n_strings = {
 		title: 'On Site',
 		intro: (<div>
 			<p>
-				Tickers for <b>one day</b> will be available at the entry of the festival
-				only. <b>3 days passes</b> will also be available on site, but at a higher
+				<b>One day</b> tickets will be available at the entry of the festival
+				only. <b>3 days Pass</b> will also be available on site, but at a higher
 				price than pre-sales.
 			</p>
 			<p>
@@ -101,9 +101,8 @@ const i18n_strings = {
 		title: 'Ter plaatse',
 		intro: (<div>
 			<p>
-				Heb je geen ticket in voorverkoop kunnen nemen, je zult uw tickets ter
-				plaatse kunnen kopen op tarief hierboven gemeld.(Er zullen er voor
-				iedereen zijn!)
+				<b>Een dag</b> tickets zijn rechtstreeks op de site te kopen. 
+				De <b>3 dagen Pass</b> zullen daar ook beschikbaar zijn maar op hooger prijs dan in voorverkoop.
 			</p>
 			<p>
 				Voorzichtig! Betaling ter plaatse: <b>GEEN betaling met bankkaart OF bankcheques</b>,
@@ -124,9 +123,8 @@ const i18n_strings = {
 		notes: (
 			<ul>
 				<li>
-					U kunt altijd tickets kopen op de site om de tarieven
-					hierboven vermeld - zal er voor elk wat wils.
-					Er zullen er voor iedereen zijn!
+					Heb je geen ticket in voorverkoop kunnen nemen, je zult uw tickets ter 
+					plaatse kunnen kopen op tarief hierboven gemeld - er zullen er voor iedereen zijn!
 				</li>
 				<li>
 					De dichtstbijzijnde geldautomaat is 1,7 km:
@@ -189,7 +187,7 @@ export default class EventsCard extends React.Component {
 	              <TableRow>
 	                <TableRowColumn>{strings.table.sunday}</TableRowColumn>
 	                <TableRowColumn>22 €</TableRowColumn>
-	                <TableRowColumn>18 € (19:00)</TableRowColumn>
+	                <TableRowColumn>18 €</TableRowColumn>
 	                <TableRowColumn>10 € (19h00)</TableRowColumn>
 	              </TableRow>
 	            </TableBody>
