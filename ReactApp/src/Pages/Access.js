@@ -6,7 +6,21 @@ import Paper from 'material-ui/Paper';
 const i18n_strings = {
   fr: {
     title: 'Accéder au festival',
-    location: 'Site du festival',
+    location: {
+      title: 'Site du festival',
+      chateau: (
+      <p>
+      Le Festival se tient au château-ferme de Marsinne. Cette ferme fortifiée, construite au XIIème siècle, servait de poste d'avant-garde pour le Château de Moha et la Seigneurie de Beaufort. 
+      </p>
+      <p>
+      Le bâtiment principal est composé de deux salles, une de 150m² (l'ancienne grange, qui nous sert de bar) et une autre de 275m² (la grande salle). Par ailleurs, à l'occasion du festival, un chapiteau d'environ 450m² est installé à l'extérieur de l'enceinte. Enfin, la cour du château est le lieu des multiples rencontres que le festival permet.
+      </p>
+      <p>
+      Le hangar quant à lui, occupé autrefois par une des scènes du festival, est aujourd'hui devenu une brasserie qui propose au Folk Festival une bière locale du nom de Léopold7.
+      </p>
+      ),
+      website: 'Site internet'  
+    },
     gps: 'Coordonnées GPS',
     horaire: {
       title: 'Heures d\'ouvertures du festival',  
@@ -49,10 +63,16 @@ const i18n_strings = {
       bus: (
         <p>
           <b>En Bus</b>: Ligne 143 HUY - COUTHUIN - ANDENNE
-          Peu de bus par jour, surtout le week-end, vérifiez les horaires :
-          http://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L143
-          Descendre à l'arrêt Couthuin, Rue de Marsinne.
-          Marcher jusqu'au Château Ferme, Rue de la Médaille (7 min).
+          Peu de bus par jour, surtout le week-end, vérifiez les <a href="http://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L143"> horaires</a>. :
+          <p>
+          Descendre à l'arrêt "Couthuin Rue de Marsinne". Marcher ensuite jusqu'au Château Ferme situé Rue de la Médaille.
+          </p>
+          <ul>
+            <li>A la gare d'Andenne, rejoindre l'arrêt "Seilles Gare Routière", y prendre le bus direction Huy et descendre à l'arrêt "Couthuin Rue de Marsinne" (trajet en bus : 12 min). 
+            </li>
+            <li>A la gare de Huy, rejoindre l'arrêt "Ecole Technique" (trajet à pied : 8 min), y prendre direction Andenne et descendre à l'arrêt "Couthuin rue de Marsinne" (trajet en bus : 25 min).
+            </li>
+          </ul>
         </p>
       ),
     },
@@ -85,11 +105,25 @@ const i18n_strings = {
           </p>
         </div>
       ),
-    }
+    },
   },
   en: {
     title: 'Accessing the festival',
-    location: 'Festival location',
+    location: {
+      title: 'Festival location',
+      chateau: (
+      <p>
+      The music festival takes place in the Marsinne castle-farm.  This farm with bulwark was built in the 13rd century, it was a guarded outpost of the Moha castle for the Beaufort Lord.
+      </p>
+      <p>
+      The main building holds two rooms, the first one (the old barn) has a 150m² size and will contains the bar.  The second hall has a 275m² size and will be a danse hall.  During the festival, a big top with a size of 450m² is built outside of the compound.  And the courtyard becomes the meeting place of the festival.
+      </p>
+      <p>
+      The shed, where was one of the festival stage, is became a brewery. The brewed beer is sold at the festival bar, its name is Léopold7.
+      </p>
+      ),
+      website: 'Website'  
+    },
     gps: 'GPS coordinates ',
     horaire: {
       title: 'Festival\'s opening hours',  
@@ -180,7 +214,21 @@ const i18n_strings = {
   },
   nl: {
     title: 'Bereikbaarheid',
-    location: 'Festivalterrein',
+    location: {
+      title: 'Festivalterrein',
+      chateau: (
+      <p>
+      Het festival wordt gehouden op de kasteelhoeve van Marsinne. Deze versterkte boerderij, gebouwd in de twaalfde eeuw, diende als een voorpost voor het Kasteel van Moha en Heerschap van Beaufort.
+      </p>
+      <p>
+      Het hoofdgebouw bestaat uit twee zalen, een van 150m² (de oude schuur, die als bar gebruikt wordt) en nog een andere van 275m² (de grote zaal). In aanvulling, ter gelegenheid van het festival, wordt een tent van ongeveer 450m² buiten de omheining geplaatst. De binnenplaats van het kasteel is de ontmoetingsplaats voor heel het festival.
+      </p>
+      <p>
+      Wat de hangar betreft die vroeger dienst deed als één van de podia van het festival, die is nu omgebouwd tot een brouwerij die aan het Folk Festival een lokaal bier aanbiedt met de naam Léopold7.
+      </p>
+      ),
+    website: 'Website'  
+    },
     gps: 'GPS coördinaten',
     horaire: {
       title: 'Festival\'s opening hours',  
@@ -284,9 +332,13 @@ export default class AccessPage extends React.Component {
         <CustomTitle title={strings.title} />
 
         <Card>
-          <CardTitle title={strings.location}
+          <CardTitle title={strings.location.title}
                      subtitle="" />
           <CardText>
+            {strings.location.chateau}
+            <p>
+            {strings.location.website}: <a href="http://www.marsinne.be/">www.marsinne.be</a>
+            </p>
             <Paper style={{padding: 10, width: 200}}>
               Château-ferme de Marsinne<br/>
               Rue de la Médaille 17<br/>
@@ -297,6 +349,8 @@ export default class AccessPage extends React.Component {
               {strings.gps} : <a href="geo:50.529371,5.117713">50.529371,5.117713</a> <br/>
               (ou 50°31'45.74"N & 5° 7'3.78"E)
             </p>
+            <img src="http://www.folkfestivalmarsinne.be/images/stories/lieu/salle_marsinne00.jpg"/>
+            <img src="http://www.folkfestivalmarsinne.be/images/stories/lieu/salle_marsinne03.jpg"/>
           </CardText>
         </Card>
         <p/>
@@ -305,7 +359,7 @@ export default class AccessPage extends React.Component {
                      subtitle="" />
           <CardText>
             {strings.horaire.vendredi}
-            {strings.horaire.samedi}
+            {strings.horaire.samedimanche}
           </CardText>
         </Card>
         <Card>
