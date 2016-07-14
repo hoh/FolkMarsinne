@@ -8,18 +8,30 @@ const i18n_strings = {
     title: "Animations 2016",
     mabotte: {
       title: "Théâtre des Marionnettes de Mabotte",
-      headline: "Théâtre de marionnettes liégeoises (Belgique - Wallonie) - Samedi et dimanche / COUR",
+      headline: "Théâtre de marionnettes liégeoises (Belgique - Wallonie) - Samedi et Dimanche / COUR",
       desc: "Un théâtre de marionnettes traditionnelles liégeoises: de quoi réjouir les plus jeunes d'entre nous! Le Théâtre Mabotte rassemble des professionnels qui perpétuent avec talent cette vieille tradition. Avec brio, alors venez les rejoindre!",
       website: "Site web"
+    }
+    maquillage: {
+      title: "Maquillage pour enfants",
+      headline: "(Belgique - Wallonie) - Samedi et Dimanche / MARCHÉ",
+      desc: "Des oeuvres d'art éphémères sur les plus belles oeuvres d'art des parents, le temps pour les enfants de jouer à quelqu'un d'autre!",
+      desc2: "Maquilleuse : Viviane Desmet"
     }
   },
   en: {
     title: "Revel 2016",
     mabotte: {
       title: "Puppet Theatre",
-      headline: "Puppet Theater from Liege (Wallonia) - Saturday and sunday / COURTYARD",
+      headline: "Puppet Theater from Liege (Wallonia) - Saturday and Sunday / COURTYARD",
       desc: "A traditional puppet theater from Liège has enough to delight the youngest among us. The Mabotte Theater brings together professionals who perpetuate this old tradition with talent. Brilliant! So come and join them!",
       website: "Website"
+    }
+    maquillage: {
+      title: "Children make-up",
+      headline: "(Belgium - Wallonia) - Saturday and Sunday / MARKET",
+      desc: "Ephemeral works of art on the most beautiful artworks of parents, time for children to play someone else !",
+      desc2: "Make-up artist : Viviane Desmet"
     }
   },
   nl: {
@@ -27,8 +39,14 @@ const i18n_strings = {
     mabotte: {
       title: "Poppentheater van de Mabotte (België)",
       headline: "Luiks poppentheater (Wallonië) – Zaterdag en Zondag / BINNENPLAATS",
-      desc: "Een traditioneel Luiks poppentheater om de jongsten onder ons te verheugen ! Theater Mabotte brengt professionelen met talent die deze traditie met talent bestendigen. Met brio, dus kom meedoen!",
+      desc: "Een traditioneel Luiks poppentheater om de jongsten onder ons te verheugen ! Theater Mabotte brengt professionelen met talent die deze traditie met talent bestendigen. Met brio, dus kom meedoen !",
       website: "Website"
+    }
+    maquillage: {
+      title: "Grimeren voor kinderen",
+      headline: "(België - Wallonië) – Zaterdag en Zondag / MARKT",
+      desc: "Vergankelijke kunstwerken op de mooiste kunstwerken van de ouders, het moment voor de kinderen om met iemand anders te spelen !",
+      desc2: "Begeleiding : Viviane Desmet"
     }
   },
 
@@ -58,6 +76,21 @@ export default class ActivitiesPage extends React.Component {
             </p>
             <img src="http://www.folkfestivalmarsinne.be/marsinne_img/groupes/2014/PHOTO_Theatre_Mabotte.jpg"
                  alt="Theatre Mabotte"/>
+          </CardText>
+        </Card>
+        <p/>
+        <Card>
+          <CardTitle title={strings.maquillage.title}
+                     subtitle={strings.maquillage.headline} />
+          <CardText>
+            <p>
+              {strings.maquillage.desc}
+            </p>
+            <p>
+              {strings.maquillage.desc2}
+            </p>
+            <img src="http://www.folkfestivalmarsinne.be/marsinne_img/groupes/2014/PHOTO_Viviane_Desmet.png"
+                 alt="Maquillage"/>
           </CardText>
         </Card>
       </div>
