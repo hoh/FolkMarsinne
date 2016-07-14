@@ -63,6 +63,8 @@ export default class ArtisansPage extends React.Component {
                      subtitle={strings.canteen.subtitle} />
           <CardText>
             {strings.canteen.desc}
+            <p/>
+            {strings.canteen.desc2} 
           </CardText>
         </Card>
 
