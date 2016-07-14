@@ -18,8 +18,7 @@ const i18n_strings = {
     },
     canteen: {
       title: 'Cuisine du festival',
-      subtitle: 'Plats chauds cuisinés sur place',
-      desc: 'Située à l\'intérieur à proximité du bar, la cuisine sert des plats chauds.',
+      desc: 'Un grand choix de restauration est proposé sur place aux festivaliers : repas chauds complets cuisinés sur place, frites, couscous, croque-monsieur spéciaux, crêpes, ... Possibilité de petit-déjeuner.',
     },
   },
   en: {
@@ -29,8 +28,7 @@ const i18n_strings = {
     },
     canteen: {
       title: 'Cuisine of the festival',
-      subtitle: 'Hot meals prepared prepared on site',
-      desc: 'Located indoor next to the bar, the cuisine serves hot meals.',
+      desc: 'A lot of food choice are available in the festival area (full hot meals prepared on site, french fries, ...). Breakfast also possible.',
     },
   },
   nl: {
@@ -40,8 +38,7 @@ const i18n_strings = {
     },
     canteen: {
       title: 'Keuken van het festival',
-      subtitle: 'Warme maaltijden bereid ter plaatse bereid',
-      desc: 'Gelegen indoor naast de bar, de keuken serveert warme maaltijden.',
+      desc: 'Er is een grote verscheidenheid aan maaltijden/snacks voorzien (Volledige warme maaltijden ter plaatse bereid, frieten, couscousschotels, croque-monsieur, pannenkoeken, ...). Mogelijkheid tot ontbijt.',
     },
   },
 }
