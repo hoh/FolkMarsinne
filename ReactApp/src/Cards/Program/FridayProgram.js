@@ -24,6 +24,7 @@ const fridayPlan = [
   {hour: '00h30', 'groups': [false, true, false, false]},
   {hour: '01h', 'groups': [false, true, false, false]},
   {hour: '01h30', 'groups': [false, true, false, false]},
+  {hour: '02h00', 'groups': [false, false, false, false]},
 ];
 
 
