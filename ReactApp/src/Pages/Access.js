@@ -78,17 +78,18 @@ const i18n_strings = {
     },
     car: {
       title: 'En voiture',
-      parking_title: 'Car park',
+      parking_title: 'Parking',
       parking: (
         <div>
           <p>
-            Une large zone de parking totalement gratuit est prévue, ainsi que le long du chemin de remembrement (rue de Couthuin). Merci de respecter les voisins, le passage et les demandes des bénévoles responsables de la circulation. Garez-vous en épi, le plus près possible les uns des autres.
+            Une large zone de parking totalement gratuit est prévue, il est également possible de se garer le long du chemin de remembrement (rue de Couthuin). Merci de respecter les voisins, le passage et les demandes des bénévoles responsables de la circulation. Garez-vous en épi, le plus près possible les uns des autres.
           </p>
           <p>
-            Le parking « handicapés » est prévu dans le bout de la rue de la médaille, côté rue de Marsinne, avant les guichets.
+            Un parking pour les véhicules des personnes à mobilité réduite est prévu dans le bout de la rue de la médaille, côté rue de Marsinne, avant les guichets.
           </p>
         </div>
       ),
+      directions_title: 'Itinéraire',
       directions: (
         <div>
           <p>
@@ -183,17 +184,18 @@ const i18n_strings = {
     },
     car: {
       title: 'By car',
-      parking_title: 'Car park',
+      parking_title: 'Carpark',
       parking: (
         <div>
           <p>
             A wide free area is usable to park your car and it is also possible to park your car on the street. Please respect the neighborhood, don't park your car just in front of the houses. A group of volunteers will help you to park your car and maximize the use of the parking, please follow their instructions and try to save the available space.
           </p>
           <p>
-            A special par king for low mobility person is available at the end of the street "rue de la médaille", just before the ticket check.
+            A special parking for low mobility persons' vehicles is available at the end of the street "rue de la médaille", just before the ticket check.
           </p>
         </div>
       ),
+      directions_title: 'Directions',
       directions: (
         <div>
           <p>
@@ -291,17 +293,18 @@ const i18n_strings = {
     },
     car: {
       title: 'Met de wagen',
-      parking_title: 'Car park',
+      parking_title: 'Carpark',
       parking: (
         <div>
           <p>
             Er is een grote parkingzone voorzien, helemaal gratis. Daarnaast is parkeren ook mogelijk langs de weg “rue de Couthuin”. Wij stellen het respect voor de buurtbewoners op prijs, het <u>respect voor een vlotte doorgang en voor de inzet van de vrijwilligers</u>, verantwoordelijk voor het verkeer. Parkeer schuin en zo dicht mogelijk bij elkaar.
           </p>
           <p>
-            De parking voor gehandicapten ( andersvaliden) bevindt zich op het einde van de “ Rue de la Médaille”, aan de kant van de “Rue de Marsinne”, juist voor de loketten.
+            De parking voor de voertuigen van de personen met verminderde mobiliteit bevindt zich op het einde van de “ Rue de la Médaille”, aan de kant van de “Rue de Marsinne”, juist voor de loketten.
           </p>
         </div>
       ),
+      directions_title: 'Reisroute',
       directions: (
         <div>
           <p>
@@ -381,7 +384,7 @@ export default class AccessPage extends React.Component {
           </CardText>
 
           <CardText>
-            <h3 style={{marginTop: '0px'}}>Directions</h3>
+            <h3 style={{marginTop: '0px'}}>{strings.car.directions_title}</h3>
             {strings.car.directions}
           </CardText>
 
