@@ -18,6 +18,28 @@ const i18n_strings = {
       desc: "Des oeuvres d'art éphémères sur les plus belles oeuvres d'art des parents, le temps pour les enfants de jouer à quelqu'un d'autre!",
       desc2: "Maquilleuse : Viviane Desmet"
     }
+    bourse: {
+      title: "Bourse musicale",
+      text: (
+         <p>
+         Deux musiciens de confiance, <b>André Deru</b> et <b>Thierry Legros</b> (du groupe Salon Ambroisine), proposent cette année une bourse musicale à Marsinne.
+        </p>
+        <p>
+        <b>Vous souhaitez vendre un « objet musical ?»</b> 
+        </p>
+        <p>
+        Venez le confier à ce stand pour la journée (reprise à 18h30 au plus tard). Indiquez le prix demandé ou/et un numéro de gsm où l'acheteur potentiel pourrait vous joindre.
+        André Deru et Thierry Legros accueilleront les dépôts avec la plus grande attention et veilleront de leur mieux à ce que ces objets ne subissent aucun dégât. 
+        Cependant, ils ne pourront être tenus pour responsables en cas de dégât ou de vol.
+        </p>
+        <p>
+        <b>Vous souhaitez acheter un « objet musical ?»</b> 
+        </p>
+        <p>
+        Acquittez-vous du prix demandé ou, s'il y a lieu, contactez le vendeur.
+        </p>
+      ),
+    },
   },
   en: {
     title: "Revel 2016",
@@ -33,6 +55,28 @@ const i18n_strings = {
       desc: "Ephemeral works of art on the most beautiful artworks of parents, time for children to play someone else !",
       desc2: "Make-up artist : Viviane Desmet"
     }
+  bourse: {
+      title: "Bourse musicale",
+      text: (
+         <p>
+         Deux musiciens de confiance, <b>André Deru</b> et <b>Thierry Legros</b> (du groupe Salon Ambroisine), proposent cette année une bourse musicale à Marsinne.
+        </p>
+        <p>
+        <b>Vous souhaitez vendre un « objet musical ?»</b> 
+        </p>
+        <p>
+        Venez le confier à ce stand pour la journée (reprise à 18h30 au plus tard). Indiquez le prix demandé ou/et un numéro de gsm où l'acheteur potentiel pourrait vous joindre.
+        André Deru et Thierry Legros accueilleront les dépôts avec la plus grande attention et veilleront de leur mieux à ce que ces objets ne subissent aucun dégât. 
+        Cependant, ils ne pourront être tenus pour responsables en cas de dégât ou de vol.
+        </p>
+        <p>
+        <b>Vous souhaitez acheter un « objet musical ?»</b> 
+        </p>
+        <p>
+        Acquittez-vous du prix demandé ou, s'il y a lieu, contactez le vendeur.
+        </p>
+      ),
+    },
   },
   nl: {
     title: "Animaties 2016",
@@ -41,15 +85,36 @@ const i18n_strings = {
       headline: "Luiks poppentheater (Wallonië) – Zaterdag en Zondag / BINNENPLAATS",
       desc: "Een traditioneel Luiks poppentheater om de jongsten onder ons te verheugen ! Theater Mabotte brengt professionelen met talent die deze traditie met talent bestendigen. Met brio, dus kom meedoen !",
       website: "Website"
-    }
+    },
     maquillage: {
       title: "Grimeren voor kinderen",
       headline: "(België - Wallonië) – Zaterdag en Zondag / MARKT",
       desc: "Vergankelijke kunstwerken op de mooiste kunstwerken van de ouders, het moment voor de kinderen om met iemand anders te spelen !",
       desc2: "Begeleiding : Viviane Desmet"
-    }
+    },
+    bourse: {
+      title: "Bourse musicale",
+      text: (
+         <p>
+         Deux musiciens de confiance, <b>André Deru</b> et <b>Thierry Legros</b> (du groupe Salon Ambroisine), proposent cette année une bourse musicale à Marsinne.
+        </p>
+        <p>
+        <b>Vous souhaitez vendre un « objet musical ?»</b> 
+        </p>
+        <p>
+        Venez le confier à ce stand pour la journée (reprise à 18h30 au plus tard). Indiquez le prix demandé ou/et un numéro de gsm où l'acheteur potentiel pourrait vous joindre.
+        André Deru et Thierry Legros accueilleront les dépôts avec la plus grande attention et veilleront de leur mieux à ce que ces objets ne subissent aucun dégât. 
+        Cependant, ils ne pourront être tenus pour responsables en cas de dégât ou de vol.
+        </p>
+        <p>
+        <b>Vous souhaitez acheter un « objet musical ?»</b> 
+        </p>
+        <p>
+        Acquittez-vous du prix demandé ou, s'il y a lieu, contactez le vendeur.
+        </p>
+      ),
+    },
   },
-
 };
 
 
