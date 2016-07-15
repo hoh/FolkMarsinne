@@ -42,7 +42,7 @@ const i18n_strings = {
   },
   en: {
     title: 'Folk Festival in Marsinne, Belgium',
-    subtitle: '25th anniversary of the Folk Festival in Marsinne',
+    subtitle: '25th edition of the Folk Festival in Marsinne',
     desc: 'The only one of its kind in Wallonia, the three-day long Folk Festival of Marsinne features balls, concerts, dancing workshops, a free stage, sessions, street and puppet theatre, as well as a market for instrument makers and craftsmen.',
     desc2: 'Whether you are an experienced dancer, an enthusiastic music lover or a one day passer-by, this is the place to be if you want to indulge in traditional music in a peaceful and easily accessible setting. Expect to find a friendly and family-oriented festival with a unique atmosphere and set in a spectacular location.',
     buttons: {
@@ -52,7 +52,20 @@ const i18n_strings = {
     poster: 'Poster 2016',
     flyer: 'Flyer 2016',
     old_website: 'Old website',
-  }
+  },
+  nl: {
+    title: 'Folkfestival van Marsinne, Belgïe',
+    subtitle: '25ste editie van Folkfestival van Marsinne',
+    desc: 'Uniek in zijn soort in Wallonië biedt dit festival drie dagen lang concerten, dans, straattheater, poppentheater, fabrikanten van muziekinstrumenten, ambachtsmannen. Ontdek alle ingrediënten van het oudste traditionele muziekfestival in Wallonië !',
+    desc2: 'Of het nu is voor de fanatieke danser of een nieuwsgierige van één dag, het is de plek om naartoe te gaan om van traditionele muziek te genieten in een rustige en goed bereikbare locatie. Een vriendelijk en familiaal festival in een unieke atmosfeer en prachtige omgeving !',
+    buttons: {
+      progam: 'Programma',
+      volunteer: 'Vrijwilligers',
+    },
+    poster: 'Poster 2016',
+    flyer: 'Flyer 2016',
+    old_website: 'Voorige website',
+  },
 }
 
 class WelcomeCard extends React.Component {
