@@ -105,8 +105,7 @@ const i18n_strings = {
 				De <b>3 dagen Pass</b> zullen daar ook beschikbaar zijn maar op hooger prijs dan in voorverkoop.
 			</p>
 			<p>
-				Voorzichtig! Betaling ter plaatse: <b>GEEN betaling met bankkaart OF bankcheques</b>,
-				indien mogelijk juist bedrag voorzien.
+				Aandacht! Ter plaatse kan <b>NIET met bankkaart of met bankcheques</b> betaald worden. Probeer ook  met pasmunt te betalen.
 			</p>
 		</div>),
 		table: {
@@ -123,8 +122,8 @@ const i18n_strings = {
 		notes: (
 			<ul>
 				<li>
-					Heb je geen ticket in voorverkoop kunnen nemen, je zult uw tickets ter 
-					plaatse kunnen kopen op tarief hierboven gemeld - er zullen er voor iedereen zijn!
+					Heb je geen ticket in voorverkoop kunnen nemen, dan kan je tickets ter 
+					plaatse kopen op tarief hierboven vermeld - er zullen er voor iedereen beschikbaar zijn!
 				</li>
 				<li>
 					De dichtstbijzijnde geldautomaat is 1,7 km:
