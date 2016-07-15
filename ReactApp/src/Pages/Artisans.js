@@ -17,7 +17,7 @@ const i18n_strings = {
       text: 'Le festival héberge plusieurs artisans et autres associations',
     },
     mainsunies: {
-      title: 'Mains Unies - Mettez du Folk dans vos vacances !'
+      title: 'Mains Unies - Mettez du Folk dans vos vacances !',
       text: (
          <p>
          Chaque été, <b>MAINS UNIES</b> propose des <b>séjours participatifs</b> dans des <b>sites naturels</b>. 
@@ -31,28 +31,6 @@ const i18n_strings = {
          </p>
       ),
     },
-    bourse: {
-      title: 'Bourse musicale'
-      text: (
-         <p>
-         Deux musiciens de confiance, <b>André Deru</b> et <b>Thierry Legros</b> (du groupe Salon Ambroisine), proposent cette année une bourse musicale à Marsinne.
-        </p>
-        <p>
-        <b>Vous souhaitez vendre un « objet musical ?»</b> 
-        </p>
-        <p>
-        Venez le confier à ce stand pour la journée (reprise à 18h30 au plus tard). Indiquez le prix demandé ou/et un numéro de gsm où l'acheteur potentiel pourrait vous joindre.
-        André Deru et Thierry Legros accueilleront les dépôts avec la plus grande attention et veilleront de leur mieux à ce que ces objets ne subissent aucun dégât. 
-        Cependant, ils ne pourront être tenus pour responsables en cas de dégât ou de vol.
-        </p>
-        <p>
-        <b>Vous souhaitez acheter un « objet musical ?»</b> 
-        </p>
-        <p>
-        Acquittez-vous du prix demandé ou, s'il y a lieu, contactez le vendeur.
-        </p>
-      ),
-    },
   },
   en: {
     intro: {
@@ -60,18 +38,19 @@ const i18n_strings = {
       text: 'The festival is host to several artisans and other associations',
     },
     mainsunies: {
-      title: 'Mains Unies - Mettez du Folk dans vos vacances !'
+      title: 'Mains Unies - Put Folk in your holidays !',
       text: (
          <p>
-              Chaque été, <b>MAINS UNIES</b> propose des <b>séjours participatifs</b> dans des <b>sites naturels</b>. 
-              Accompagnés par des bénévoles, 50 à 80 participants organisent les activités.
+         Every summer, <b>MAINS UNIES</b> organises <b>participative stays</b> in <b>natural sites</b>. 
+              Accompanied by volunteers, 50 to 80 participants organize the activities.
             </p>
             <p>
-              <b>Et tous les soirs, bal folk !</b> Petits et grands découvrent ou pratiquent la danse avec des musiciens et animateurs chevronnés !
+              <b>And every evening offers its folk ball !</b> Children and adults discover and practice dancing accompagnied by experienced musicians animators !
             </p>
             <p>
-              Sous tente ou en gîte, une formule qui séduira les amateurs d'authenticité et de rencontres !
-            </p>)
+              Whether lodging in a tent or a holiday home, this experience will seduce those seeking authenticity and genuine encounters !
+            </p>
+      ),
     },
   },
   nl: {
@@ -80,10 +59,10 @@ const i18n_strings = {
       text: 'Het festival is gastheer voor verschillende ambachtslieden en andere verenigingen',
     },
     mainsunies: {
-      title: 'Mains Unies - Mettez du Folk dans vos vacances !'
+      title: 'Mains Unies -  Breng Folk in uw vakantie !',
       text: (
          <p>
-              Chaque été, <b>MAINS UNIES</b> propose des <b>séjours participatifs</b> dans des <b>sites naturels</b>. 
+              Elke , <b>MAINS UNIES</b> propose des <b>séjours participatifs</b> dans des <b>sites naturels</b>. 
               Accompagnés par des bénévoles, 50 à 80 participants organisent les activités.
             </p>
             <p>
@@ -91,9 +70,10 @@ const i18n_strings = {
             </p>
             <p>
               Sous tente ou en gîte, une formule qui séduira les amateurs d'authenticité et de rencontres !
-            </p>)
+            </p>
+      ),
     },
-  }
+  },
 }
 
 
@@ -108,12 +88,6 @@ export default class ArtisansPage extends React.Component {
         <CustomTitle title={strings.intro.title}
                      desc={strings.intro.text} />
 
-        <Card>
-          <CardTitle title={strings.bourse.title}
-                     subtitle="" />
-          <CardText>
-        
-        </Card>
         <Card>
           <CardTitle title="Mains Unies - Mettez du Folk dans vos vacances !"
                      subtitle="" />
