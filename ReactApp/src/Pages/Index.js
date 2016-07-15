@@ -49,9 +49,15 @@ const i18n_strings = {
   en: {
     buttons: {
       progam: 'Program',
-      volunteer: 'volunteer',
+      volunteer: 'Volunteer',
     }
-  }
+  },
+  nl: {
+    buttons: {
+      progam: 'Programma',
+      volunteer: 'Vrijwilliger worden',
+    }
+  },
 }
 
 
