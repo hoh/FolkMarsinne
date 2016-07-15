@@ -18,8 +18,36 @@ const i18n_strings = {
     },
     canteen: {
       title: 'Cuisine du festival',
-      desc: 'Un grand choix de restauration est proposé sur place aux festivaliers : repas chauds complets cuisinés sur place, frites, couscous, croque-monsieurs spéciaux, crêpes, ...',
-      desc2: 'Possibilité de petit-déjeuner.',
+      subtitle: 'Un grand choix de restauration est proposé sur place aux festivaliers',
+      desc: (
+        <p>
+        <b>En extérieur, sous le car-port</b>
+        </p>
+        <p>
+        Cuisine bio, saine et gourmande : "Epices émoi" (Malonne)
+        </p>
+        <p>
+        Couscous
+        </p>
+        <p>
+        Croque-monsieurs spéciaux : "Studio Corben"
+        </p>
+        <p>
+        Crêpes salées et sucrées
+        </p>
+        <p>
+        Glace artisanale
+        </p>
+        <p>
+        <b>Dans la grande salle de restauration (bar)</b>
+        </p>
+        <p>
+        RestaurationFrites et Repas chauds complets cuisinés sur place : "Guimauve"
+        </p>
+        <p>
+        Possibilité de petit-déjeuner
+        </p>
+     ),
     },
   },
   en: {
@@ -29,8 +57,36 @@ const i18n_strings = {
     },
     canteen: {
       title: 'Cuisine of the festival',
-      desc: 'A lot of food choice are available in the festival area : full hot meals prepared on site, french fries, couscous, croque-monsieur, pancakes, ...',
-      desc2: 'Breakfast also possible.',
+      subtitle: 'A lot of food choice are available in the festival area',
+      desc: (
+        <p>
+        <b>Outside, under the car-port</b>
+        </p>
+        <p>
+        Bio, healthy and gourmet cuisine : "Epices émoi" (Malonne)
+        </p>
+        <p>
+        Couscous
+        </p>
+        <p>
+        Croque-monsieurs : "Studio Corben"
+        </p>
+        <p>
+        Salted and sweet pancakes
+        </p>
+        <p>
+        Home-made ice cream
+        </p>
+        <p>
+        <b>In the big hall (bar)</b>
+        </p>
+        <p>
+        Chips and full hot meals prepared on the spot : "Guimauve"
+        </p>
+        <p>
+        Breakfast also possible
+        </p>
+     ),
     },
   },
   nl: {
@@ -39,9 +95,37 @@ const i18n_strings = {
       text: 'Vanaf vrijdag om 19u',
     },
     canteen: {
-      title: 'Keuken van het festival',
-      desc: 'Er is een grote verscheidenheid aan maaltijden/snacks voorzien : Volledige warme maaltijden ter plaatse bereid, frieten, couscousschotels, croque-monsieurs, pannenkoeken, ...',
-      desc2: 'Mogelijkheid tot ontbijt.',
+      title: 'De festival keuken',
+      subtitle: 'Er is een grote verscheidenheid aan maaltijden/snacks voorzien',
+      desc: (
+        <p>
+        <b>Buiten, onder de car-port</b>
+        </p>
+        <p>
+        Biologische, gezonde en fijnproever keuken : "Epices émoi" (Malonne)
+        </p>
+        <p>
+        Couscousschotels
+        </p>
+        <p>
+        Croque-monsieurs : "Studio Corben"
+        </p>
+        <p>
+        Zoute en zoete pannenkoeken
+        </p>
+        <p>
+        Ambachtelijk ijs
+        </p>
+        <p>
+        <b>In the grote zaal (bar)</b>
+        </p>
+        <p>
+        Frieten en volledige warme maaltijden ter plekke bereid : "Guimauve"
+        </p>
+        <p>
+        Mogelijkheid tot ontbijt
+        </p>
+     ),
     },
   },
 }
@@ -63,8 +147,6 @@ export default class ArtisansPage extends React.Component {
                      subtitle={strings.canteen.subtitle} />
           <CardText>
             {strings.canteen.desc}
-            <p/>
-            {strings.canteen.desc2} 
           </CardText>
         </Card>
 
