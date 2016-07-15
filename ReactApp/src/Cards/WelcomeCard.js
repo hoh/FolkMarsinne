@@ -39,6 +39,7 @@ const i18n_strings = {
     poster: 'Affiche 2016',
     flyer: 'Dépliant 2016',
     old_website: 'Ancien site',
+    archives: 'Archives',
   },
   en: {
     title: 'Folk Festival in Marsinne, Belgium',
@@ -52,6 +53,7 @@ const i18n_strings = {
     poster: 'Poster 2016',
     flyer: 'Flyer 2016',
     old_website: 'Old website',
+    archives: 'Archives',
   },
   nl: {
     title: 'Folkfestival van Marsinne, Belgïe',
@@ -65,6 +67,7 @@ const i18n_strings = {
     poster: 'Poster 2016',
     flyer: 'Flyer 2016',
     old_website: 'Voorige website',
+    archives: 'Archieven',
   },
 }
 
@@ -97,6 +100,10 @@ class WelcomeCard extends React.Component {
             labelColor='white' linkButton={true}
             style={{marginLeft: 10}}
             href="http://www.folkfestivalmarsinne.be/joomla35/index.php/" />
+          <RaisedButton label={strings.archives} backgroundColor={cyan500}
+            labelColor='white' linkButton={true}
+            style={{marginLeft: 10}}
+            href="http://www.folkfestivalmarsinne.be/joomla35/index.php/fr/archives" />
         </CardText>
       </Card>
 		);
