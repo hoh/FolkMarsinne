@@ -12,19 +12,18 @@ const fridayPlan = [
   {hour: '21h', 'groups': [false, true, false, false]},
   {hour: '21h30', 'groups': [false, true, false, false]},
   {hour: '22h', 'groups': [{name: 'Duo Montanaro-Cavez (BE-FR) <i>concert</i>', duration: 3, kind: 'concert'},
-                           true,
+                           false,
                            {name: 'Wouter Vandenabeele et Jeroen Knapen (BE) <i>bal</i>', duration: 4, kind: 'bal'},
                            false]},
   {hour: '22h30', 'groups': [true, false, true, false]},                         
   {hour: '23h', 'groups': [true, false, true, false]},
-  {hour: '23h30', 'groups': [true, false, true, false]},
+  {hour: '23h30', 'groups': [false, false, true, false]},
   {hour: '00h', 'groups': [false,
                            {name: 'Les Zéoles (FR) <i>bal</i>', duration: 4, kind: 'bal'},
-                           true, false]},
+                           false, false]},
   {hour: '00h30', 'groups': [false, true, false, false]},
   {hour: '01h', 'groups': [false, true, false, false]},
   {hour: '01h30', 'groups': [false, true, false, false]},
-  {hour: '02h', 'groups': [false, true, false, false]},
 ];
 
 
