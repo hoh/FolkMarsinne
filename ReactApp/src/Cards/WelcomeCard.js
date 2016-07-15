@@ -60,7 +60,7 @@ const i18n_strings = {
     desc2: 'Of het nu is voor de fanatieke danser of een nieuwsgierige van één dag, het is de plek om naartoe te gaan om van traditionele muziek te genieten in een rustige en goed bereikbare locatie. Een vriendelijk en familiaal festival in een unieke atmosfeer en prachtige omgeving !',
     buttons: {
       progam: 'Programma',
-      volunteer: 'Vrijwilligers',
+      volunteer: 'Vrijwilliger worden',
     },
     poster: 'Poster 2016',
     flyer: 'Flyer 2016',
