@@ -27,7 +27,7 @@ const i18n_strings = {
     horaire: {
       title: 'Heures d\'ouvertures du festival',
       vendredi: (
-       <p>
+       <div>
          <b>Vendredi</b>:
          <p>
          14h: ouverture du camping
@@ -41,15 +41,15 @@ const i18n_strings = {
          <p>
          19h: ouverture des caisses
          </p>
-      </p>
+      </div>
       ),
       samedimanche: (
-      <p>
-         <b>Samedi et Dimanche</b>:
-         <p>
-         10h: ouverture des portes et des caisses
-         </p>
-      </p>
+        <div>
+          <b>Samedi et Dimanche</b>:
+          <p>
+            10h: ouverture des portes et des caisses
+          </p>
+        </div>
       ),
     },
     transport: {
@@ -63,7 +63,7 @@ const i18n_strings = {
         </p>
       ),
       bus: (
-        <p>
+        <div>
           <b>En Bus</b>: Ligne 143 HUY - COUTHUIN - ANDENNE
           Peu de bus par jour, surtout le week-end, vérifiez les <a href="http://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L143"> horaires</a>. :
           <p>
@@ -75,7 +75,7 @@ const i18n_strings = {
             <li>A la gare de Huy, rejoindre l'arrêt "Ecole Technique" (trajet à pied : 8 min), y prendre direction Andenne et descendre à l'arrêt "Couthuin rue de Marsinne" (trajet en bus : 25 min).
             </li>
           </ul>
-        </p>
+        </div>
       ),
     },
     car: {
@@ -133,7 +133,7 @@ const i18n_strings = {
     horaire: {
       title: 'Festival\'s opening hours',
       vendredi: (
-       <p>
+       <div>
          <b>Friday</b>:
          <p>
          14:00 camping opening
@@ -147,15 +147,15 @@ const i18n_strings = {
          <p>
          19:00 opening doors
          </p>
-      </p>
+      </div>
       ),
       samedimanche: (
-      <p>
-         <b>Saturday and Sunday</b>:
-         <p>
-         10:00 opening doors
-         </p>
-      </p>
+        <div>
+          <b>Saturday and Sunday</b>:
+          <p>
+            10:00 opening doors
+          </p>
+        </div>
       ),
     },
     transport: {
@@ -241,7 +241,7 @@ const i18n_strings = {
     horaire: {
       title: 'Festival\'s opening hours',
       vendredi: (
-       <p>
+       <div>
          <b>Friday</b>:
          <p>
          14:00 opening van de camping
@@ -255,7 +255,7 @@ const i18n_strings = {
          <p>
          19:00 opening van de kassa's
          </p>
-      </p>
+      </div>
       ),
       samedimanche: (
       <p>
