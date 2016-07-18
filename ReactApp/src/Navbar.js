@@ -35,7 +35,7 @@ const i18n_strings = {
     food: 'Catering',
     access: 'Access',
     accomodation: 'Accomodation',
-    volunteer: 'Volunteer',
+    volunteer: 'Volunteers',
     contact: 'Contact',
   },
   nl: {
@@ -45,7 +45,7 @@ const i18n_strings = {
     artisans: 'Ambachtslieden',
     food: 'Eten',
     access: 'Toegang',
-    accomodation: 'Woning',
+    accomodation: 'Logeren',
     volunteer: 'Vrijwilligers',
     contact: 'Contact',
   },
