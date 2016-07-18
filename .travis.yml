@@ -3,11 +3,8 @@ language: node_js
 node_js:
   - "6.2"
 
-before_install:
-  - "npm install -g npm@^2"
 install:
   - cd ReactApp
   - npm install
 script:
-  - cd ReactApp
   - ./node_modules/webpack/bin/webpack.js 
