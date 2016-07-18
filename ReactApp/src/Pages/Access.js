@@ -9,15 +9,17 @@ const i18n_strings = {
     location: {
       title: 'Site du festival',
       chateau: (
-      <p>
-      Le Festival se tient au château-ferme de Marsinne. Cette ferme fortifiée, construite au XIIème siècle, servait de poste d'avant-garde pour le Château de Moha et la Seigneurie de Beaufort.
-      </p>
-      <p>
-      Le bâtiment principal est composé de deux salles, une de 150m² (l'ancienne grange, qui nous sert de bar) et une autre de 275m² (la grande salle). Par ailleurs, à l'occasion du festival, un chapiteau d'environ 450m² est installé à l'extérieur de l'enceinte. Enfin, la cour du château est le lieu des multiples rencontres que le festival permet.
-      </p>
-      <p>
-      Le hangar quant à lui, occupé autrefois par une des scènes du festival, est aujourd'hui devenu une brasserie qui propose au Folk Festival une bière locale du nom de Léopold7.
-      </p>
+        <div>
+          <p>
+          Le Festival se tient au château-ferme de Marsinne. Cette ferme fortifiée, construite au XIIème siècle, servait de poste d'avant-garde pour le Château de Moha et la Seigneurie de Beaufort.
+          </p>
+          <p>
+          Le bâtiment principal est composé de deux salles, une de 150m² (l'ancienne grange, qui nous sert de bar) et une autre de 275m² (la grande salle). Par ailleurs, à l'occasion du festival, un chapiteau d'environ 450m² est installé à l'extérieur de l'enceinte. Enfin, la cour du château est le lieu des multiples rencontres que le festival permet.
+          </p>
+          <p>
+          Le hangar quant à lui, occupé autrefois par une des scènes du festival, est aujourd'hui devenu une brasserie qui propose au Folk Festival une bière locale du nom de Léopold7.
+          </p>
+        </div>
       ),
       website: 'Site internet'
     },
@@ -113,15 +115,17 @@ const i18n_strings = {
     location: {
       title: 'Festival location',
       chateau: (
-      <p>
-      The music festival takes place in the Marsinne castle-farm.  This farm with bulwark was built in the 13rd century, it was a guarded outpost of the Moha castle for the Beaufort Lord.
-      </p>
-      <p>
-      The main building holds two rooms, the first one (the old barn) has a 150m² size and will contains the bar.  The second hall has a 275m² size and will be a danse hall.  During the festival, a big top with a size of 450m² is built outside of the compound.  And the courtyard becomes the meeting place of the festival.
-      </p>
-      <p>
-      The shed, where was one of the festival stage, is became a brewery. The brewed beer is sold at the festival bar, its name is Léopold7.
-      </p>
+        <div>
+          <p>
+          The music festival takes place in the Marsinne castle-farm.  This farm with bulwark was built in the 13rd century, it was a guarded outpost of the Moha castle for the Beaufort Lord.
+          </p>
+          <p>
+          The main building holds two rooms, the first one (the old barn) has a 150m² size and will contains the bar.  The second hall has a 275m² size and will be a danse hall.  During the festival, a big top with a size of 450m² is built outside of the compound.  And the courtyard becomes the meeting place of the festival.
+          </p>
+          <p>
+          The shed, where was one of the festival stage, is became a brewery. The brewed beer is sold at the festival bar, its name is Léopold7.
+          </p>
+        </div>
       ),
       website: 'Website'
     },
@@ -219,15 +223,17 @@ const i18n_strings = {
     location: {
       title: 'Festivalterrein',
       chateau: (
-      <p>
-      Het festival wordt gehouden op de kasteelhoeve van Marsinne. Deze versterkte boerderij, gebouwd in de twaalfde eeuw, diende als een voorpost voor het Kasteel van Moha en Heerschap van Beaufort.
-      </p>
-      <p>
-      Het hoofdgebouw bestaat uit twee zalen, een van 150m² (de oude schuur, die als bar gebruikt wordt) en nog een andere van 275m² (de grote zaal). In aanvulling, ter gelegenheid van het festival, wordt een tent van ongeveer 450m² buiten de omheining geplaatst. De binnenplaats van het kasteel is de ontmoetingsplaats voor heel het festival.
-      </p>
-      <p>
-      Wat de hangar betreft die vroeger dienst deed als één van de podia van het festival, die is nu omgebouwd tot een brouwerij die aan het Folk Festival een lokaal bier aanbiedt met de naam Léopold7.
-      </p>
+        <div>
+          <p>
+          Het festival wordt gehouden op de kasteelhoeve van Marsinne. Deze versterkte boerderij, gebouwd in de twaalfde eeuw, diende als een voorpost voor het Kasteel van Moha en Heerschap van Beaufort.
+          </p>
+          <p>
+          Het hoofdgebouw bestaat uit twee zalen, een van 150m² (de oude schuur, die als bar gebruikt wordt) en nog een andere van 275m² (de grote zaal). In aanvulling, ter gelegenheid van het festival, wordt een tent van ongeveer 450m² buiten de omheining geplaatst. De binnenplaats van het kasteel is de ontmoetingsplaats voor heel het festival.
+          </p>
+          <p>
+          Wat de hangar betreft die vroeger dienst deed als één van de podia van het festival, die is nu omgebouwd tot een brouwerij die aan het Folk Festival een lokaal bier aanbiedt met de naam Léopold7.
+          </p>
+        </div>
       ),
     website: 'Website'
     },
