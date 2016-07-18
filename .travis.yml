@@ -1,0 +1,10 @@
+dist: xenial
+language: node_js
+node_js:
+  - "6.2"
+
+install:
+  - cd ReactApp
+  - npm install
+script:
+  - ./node_modules/webpack/bin/webpack.js 
