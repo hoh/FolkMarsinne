@@ -11,13 +11,13 @@ const i18n_strings = {
       chateau: (
         <div>
           <p>
-          Le Festival se tient au château-ferme de Marsinne. Cette ferme fortifiée, construite au XIIème siècle, servait de poste d'avant-garde pour le Château de Moha et la Seigneurie de Beaufort.
+          Le Festival se tient au château-ferme de Marsinne. Cette ferme fortifiée, construite au XIIème siècle, servait de poste d\'avant-garde pour le Château de Moha et la Seigneurie de Beaufort.
           </p>
           <p>
-          Le bâtiment principal est composé de deux salles, une de 150m² (l'ancienne grange, qui nous sert de bar) et une autre de 275m² (la grande salle). Par ailleurs, à l'occasion du festival, un chapiteau d'environ 450m² est installé à l'extérieur de l'enceinte. Enfin, la cour du château est le lieu des multiples rencontres que le festival permet.
+          Le bâtiment principal est composé de deux salles, une de 150m² (l\'ancienne grange, qui nous sert de bar) et une autre de 275m² (la grande salle). Par ailleurs, à l'occasion du festival, deux chapiteaux d\'environ 375 m² sont installés (le premier à côté du parking des camping-cars, en face de l\'entrée du château, le second dans le verger). Enfin, la cour du château est le lieu des multiples rencontres que le festival permet.
           </p>
           <p>
-          Le hangar quant à lui, occupé autrefois par une des scènes du festival, est aujourd'hui devenu une brasserie qui propose au Folk Festival une bière locale du nom de Léopold7.
+          Le hangar quant à lui, occupé autrefois par une des scènes du festival, est aujourd\'hui devenu une brasserie qui propose au Folk Festival une bière locale du nom de Léopold7.
           </p>
         </div>
       ),
@@ -58,8 +58,7 @@ const i18n_strings = {
         <p>
           <b>En train</b>: rejoindre la gare d’Andenne
           (à 15 minutes de Namur) ou la gare de Huy
-          (à 20 minutes de Liège) sur la ligne Namur-Liège :
-          http://www.belgianrail.be/
+          (à 20 minutes de Liège) sur la ligne Namur-Liège : <a href="http://www.belgianrail.be/fr">http://www.belgianrail.be</a>.
         </p>
       ),
       bus: (
@@ -67,10 +66,10 @@ const i18n_strings = {
           <b>En Bus</b>: Ligne 143 HUY - COUTHUIN - ANDENNE
           Peu de bus par jour, surtout le week-end, vérifiez les <a href="http://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L143"> horaires</a>. :
           <p>
-          Descendre à l'arrêt "Couthuin Rue de Marsinne". Marcher ensuite jusqu'au Château Ferme situé Rue de la Médaille.
+          Descendre à l\'arrêt "Couthuin Rue de Marsinne". Marcher ensuite jusqu'au Château Ferme situé Rue de la Médaille.
           </p>
           <ul>
-            <li>A la gare d'Andenne, rejoindre l'arrêt "Seilles Gare Routière", y prendre le bus direction Huy et descendre à l'arrêt "Couthuin Rue de Marsinne" (trajet en bus : 12 min).
+            <li>A la gare d'Andenne, rejoindre l\'arrêt "Seilles Gare Routière", y prendre le bus direction Huy et descendre à l'arrêt "Couthuin Rue de Marsinne" (trajet en bus : 12 min).
             </li>
             <li>A la gare de Huy, rejoindre l'arrêt "Ecole Technique" (trajet à pied : 8 min), y prendre direction Andenne et descendre à l'arrêt "Couthuin rue de Marsinne" (trajet en bus : 25 min).
             </li>
@@ -120,7 +119,7 @@ const i18n_strings = {
           The music festival takes place in the Marsinne castle-farm.  This farm with bulwark was built in the 13rd century, it was a guarded outpost of the Moha castle for the Beaufort Lord.
           </p>
           <p>
-          The main building holds two rooms, the first one (the old barn) has a 150m² size and will contains the bar.  The second hall has a 275m² size and will be a danse hall.  During the festival, a big top with a size of 450m² is built outside of the compound.  And the courtyard becomes the meeting place of the festival.
+          The main building holds two rooms, the first one (the old barn) has a 150m² size and will contains the bar. The second hall has a 275m² size and will be a danse hall. During the festival, two big marquees with a size of 375 m² are built (the first one on the camping-cars parking in front of the main entrance, the second one in the orchard). And the courtyard becomes the meeting place of the festival.
           </p>
           <p>
           The shed, where was one of the festival stage, is became a brewery. The brewed beer is sold at the festival bar, its name is Léopold7.
@@ -165,8 +164,8 @@ const i18n_strings = {
           <b>By train</b>: go to "Andenne" rail station (travel time: 15 minutes
             from Namur, 90 minutes from Brussels) or go to "Huy" rail station
             (travel time: 20 minutes from Liège). These station are accessible
-            with the Belgium rail system, line 143 NAMUR-LIEGE.  The music
-             festival is not directly accessible from these rail stations, you need to take a bus.
+            with the Belgium rail system, line 143 NAMUR-LIEGE. Schedule on <a href="http://www.belgianrail.be/en">http://www.belgianrail.be</a>. 
+            The music festival is not directly accessible from these rail stations, you need to take a bus.
         </p>
       ),
       bus: (
@@ -228,7 +227,7 @@ const i18n_strings = {
           Het festival wordt gehouden op de kasteelhoeve van Marsinne. Deze versterkte boerderij, gebouwd in de twaalfde eeuw, diende als een voorpost voor het Kasteel van Moha en Heerschap van Beaufort.
           </p>
           <p>
-          Het hoofdgebouw bestaat uit twee zalen, een van 150m² (de oude schuur, die als bar gebruikt wordt) en nog een andere van 275m² (de grote zaal). In aanvulling, ter gelegenheid van het festival, wordt een tent van ongeveer 450m² buiten de omheining geplaatst. De binnenplaats van het kasteel is de ontmoetingsplaats voor heel het festival.
+          Het hoofdgebouw bestaat uit twee zalen, een van 150m² (de oude schuur, die als bar gebruikt wordt) en nog een andere van 275m² (de grote zaal). In aanvulling, ter gelegenheid van het festival, worden twee tenten van ongeveer 375 m² geplaatst (het eerste naast the campingcars parking tegenover de ingang van de kasteelhoeve, het tweede in de boomgaard). De binnenplaats van het kasteel is de ontmoetingsplaats voor heel het festival.
           </p>
           <p>
           Wat de hangar betreft die vroeger dienst deed als één van de podia van het festival, die is nu omgebouwd tot een brouwerij die aan het Folk Festival een lokaal bier aanbiedt met de naam Léopold7.
@@ -239,10 +238,10 @@ const i18n_strings = {
     },
     gps: 'GPS coördinaten',
     horaire: {
-      title: 'Festival\'s opening hours',
+      title: 'Opening uuren van het festival',
       vendredi: (
        <div>
-         <b>Friday</b>:
+         <b>Vrijdag</b>:
          <p>
          14:00 opening van de camping
          </p>
@@ -259,7 +258,7 @@ const i18n_strings = {
       ),
       samedimanche: (
       <p>
-         <b>Saturday and Sunday</b>:
+         <b>Zaterdag en Zondag</b>:
          <p>
          10:00 opening van de deuren
          </p>
@@ -272,7 +271,7 @@ const i18n_strings = {
         <p>
           <b>Met de trein :</b> Tot het station van Andenne (15 minuten met de
           trein vanuit Namen) of tot het station van Huy (20 minuten met de
-          trein vanuit Luik op de lijn Namen-Luik).
+          trein vanuit Luik op de lijn Namen-Luik). Dienstregeling op <a href="http://www.belgianrail.be/nl">http://www.belgianrail.be</a>
         </p>
       ),
       bus: (
