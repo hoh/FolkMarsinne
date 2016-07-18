@@ -21,8 +21,8 @@ const i18n_strings = {
       text: (<div>
         <CardText>
           Comme chaque année, nous sommes à la recherche de bénévoles pour
-          réaliser toute une série de tâches (montage et démontage du site, vente au bar,
-          vente aux caisses bracelets et jetons, contrôle, circulation,...).
+          réaliser toute une série de tâches (montage et démontage du site, vente aux caisses des bracelets d'entrée et des jetons de boissons, 
+          service au bar, contrôle, circulation,...).
           <p/>
           Il n'est pas encore possible de t'inscrire, mais reste attentif!
           Les inscriptions seront annoncées sur cette page et
@@ -55,7 +55,7 @@ const i18n_strings = {
         </CardText>
 
         <CardText>
-          Le montage commence le lundi 05/09 et se termine le vendredi 09/09 avant les premiers concerts.
+          Le montage commence le lundi 5 septembre et se termine le vendredi 9 septembre avant les premiers concerts.
           Le démontage commence le lundi 12/09 et termine le jeudi 15/09.
           Tu ne sais venir que quelques jours ? Pas de soucis, tu restes le bienvenu.
           Mais sache que si les places viennent à manquer, ceux qui sont disponibles pour le
@@ -69,7 +69,124 @@ const i18n_strings = {
         </CardText>
 
         <CardText>
-          Tenté(e) ? N’hésite plus et rejoins-nous.
+          Tenté(e) ? N’hésite plus et rejoins-nous !
+        </CardText>
+      </div>)
+    }
+  },
+  en: {
+    title: 'Volunteers',
+    local: {
+      title: 'Volunteering',
+      subtitle: 'Take part to the festival life',
+      register: 'Contact Simon',
+      text: (<div>
+        <CardText>
+          As each year, we are looking for volunteers to help us in fulfilling a lot of practical tasks 
+          (assembly and dismantling of the site, sale of entry-bracelets and drink tokens, service at the bar, control, traffic, ...).
+          <p/>
+          You can't register at the moment, but stay tuned !
+          The registrations will be announced on this page and on 
+          <a href='https://www.facebook.com/events/649129711905158/'>the facebook event of the festival</a>.
+          <p/>
+          To get any information on the volunteering, you can contact Simon by email
+          <a href='mailto:benevolat@folkfestivalmarsinne.be'>benevolat@folkfestivalmarsinne.be</a>
+        </CardText>
+      </div>),
+    },
+    international: {
+      title: 'International voluntary camp',
+      subtitle: 'Young people from around the world',
+      register: 'Registration',
+      to_planning: 'Planning of the registred volunteers',
+      text: (<div>
+        <CardText>
+          You want to live a festival from the inside ? To participate to its installation ?
+          To meet young people from other countries and to be a member of a team ?
+          Possibly to get a free entrance to the festival (yes yes, this also matters) ?
+          Then the assembly and the dismantling of the Marsinne folk festival are made for you!
+        </CardText>
+
+        <CardText>
+          Once again this year, we have a partnership with <a href="https://www.javva.org/">JAVVA</a> 
+          to organize an international voluntary camp.
+          About ten young people come from around the world to discover our region 
+          and our festival by putting their shoulder to the wheel.
+        </CardText>
+
+        <CardText>
+          The assembly begins on Monday 5th of September and ends on Friday 9th of September before the first concerts.
+          The dismantling begins on Monday 12 of September and ends on Thursday 15 of September.
+          You can participate only a few days ? No worries, you are heartfully welcome.
+          But pay attention that if places are running out, people who are available for the longest period will have the priority.
+        </CardText>
+
+        <CardText>
+          About fifteen places are left at the moment, don't wait to contact us to know more about it and to register by sending an email
+          to <a href='mailto:chantierjeunes@folkfestivalmarsinne.be'>chantierjeunes@folkfestivalmarsinne.be</a> !
+        </CardText>
+
+        <CardText>
+          Interested ? Do not hesitate any more and join us !
+        </CardText>
+      </div>)
+    }
+  },
+  nl: {
+    title: 'Vrijwilligers',
+    local: {
+      title: 'Vrijwilliger worden',
+      subtitle: 'Deelnemen aan het leven van het festival',
+      register: 'Simon contacteren',
+      text: (<div>
+        <CardText>
+          Zoals ieder jaar zijn we ook nu op zoek naar vrijwilligers voor de realisatie van een heleboel 
+          taken (opbouw en ontmanteling van de site, verkoop aan de kassa van toegangsarmbandjes en drank jetons, 
+          bar, controle, vlotte circulatie, …)
+          <p/>
+          Je kan je op dit ogenblik nog niet inschrijven, maar blijf wel alert. De inschrijvingen worden op deze pagina aangekondigd 
+          en ook via <a href='https://www.facebook.com/events/649129711905158/'>het festival facebook event</a>.
+          <p/>
+          Voor alle informatie omtrent het vrijwilligerswerk kan je terecht bij Simon
+          via <a href='mailto:benevolat@folkfestivalmarsinne.be'>benevolat@folkfestivalmarsinne.be</a>
+        </CardText>
+      </div>),
+    },
+    international: {
+      title: 'Internationaal vrijwilligerskamp',
+      subtitle: 'Jongeren uit de hele wereld',
+      register: 'Zich inscrijven',
+      to_planning: 'Planning van de ingeschreven vrijwilligers',
+      text: (<div>
+        <CardText>
+         Heb je zin om een festival van binnenuit te beleven ? Om mee te werken aan zijn hele installatie ?
+         Om jongeren uit andere landen te ontmoeten en om deel uit te maken van een ploeg ? 
+         Om eventueel een gratis toegangsticket voor het festival te ontvangen (ja, dat kan ook!) ? 
+         Wel, engageer je dan voor de opbouw en ontmanteling van het Marsinne folk festival.
+        </CardText>
+
+        <CardText>
+          Dit jaar realiseren wij een partnerschap met <a href="https://www.javva.org/">JAVVA</a> om een ‘Internationaal vrijwilligerskamp’ op te zetten. 
+          Een tiental jongeren uit de hele wereld komen om onze streek en ons festival te ontdekken 
+          en hun handen uit de mouwen te steken.
+        </CardText>
+
+        <CardText>
+          De opbouw begint op maandag 5 september en eindigt op vrijdag 9 september vóór de eerste optredens.
+          De ontmanteling start op maandag 12 september en eindigt op donderdag 15 september. 
+          Kan je slechts enkele dagen komen ? Geen probleem, je blijft van harte welkom.
+          Maar houd er wel rekening mee dat, in geval van plaatsgebrek, we voorkeur zullen geven aan zij die beschikbaar zijn 
+          voor de langste periode.
+        </CardText>
+
+        <CardText>
+          Er blijven momenteel nog zo’n 15 plaatsen over. 
+          Aarzel niet om ons te contacteren voor meer info hierover en om je in te schrijven 
+          per mail naar <a href='mailto:chantierjeunes@folkfestivalmarsinne.be'>chantierjeunes@folkfestivalmarsinne.be</a> !
+        </CardText>
+
+        <CardText>
+          Aarzel niet. Vervoeg ons !
         </CardText>
       </div>)
     }
