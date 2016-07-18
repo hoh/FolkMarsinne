@@ -6,8 +6,52 @@ import Paper from 'material-ui/Paper';
 const i18n_strings = {
   fr: {
     title: 'Accéder au festival',
-    location: 'Site du festival',
+    location: {
+      title: 'Site du festival',
+      chateau: (
+        <div>
+          <p>
+          Le Festival se tient au château-ferme de Marsinne. Cette ferme fortifiée, construite au XIIème siècle, servait de poste d'avant-garde pour le Château de Moha et la Seigneurie de Beaufort.
+          </p>
+          <p>
+          Le bâtiment principal est composé de deux salles, une de 150m² (l'ancienne grange, qui nous sert de bar) et une autre de 275m² (la grande salle). Par ailleurs, à l'occasion du festival, un chapiteau d'environ 450m² est installé à l'extérieur de l'enceinte. Enfin, la cour du château est le lieu des multiples rencontres que le festival permet.
+          </p>
+          <p>
+          Le hangar quant à lui, occupé autrefois par une des scènes du festival, est aujourd'hui devenu une brasserie qui propose au Folk Festival une bière locale du nom de Léopold7.
+          </p>
+        </div>
+      ),
+      website: 'Site internet'
+    },
     gps: 'Coordonnées GPS',
+    horaire: {
+      title: 'Heures d\'ouvertures du festival',
+      vendredi: (
+       <div>
+         <b>Vendredi</b>:
+         <p>
+         14h: ouverture du camping
+         </p>
+         <p>
+         16h30: ouverture des portes pour les VIP
+         </p>
+         <p>
+         18h30: ouverture des portes pour les détenteurs d'une prévente
+         </p>
+         <p>
+         19h: ouverture des caisses
+         </p>
+      </div>
+      ),
+      samedimanche: (
+        <div>
+          <b>Samedi et Dimanche</b>:
+          <p>
+            10h: ouverture des portes et des caisses
+          </p>
+        </div>
+      ),
+    },
     transport: {
       title: 'En transport en commun',
       train: (
@@ -19,28 +63,35 @@ const i18n_strings = {
         </p>
       ),
       bus: (
-        <p>
+        <div>
           <b>En Bus</b>: Ligne 143 HUY - COUTHUIN - ANDENNE
-          Peu de bus par jour, surtout le week-end, vérifiez les horaires :
-          http://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L143
-          Descendre à l'arrêt Couthuin, Rue de Marsinne.
-          Marcher jusqu'au Château Ferme, Rue de la Médaille (7 min).
-        </p>
+          Peu de bus par jour, surtout le week-end, vérifiez les <a href="http://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L143"> horaires</a>. :
+          <p>
+          Descendre à l'arrêt "Couthuin Rue de Marsinne". Marcher ensuite jusqu'au Château Ferme situé Rue de la Médaille.
+          </p>
+          <ul>
+            <li>A la gare d'Andenne, rejoindre l'arrêt "Seilles Gare Routière", y prendre le bus direction Huy et descendre à l'arrêt "Couthuin Rue de Marsinne" (trajet en bus : 12 min).
+            </li>
+            <li>A la gare de Huy, rejoindre l'arrêt "Ecole Technique" (trajet à pied : 8 min), y prendre direction Andenne et descendre à l'arrêt "Couthuin rue de Marsinne" (trajet en bus : 25 min).
+            </li>
+          </ul>
+        </div>
       ),
     },
     car: {
       title: 'En voiture',
-      parking_title: 'Car park',
+      parking_title: 'Parking',
       parking: (
         <div>
           <p>
-            Une large zone de parking totalement gratuit est prévue, ainsi que le long du chemin de remembrement (rue de Couthuin). Merci de respecter les voisins, le passage et les demandes des bénévoles responsables de la circulation. Garez-vous en épi, le plus près possible les uns des autres.
+            Une large zone de parking totalement gratuit est prévue, il est également possible de se garer le long du chemin de remembrement (rue de Couthuin). Merci de respecter les voisins, le passage et les demandes des bénévoles responsables de la circulation. Garez-vous en épi, le plus près possible les uns des autres.
           </p>
           <p>
-            Le parking « handicapés » est prévu dans le bout de la rue de la médaille, côté rue de Marsinne, avant les guichets.
+            Un parking pour les véhicules des personnes à mobilité réduite est prévu dans le bout de la rue de la médaille, côté rue de Marsinne, avant les guichets.
           </p>
         </div>
       ),
+      directions_title: 'Itinéraire',
       directions: (
         <div>
           <p>
@@ -57,12 +108,56 @@ const i18n_strings = {
           </p>
         </div>
       ),
-    }
+    },
   },
   en: {
     title: 'Accessing the festival',
-    location: 'Festival location',
+    location: {
+      title: 'Festival location',
+      chateau: (
+        <div>
+          <p>
+          The music festival takes place in the Marsinne castle-farm.  This farm with bulwark was built in the 13rd century, it was a guarded outpost of the Moha castle for the Beaufort Lord.
+          </p>
+          <p>
+          The main building holds two rooms, the first one (the old barn) has a 150m² size and will contains the bar.  The second hall has a 275m² size and will be a danse hall.  During the festival, a big top with a size of 450m² is built outside of the compound.  And the courtyard becomes the meeting place of the festival.
+          </p>
+          <p>
+          The shed, where was one of the festival stage, is became a brewery. The brewed beer is sold at the festival bar, its name is Léopold7.
+          </p>
+        </div>
+      ),
+      website: 'Website'
+    },
     gps: 'GPS coordinates ',
+    horaire: {
+      title: 'Festival\'s opening hours',
+      vendredi: (
+       <div>
+         <b>Friday</b>:
+         <p>
+         14:00 camping opening
+         </p>
+         <p>
+         16:30 opening doors for the VIP
+         </p>
+         <p>
+         18:30 opening doors for pre-order tickets
+         </p>
+         <p>
+         19:00 opening doors
+         </p>
+      </div>
+      ),
+      samedimanche: (
+        <div>
+          <b>Saturday and Sunday</b>:
+          <p>
+            10:00 opening doors
+          </p>
+        </div>
+      ),
+    },
     transport: {
       title: 'With public transporation',
       train: (
@@ -93,17 +188,18 @@ const i18n_strings = {
     },
     car: {
       title: 'By car',
-      parking_title: 'Car park',
+      parking_title: 'Carpark',
       parking: (
         <div>
           <p>
             A wide free area is usable to park your car and it is also possible to park your car on the street. Please respect the neighborhood, don't park your car just in front of the houses. A group of volunteers will help you to park your car and maximize the use of the parking, please follow their instructions and try to save the available space.
           </p>
           <p>
-            A special par king for low mobility person is available at the end of the street "rue de la médaille", just before the ticket check.
+            A special parking for low mobility persons' vehicles is available at the end of the street "rue de la médaille", just before the ticket check.
           </p>
         </div>
       ),
+      directions_title: 'Directions',
       directions: (
         <div>
           <p>
@@ -116,7 +212,7 @@ const i18n_strings = {
             Near Fiat, Citroën and Alfa Romeo garages,  turn right to the city direction "Couthuin" (road name: Rue de la Campagne).
           </p>
           <p>
-            Continue straight and follow yellow or orange "Marsinne" road sign (see bellow) 1 kilometer / 1100 yards.  You will be able to see the castle-farm.  
+            Continue straight and follow yellow or orange "Marsinne" road sign (see bellow) 1 kilometer / 1100 yards.  You will be able to see the castle-farm.
           </p>
         </div>
       ),
@@ -124,8 +220,52 @@ const i18n_strings = {
   },
   nl: {
     title: 'Bereikbaarheid',
-    location: 'Festivalterrein',
+    location: {
+      title: 'Festivalterrein',
+      chateau: (
+        <div>
+          <p>
+          Het festival wordt gehouden op de kasteelhoeve van Marsinne. Deze versterkte boerderij, gebouwd in de twaalfde eeuw, diende als een voorpost voor het Kasteel van Moha en Heerschap van Beaufort.
+          </p>
+          <p>
+          Het hoofdgebouw bestaat uit twee zalen, een van 150m² (de oude schuur, die als bar gebruikt wordt) en nog een andere van 275m² (de grote zaal). In aanvulling, ter gelegenheid van het festival, wordt een tent van ongeveer 450m² buiten de omheining geplaatst. De binnenplaats van het kasteel is de ontmoetingsplaats voor heel het festival.
+          </p>
+          <p>
+          Wat de hangar betreft die vroeger dienst deed als één van de podia van het festival, die is nu omgebouwd tot een brouwerij die aan het Folk Festival een lokaal bier aanbiedt met de naam Léopold7.
+          </p>
+        </div>
+      ),
+    website: 'Website'
+    },
     gps: 'GPS coördinaten',
+    horaire: {
+      title: 'Festival\'s opening hours',
+      vendredi: (
+       <div>
+         <b>Friday</b>:
+         <p>
+         14:00 opening van de camping
+         </p>
+         <p>
+         16:30 opening van de deuren voor de VIP
+         </p>
+         <p>
+         18:30 opening van de deuren voor de voorverkoop
+         </p>
+         <p>
+         19:00 opening van de kassa's
+         </p>
+      </div>
+      ),
+      samedimanche: (
+      <p>
+         <b>Saturday and Sunday</b>:
+         <p>
+         10:00 opening van de deuren
+         </p>
+      </p>
+      ),
+    },
     transport: {
       title: 'Onderweg',
       train: (
@@ -159,17 +299,18 @@ const i18n_strings = {
     },
     car: {
       title: 'Met de wagen',
-      parking_title: 'Car park',
+      parking_title: 'Carpark',
       parking: (
         <div>
           <p>
             Er is een grote parkingzone voorzien, helemaal gratis. Daarnaast is parkeren ook mogelijk langs de weg “rue de Couthuin”. Wij stellen het respect voor de buurtbewoners op prijs, het <u>respect voor een vlotte doorgang en voor de inzet van de vrijwilligers</u>, verantwoordelijk voor het verkeer. Parkeer schuin en zo dicht mogelijk bij elkaar.
           </p>
           <p>
-            De parking voor gehandicapten ( andersvaliden) bevindt zich op het einde van de “ Rue de la Médaille”, aan de kant van de “Rue de Marsinne”, juist voor de loketten.
+            De parking voor de voertuigen van de personen met verminderde mobiliteit bevindt zich op het einde van de “ Rue de la Médaille”, aan de kant van de “Rue de Marsinne”, juist voor de loketten.
           </p>
         </div>
       ),
+      directions_title: 'Reisroute',
       directions: (
         <div>
           <p>
@@ -200,9 +341,13 @@ export default class AccessPage extends React.Component {
         <CustomTitle title={strings.title} />
 
         <Card>
-          <CardTitle title={strings.location}
+          <CardTitle title={strings.location.title}
                      subtitle="" />
           <CardText>
+            {strings.location.chateau}
+            <p>
+            {strings.location.website}: <a href="http://www.marsinne.be/">www.marsinne.be</a>
+            </p>
             <Paper style={{padding: 10, width: 200}}>
               Château-ferme de Marsinne<br/>
               Rue de la Médaille 17<br/>
@@ -213,9 +358,19 @@ export default class AccessPage extends React.Component {
               {strings.gps} : <a href="geo:50.529371,5.117713">50.529371,5.117713</a> <br/>
               (ou 50°31'45.74"N & 5° 7'3.78"E)
             </p>
+            <img src="http://www.folkfestivalmarsinne.be/images/stories/lieu/salle_marsinne00.jpg"/>
+            <img src="http://www.folkfestivalmarsinne.be/images/stories/lieu/salle_marsinne03.jpg"/>
           </CardText>
         </Card>
         <p/>
+        <Card>
+          <CardTitle title={strings.horaire.title}
+                     subtitle="" />
+          <CardText>
+            {strings.horaire.vendredi}
+            {strings.horaire.samedimanche}
+          </CardText>
+        </Card>
         <Card>
           <CardTitle title={strings.transport.title}
                      subtitle="" />
@@ -235,7 +390,7 @@ export default class AccessPage extends React.Component {
           </CardText>
 
           <CardText>
-            <h3 style={{marginTop: '0px'}}>Directions</h3>
+            <h3 style={{marginTop: '0px'}}>{strings.car.directions_title}</h3>
             {strings.car.directions}
           </CardText>
 
