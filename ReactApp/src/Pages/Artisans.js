@@ -14,21 +14,147 @@ const i18n_strings = {
   fr: {
     intro: {
       title: 'Artisans',
-      text: 'Le festival héberge plusieurs artisans et autres associations',
+      text: 'Le festival héberge plusieurs artisans et autres associations : luthiers, vêtements, chaussures, bijoux, Mains-Unies asbl',
+    },
+    luthiers: {
+      title: 'Marché des luthiers',
+      text: (
+        <p>
+        J-Cl Condi (<a href="http://www.nyckelharpa-condi.com">www.nyckelharpa-condi.com</a>, nyckelharpa, archets, cordes,...)
+        </p>
+        <p>
+        Gilles Garneret (<a href="http://www.anchesetcuirs.fr">www.anchesetcuirs.fr</a>)
+        </p>
+        <p>
+        Pierre Kieffer (La Bonne Franquette, psaltérion)
+        </p>
+        <p>
+        J-M Pâque (accordéon, basse au pied,...)
+        </p>
+        <p>
+        Pierre Thouvenin (Pierrot accordéon)
+        </p>
+        <p>
+        Peter Verhoeven (<a href="http://www.peterkyn.be">www.peterkyn.be</a>, épinette) : propose un cours d'initiation le dimanche 11 septembre, heure à préciser
+        </p>
+        <p>
+        Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
+        <img src="/static/artisans/advertentie A4 kleur chrom_300 dpi.jpg"/>
+        </p>
+      ),
+    },
+    mainsunies: {
+      title: 'Mains Unies - Mettez du Folk dans vos vacances !',
+      text: (
+         <p>
+         Chaque été, <b>MAINS UNIES</b> propose des <b>séjours participatifs</b> dans des <b>sites naturels</b>. 
+         Accompagnés par des bénévoles, 50 à 80 participants organisent les activités.
+         </p>
+         <p>
+         <b>Et tous les soirs, bal folk !</b> Petits et grands découvrent ou pratiquent la danse avec des musiciens et animateurs chevronnés !
+         </p>
+         <p>
+         Sous tente ou en gîte, une formule qui séduira les amateurs d'authenticité et de rencontres !
+         </p>
+      ),
     },
   },
   en: {
     intro: {
       title: 'Artisans',
-      text: 'The festival is host to several artisans and other associations',
+      text: 'The festival is host to several artisans and other associations: instrument makers, clothes, shoes, jewels, Mains-Unies npo',
+    },
+    luthiers: {
+      title: 'Instrument makers market',
+      text: (
+        <p>
+        J-Cl Condi (<a href="http://www.nyckelharpa-condi.com">www.nyckelharpa-condi.com</a>, nyckelharpa, bows, ropes,...)
+        </p>
+        <p>
+        Gilles Garneret (<a href="http://www.anchesetcuirs.fr">www.anchesetcuirs.fr</a>)
+        </p>
+        <p>
+        Pierre Kieffer (La Bonne Franquette, psaltérion)
+        </p>
+        <p>
+        J-M Pâque (accordion, basse au pied,...)
+        </p>
+        <p>
+        Pierre Thouvenin (Pierrot accordéon)
+        </p>
+        <p>
+        Peter Verhoeven (<a href="http://www.peterkyn.be">www.peterkyn.be</a>, épinette) : proposes an introductory course on Sunday September 11th, hour to be specified
+        </p>
+        <p>
+        Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
+        <img src="/static/artisans/advertentie A4 kleur chrom_300 dpi.jpg"/>
+        </p>
+      ),
+    },
+    mainsunies: {
+      title: 'Mains Unies - Put Folk in your holidays !',
+      text: (
+         <p>
+         Every summer, <b>MAINS UNIES</b> organises <b>participative stays</b> in <b>natural sites</b>. 
+              Accompanied by volunteers, 50 to 80 participants organize the activities.
+            </p>
+            <p>
+              <b>And every evening offers its folk ball !</b> Children and adults discover or practice dancing accompagnied by experienced musicians animators !
+            </p>
+            <p>
+              Whether lodging in a tent or a holiday home, this experience will seduce those seeking authenticity and genuine encounters !
+            </p>
+      ),
     },
   },
   nl: {
     intro: {
-      title: 'Artisans',
-      text: 'Het festival is gastheer voor verschillende ambachtslieden en andere verenigingen',
+      title: 'Kunstenaars',
+      text: 'Het festival is gastheer voor kunstenaars en diverse verenigingen : instrument makers, kleren, schoenen, juwelen, Mains-Unies vzw',
     },
-  }
+    luthiers: {
+      title: 'Markt van instrument makers',
+      text: (
+        <p>
+        J-Cl Condi (<a href="http://www.nyckelharpa-condi.com">www.nyckelharpa-condi.com</a>, nyckelharpa, strijkstok, touwen,...)
+        </p>
+        <p>
+        Gilles Garneret (<a href="http://www.anchesetcuirs.fr">www.anchesetcuirs.fr</a>)
+        </p>
+        <p>
+        Pierre Kieffer (La Bonne Franquette, psaltérion)
+        </p>
+        <p>
+        J-M Pâque (accordeon, basse au pied,...)
+        </p>
+        <p>
+        Pierre Thouvenin (Pierrot accordéon)
+        </p>
+        <p>
+        Peter Verhoeven (<a href="http://www.peterkyn.be">www.peterkyn.be</a>, épinette) : stelt een introductiecursus op zondag 11 september, uur te specificeren
+        </p>
+        <p>
+        Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
+        <img src="/static/artisans/advertentie A4 kleur_300 dpi.jpg"/>
+        </p>
+      ),
+    },
+    mainsunies: {
+      title: 'Mains Unies -  Zet in op Folk voor je vakantie !',
+      text: (
+         <p>
+              Elke zomer biedt <b>MAINS UNIES participatieve uitstapjes </b> aan in een mooi natuurkader. 
+              Begeleid door vrijwilligers kunnen 50 tot 80 deelnemers verschillende activiteiten organizeren.
+            </p>
+            <p>
+              <b>Et tous les soirs, bal folk !</b> Iedere avond is er volksbal. Klein en groot kan dan deelnemen met het dansen onder leiding van ervaren muzikanten en animators. 
+            </p>
+            <p>
+              Onder tent of in vakantiehuis, een formule die de liefhebbers van authenticiteit en vergaderingen !
+            </p>
+      ),
+    },
+  },
 }
 
 
@@ -44,24 +170,19 @@ export default class ArtisansPage extends React.Component {
                      desc={strings.intro.text} />
 
         <Card>
-          <CardTitle title="Mains Unies - Mettez du Folk dans vos vacances !"
+          <CardTitle title={strings.luthiers.title}
+                     subtitle="" />
+          <CardText>
+              {strings.luthiers.text}
+          </CardText>
+          
+          <Card>
+          <CardTitle title={strings.mainsunies.title}
                      subtitle="" />
           <CardText>
             <img src="/static/artisans/mains-unies.jpg" width="250px"
                  style={{float: 'right'}} />
-            <p>
-              Chaque été, <b>MAINS UNIES</b> propose des <b>séjours participatifs </b>
-              dans des <b>sites naturels</b>. Accompagnés par des bénévoles,
-              50 à 80 participants organisent les activités.
-            </p>
-            <p>
-              <b>Et tous les soirs, bal folk !</b> Petits et grands découvrent ou
-              pratiquent la danse avec des musiciens et animateurs chevronnés !
-            </p>
-            <p>
-              Sous tente ou en gîte, une formule qui séduira les amateurs
-              d'authenticité et de rencontres !
-            </p>
+            {strings.mainsunies.text}
           </CardText>
           <RaisedButton label="mainsunies.be" secondary={true}
                         style={{margin: 12}} href="http://www.mainsunies.be/"
