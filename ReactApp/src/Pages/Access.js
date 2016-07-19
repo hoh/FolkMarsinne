@@ -55,11 +55,13 @@ const i18n_strings = {
     transport: {
       title: 'En transport en commun',
       train: (
+       <div>  
         <p>
           <b>En train</b>: rejoindre la gare d’Andenne
           (à 15 minutes de Namur) ou la gare de Huy
           (à 20 minutes de Liège) sur la ligne Namur-Liège : <a href="http://www.belgianrail.be/fr">http://www.belgianrail.be</a>.
         </p>
+       </div>
       ),
       bus: (
         <div>
@@ -160,6 +162,7 @@ const i18n_strings = {
     transport: {
       title: 'With public transporation',
       train: (
+       <div>
         <p>
           <b>By train</b>: go to "Andenne" rail station (travel time: 15 minutes
             from Namur, 90 minutes from Brussels) or go to "Huy" rail station
@@ -167,6 +170,7 @@ const i18n_strings = {
             with the Belgium rail system, line 143 NAMUR-LIEGE. Schedule on <a href="http://www.belgianrail.be/en">http://www.belgianrail.be</a>. 
             The music festival is not directly accessible from these rail stations, you need to take a bus.
         </p>
+       </div>
       ),
       bus: (
         <div>
@@ -257,22 +261,26 @@ const i18n_strings = {
       </div>
       ),
       samedimanche: (
-      <p>
+       <div>
+        <p>
          <b>Zaterdag en Zondag</b>:
          <p>
          10:00 opening van de deuren
          </p>
-      </p>
+        </p>
+       </div>
       ),
     },
     transport: {
       title: 'Onderweg',
       train: (
+       <div>
         <p>
           <b>Met de trein :</b> Tot het station van Andenne (15 minuten met de
           trein vanuit Namen) of tot het station van Huy (20 minuten met de
           trein vanuit Luik op de lijn Namen-Luik). Dienstregeling op <a href="http://www.belgianrail.be/nl">http://www.belgianrail.be</a>
         </p>
+       </div>
       ),
       bus: (
         <div>
@@ -370,6 +378,7 @@ export default class AccessPage extends React.Component {
             {strings.horaire.samedimanche}
           </CardText>
         </Card>
+        <p/>
         <Card>
           <CardTitle title={strings.transport.title}
                      subtitle="" />
