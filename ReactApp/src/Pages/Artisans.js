@@ -19,7 +19,6 @@ const i18n_strings = {
     luthiers: {
       title: 'Marché des luthiers',
       text: (
-       <div>
         <p>
         J-Cl Condi (<a href="http://www.nyckelharpa-condi.com">www.nyckelharpa-condi.com</a>, nyckelharpa, archets, cordes,...)
         </p>
@@ -42,13 +41,11 @@ const i18n_strings = {
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
         <img src="/static/artisans/advertentie A4 kleur chrom_300 dpi.jpg"/>
         </p>
-       </div>
       ),
     },
     mainsunies: {
       title: 'Mains Unies - Mettez du Folk dans vos vacances !',
       text: (
-        <div> 
          <p>
          Chaque été, <b>MAINS UNIES</b> propose des <b>séjours participatifs</b> dans des <b>sites naturels</b>. 
          Accompagnés par des bénévoles, 50 à 80 participants organisent les activités.
@@ -59,7 +56,6 @@ const i18n_strings = {
          <p>
          Sous tente ou en gîte, une formule qui séduira les amateurs d'authenticité et de rencontres !
          </p>
-       </div>
       ),
     },
   },
@@ -71,7 +67,6 @@ const i18n_strings = {
     luthiers: {
       title: 'Instrument makers market',
       text: (
-       <div>
         <p>
         J-Cl Condi (<a href="http://www.nyckelharpa-condi.com">www.nyckelharpa-condi.com</a>, nyckelharpa, bows, ropes,...)
         </p>
@@ -94,13 +89,11 @@ const i18n_strings = {
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
         <img src="/static/artisans/advertentie A4 kleur chrom_300 dpi.jpg"/>
         </p>
-       </div>
       ),
     },
     mainsunies: {
       title: 'Mains Unies - Put Folk in your holidays !',
       text: (
-       <div>
          <p>
          Every summer, <b>MAINS UNIES</b> organises <b>participative stays</b> in <b>natural sites</b>. 
               Accompanied by volunteers, 50 to 80 participants organize the activities.
@@ -111,7 +104,6 @@ const i18n_strings = {
             <p>
               Whether lodging in a tent or a holiday home, this experience will seduce those seeking authenticity and genuine encounters !
             </p>
-       </div>
       ),
     },
   },
@@ -123,7 +115,6 @@ const i18n_strings = {
     luthiers: {
       title: 'Markt van instrument makers',
       text: (
-       <div>
         <p>
         J-Cl Condi (<a href="http://www.nyckelharpa-condi.com">www.nyckelharpa-condi.com</a>, nyckelharpa, strijkstok, touwen,...)
         </p>
@@ -146,24 +137,21 @@ const i18n_strings = {
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
         <img src="/static/artisans/advertentie A4 kleur_300 dpi.jpg"/>
         </p>
-       </div>
       ),
     },
     mainsunies: {
       title: 'Mains Unies -  Zet in op Folk voor je vakantie !',
       text: (
-        <div>
-            <p>
-            Elke zomer biedt <b>MAINS UNIES participatieve uitstapjes </b> aan in een mooi natuurkader. 
-            Begeleid door vrijwilligers kunnen 50 tot 80 deelnemers verschillende activiteiten organizeren.
+         <p>
+              Elke zomer biedt <b>MAINS UNIES participatieve uitstapjes </b> aan in een mooi natuurkader. 
+              Begeleid door vrijwilligers kunnen 50 tot 80 deelnemers verschillende activiteiten organizeren.
             </p>
             <p>
-            <b>En iedere avond is er volksbal !</b> . Klein en groot kan dan deelnemen met het dansen onder leiding van ervaren muzikanten en animators. 
+              <b>Et tous les soirs, bal folk !</b> Iedere avond is er volksbal. Klein en groot kan dan deelnemen met het dansen onder leiding van ervaren muzikanten en animators. 
             </p>
             <p>
-            Onder tent of in vakantiehuis, een formule die de liefhebbers van authenticiteit en vergaderingen !
+              Onder tent of in vakantiehuis, een formule die de liefhebbers van authenticiteit en vergaderingen !
             </p>
-        </div>
       ),
     },
   },
