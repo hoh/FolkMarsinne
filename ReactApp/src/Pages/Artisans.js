@@ -187,7 +187,8 @@ export default class ArtisansPage extends React.Component {
           <CardText>
               {strings.luthiers.text}
           </CardText>
-          
+        </Card>
+        
           <Card>
           <CardTitle title={strings.mainsunies.title}
                      subtitle="" />
@@ -201,7 +202,7 @@ export default class ArtisansPage extends React.Component {
                         linkButton={true} />
                       <RaisedButton label="02 / 344 46 53" primary={true}
             style={{margin: 12}} href="tel:+3223444653" linkButton={true} />
-        </Card>
+          </Card>
 
       </div>
     );
