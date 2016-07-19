@@ -188,7 +188,7 @@ export default class ArtisansPage extends React.Component {
               {strings.luthiers.text}
           </CardText>
         </Card>
-        
+        <p/>
         <Card>
           <CardTitle title={strings.mainsunies.title}
                      subtitle="" />
