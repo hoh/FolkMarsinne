@@ -11,17 +11,17 @@ const i18n_strings = {
       headline: "Théâtre de marionnettes liégeoises (Belgique - Wallonie) - Samedi et Dimanche / COUR",
       desc: "Un théâtre de marionnettes traditionnelles liégeoises: de quoi réjouir les plus jeunes d'entre nous! Le Théâtre Mabotte rassemble des professionnels qui perpétuent avec talent cette vieille tradition. Avec brio, alors venez les rejoindre!",
       website: "Site web"
-    }
+    },
     maquillage: {
       title: "Maquillage pour enfants",
       headline: "(Belgique - Wallonie) - Samedi et Dimanche / MARCHÉ",
       desc: "Des oeuvres d'art éphémères sur les plus belles oeuvres d'art des parents, le temps pour les enfants de jouer à quelqu'un d'autre!",
       desc2: "Maquilleuse : Viviane Desmet"
-    }
+    },
     initiation: {
       title: "Initiation à l'épinette",
       desc: "Le luthier <b>Peter Verhoeven</b> propose un cours d'initiation à l'épinette, le dimanche 11 septembre, heure à préciser",
-    }
+    },
     bourse: {
       title: "Bourse musicale",
       desc: (
@@ -52,17 +52,17 @@ const i18n_strings = {
       headline: "Puppet Theater from Liege (Wallonia) - Saturday and Sunday / COURTYARD",
       desc: "A traditional puppet theater from Liège has enough to delight the youngest among us. The Mabotte Theater brings together professionals who perpetuate this old tradition with talent. Brilliant! So come and join them!",
       website: "Website"
-    }
+    },
     maquillage: {
       title: "Children make-up",
       headline: "(Belgium - Wallonia) - Saturday and Sunday / MARKET",
       desc: "Ephemeral works of art on the most beautiful artworks of parents, time for children to play someone else !",
       desc2: "Make-up artist : Viviane Desmet"
-    }
+    },
     initiation: {
       title: "Introductory course épinette",
       desc: "Instrument maker <b>Peter Verhoeven</b> proposes an introductory course on Sunday September 11th, hour to be specified",
-    }
+    },
     bourse: {
       title: "Musical market",
       desc: (
@@ -103,7 +103,7 @@ const i18n_strings = {
     initiation: {
       title: "Introductiecursus épinette",
       desc: "Instrument maker <b>Peter Verhoeven</b> telt een introductiecursus op zondag 11 september, uur te specificeren",
-    }
+    },
     bourse: {
       title: "Muzikale markt",
       desc: (
