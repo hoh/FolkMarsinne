@@ -25,6 +25,7 @@ const i18n_strings = {
     bourse: {
       title: "Bourse musicale",
       desc: (
+       <div>
          <p>
          Deux musiciens de confiance, <b>André Deru</b> et <b>Thierry Legros</b> (du groupe Salon Ambroisine), proposent cette année une bourse musicale à Marsinne.
         </p>
@@ -42,6 +43,7 @@ const i18n_strings = {
         <p>
         Acquittez-vous du prix demandé ou, s'il y a lieu, contactez le vendeur.
         </p>
+       </div>
       ),
     },
   },
@@ -66,7 +68,8 @@ const i18n_strings = {
     bourse: {
       title: "Musical market",
       desc: (
-         <p>
+       <div>
+        <p>
          Two reliable musicians, <b>André Deru</b> et <b>Thierry Legros</b> (from the band Salon Ambroisine), propose this year a musical market in Marsinne.
         </p>
         <p>
@@ -83,6 +86,7 @@ const i18n_strings = {
         <p>
         Pay the asking price or, if necessary, contact the seller.
         </p>
+       </div>
       ),
     },
   },
@@ -107,7 +111,8 @@ const i18n_strings = {
     bourse: {
       title: "Muzikale markt",
       desc: (
-         <p>
+       <div>
+        <p>
          Twee betrouwbare muzikanten, <b>André Deru</b> et <b>Thierry Legros</b> (groep Salon Ambroisine) stellen dit jaar een muzikale markt in Marsinne.
          </p>
         <p>
@@ -124,6 +129,7 @@ const i18n_strings = {
         <p>
         Betaal de vraagprijs of, indien nodig, neem contact op met de verkoper.
         </p>
+       </div>
       ),
     },
   },
