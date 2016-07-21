@@ -40,10 +40,10 @@ const i18n_strings = {
           Glace artisanale
           </p>
           <p>
-          <b>Dans la grande salle de restauration (bar)</b>
+          <b>Dans la grande salle (bar)</b>
           </p>
           <p>
-          RestaurationFrites et Repas chauds complets cuisinés sur place : "Guimauve"
+          Repas chauds complets cuisinés sur place : "Guimauve"
           </p>
           <p>
           Possibilité de petit-déjeuner
@@ -84,7 +84,7 @@ const i18n_strings = {
           <b>In the big hall (bar)</b>
           </p>
           <p>
-          Chips and full hot meals prepared on the spot : "Guimauve"
+          Full hot meals prepared on the spot : "Guimauve"
           </p>
           <p>
           Breakfast also possible
@@ -125,7 +125,7 @@ const i18n_strings = {
           <b>In the grote zaal (bar)</b>
           </p>
           <p>
-          Frieten en volledige warme maaltijden ter plekke bereid : "Guimauve"
+          Volledige warme maaltijden ter plekke bereid : "Guimauve"
           </p>
           <p>
           Mogelijkheid tot ontbijt
