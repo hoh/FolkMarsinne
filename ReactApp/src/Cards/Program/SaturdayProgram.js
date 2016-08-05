@@ -45,7 +45,7 @@ const saturdayPlan = [
                             true,
                             false,
                             {name: 'Théâtre Mabotte (BE) théatre enfants', duration: 1, kind: 'theatre'}]},
-  {hour: '16h00', 'groups':[{name: 'Initiation bal folk - Carine de Lauw (BE) atelier de danse', duration: 3, kind: 'learn'},
+  {hour: '16h00', 'groups':[{name: 'Initiation bal folk - Carine de Lauw et Christian D\'Huyvetter (BE) atelier de danse', duration: 3, kind: 'learn'},
                             false,
                             {name: 'Durif - Champeval (FR) bal', duration: 4, kind: 'bal'},
                             false]},
