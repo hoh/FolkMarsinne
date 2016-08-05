@@ -105,16 +105,18 @@ export class DayProgram extends React.Component {
             href="/static/all-details.html" />
         </CardText>
         <table style={programTableStyle}>
-          <tr style={programRowStyle}>
-            <th></th>
-            <th style={{}}>Salle</th>
-            <th style={{}}>Chapiteau 1</th>
-            <th style={{}}>Chapiteau 2</th>
-            <th style={{}}>Cour</th>
-          </tr>
-          {this.props.plan.map((hourPlan) =>
-            <HourRow hour={hourPlan.hour} groups={hourPlan.groups} />
-           )}
+          <tbody>
+            <tr style={programRowStyle}>
+              <th></th>
+              <th style={{}}>Salle</th>
+              <th style={{}}>Chapiteau 1</th>
+              <th style={{}}>Chapiteau 2</th>
+              <th style={{}}>Cour</th>
+            </tr>
+            {this.props.plan.map((hourPlan) =>
+              <HourRow key={hourPlan.hour} hour={hourPlan.hour} groups={hourPlan.groups} />
+             )}
+          </tbody>
         </table>
       </div>
     );

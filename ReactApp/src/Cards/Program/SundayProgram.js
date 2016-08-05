@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {blue100} from 'material-ui/styles/colors';
 import {DayProgram} from './ProgramComponents'
+import {BandDescriptions} from './BandDescriptions'
 
 
 const sundayPlan = [
@@ -116,10 +117,17 @@ const sundayPlan = [
 ];
 
 
+const sundayBands = [
+]
+
+
 export default class SundayProgram extends React.Component {
   render() {
 		return (
-      <DayProgram plan={sundayPlan} lang={this.props.lang} />
+      <div>
+        <DayProgram plan={sundayPlan} lang={this.props.lang} />
+        <BandDescriptions bands={sundayBands} lang={this.props.lang} />
+      </div>
     );
   }
 }

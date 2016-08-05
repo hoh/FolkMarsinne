@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import {blue100} from 'material-ui/styles/colors';
+import {blue100} from 'material-ui/styles/colors'
 import {DayProgram} from './ProgramComponents'
+import {BandDescriptions} from './BandDescriptions'
 
 
 const fridayPlan = [
   {hour: '', 'groups': []},
-  {hour: '20h', 'groups': [false, 
+  {hour: '20h', 'groups': [false,
   			   {name: 'Baila Tocamos (BE) bal', duration: 4, kind: 'bal'},
   			   false, false]},
   {hour: '20h30', 'groups': [false, true, false, false]},
@@ -15,7 +16,7 @@ const fridayPlan = [
                            false,
                            {name: 'Wouter Vandenabeele et Jeroen Knapen (BE) bal', duration: 4, kind: 'bal'},
                            false]},
-  {hour: '22h30', 'groups': [true, false, true, false]},                         
+  {hour: '22h30', 'groups': [true, false, true, false]},
   {hour: '23h', 'groups': [true, false, true, false]},
   {hour: '23h30', 'groups': [false, false, true, false]},
   {hour: '00h', 'groups': [false,
@@ -28,10 +29,72 @@ const fridayPlan = [
 ];
 
 
+const fridayBands = [
+  {
+    name: 'Baila Tocamos',
+    kind: 'bal',
+    from: 'Belgique - Wallonie',
+    members: [
+      {name: 'Martin de Roos', instrument: 'accordéon diatonique'},
+      {name: 'Emile Postic', instrument: 'clarinette'},
+      {name: 'François Postic', instrument: 'saxophone baryton'},
+    ],
+    links: [
+      'https://soundcloud.com/baila-tocamos',
+    ]
+  },
+  {
+    name: 'Duo Montanaro-Cavez',
+    kind: 'concert',
+    from: 'France / Belgique - Wallonie',
+    members: [
+      {name: 'Sophie Cavez', instrument: 'accordéon diatonique'},
+      {name: 'Baltazar Montanaro', instrument: 'violon'},
+    ],
+    links: [
+      'http://www.duomontanarocavez.sitew.com/',
+      'https://youtu.be/G3Y7-iPCjjY',
+      'https://youtu.be/NI3fo4GW7vs',
+    ]
+  },
+  {
+    name: 'Wouter Vandenabeele & Jeroen Knapen',
+    kind: 'bal',
+    from: 'Belgique - Flandre',
+    members: [
+      {name: 'Jeroen Knapen', instrument: 'guitare'},
+      {name: 'Wouter Vandenabeele', instrument: 'violon'},
+    ],
+    links: [
+      'http://www.woutervandenabeele.be',
+      'https://www.youtube.com/watch?v=0ARP-LacEQ0',
+      'https://www.youtube.com/watch?v=imR5WTyFrK8',
+    ]
+  },
+  {
+    name: 'Les Zéoles',
+    kind: 'bal',
+    from: 'France',
+    members: [
+      {name: 'Amélie Denarié', instrument: 'accordéon diatonique'},
+      {name: 'Anne Guinot', instrument: 'accordéon chromatique'},
+    ],
+    links: [
+      'http://leszeoles.net/',
+      'https://youtu.be/CozOezCNih4',
+      'https://youtu.be/Ykqn-uLhyLY',
+    ]
+  },
+];
+
+
 export default class FridayProgram extends React.Component {
   render() {
     return (
-      <DayProgram plan={fridayPlan} lang={this.props.lang} />
+      <div>
+        <DayProgram plan={fridayPlan} lang={this.props.lang} />
+        <BandDescriptions bands={fridayBands} lang={this.props.lang} />
+      </div>
     );
   }
 }
