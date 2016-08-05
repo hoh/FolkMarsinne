@@ -101,7 +101,7 @@ const i18n_strings = {
         <CardText>
           Il reste encore une quinzaine de places, ne tarde pas à nous contacter
           pour en savoir plus et t'inscrire en envoyant un email
-          à <a href='mailto:chantierjeunes@folkfestivalmarsinne.be'>chantierjeunes@folkfestivalmarsinne.be</a> !
+          à <a href='mailto:chantier_international@folkfestivalmarsinne.be'>chantier_international@folkfestivalmarsinne.be</a> !
         </CardText>
 
         <CardText>
@@ -203,7 +203,7 @@ const i18n_strings = {
 
         <CardText>
           About fifteen places are left at the moment, don't wait to contact us to know more about it and to register by sending an email
-          to <a href='mailto:chantierjeunes@folkfestivalmarsinne.be'>chantierjeunes@folkfestivalmarsinne.be</a> !
+          to <a href='mailto:chantier_international@folkfestivalmarsinne.be'>chantier_international@folkfestivalmarsinne.be</a> !
         </CardText>
 
         <CardText>
@@ -305,7 +305,7 @@ const i18n_strings = {
         <CardText>
           Er blijven momenteel nog zo’n 15 plaatsen over.
           Aarzel niet om ons te contacteren voor meer info hierover en om je in te schrijven
-          per mail naar <a href='mailto:chantierjeunes@folkfestivalmarsinne.be'>chantierjeunes@folkfestivalmarsinne.be</a> !
+          per mail naar <a href='mailto:chantier_international@folkfestivalmarsinne.be'>chantier_international@folkfestivalmarsinne.be</a> !
         </CardText>
 
         <CardText>
@@ -362,7 +362,7 @@ export default class VolunteerPage extends React.Component {
           <CardText>
             <RaisedButton label={strings.international.register} primary={true}
               labelColor='white' linkButton={true}
-              href="mailto:chantierjeunes@folkfestivalmarsinne.be"
+              href="mailto:chantier_international@folkfestivalmarsinne.be"
               />
             {/*
               <RaisedButton label={strings.international.to_planning} secondary={true}
