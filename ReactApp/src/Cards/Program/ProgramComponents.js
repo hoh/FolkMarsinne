@@ -20,7 +20,7 @@ const programHourStyle = {
   borderCollapse: 'collapse',
   position: 'relative',
   height: '40px',
-  top: '20px',
+  top: '-20px',
   width: '60px',
 };
 
