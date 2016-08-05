@@ -20,7 +20,7 @@ const i18n_strings = {
     },
     initiation: {
       title: "Initiation à l'épinette",
-      desc: "Le luthier <b>Peter Verhoeven</b> propose un cours d'initiation à l'épinette, le dimanche 11 septembre, heure à préciser",
+      desc: <span>Le luthier <b>Peter Verhoeven</b> propose un cours d'initiation à l'épinette, le dimanche 11 septembre, heure à préciser</span>,
     },
     bourse: {
       title: "Bourse musicale",
@@ -30,15 +30,15 @@ const i18n_strings = {
          Deux musiciens de confiance, <b>André Deru</b> et <b>Thierry Legros</b> (du groupe Salon Ambroisine), proposent cette année une bourse musicale à Marsinne.
         </p>
         <p>
-        <b>Vous souhaitez vendre un «objet musical» ?</b> 
+        <b>Vous souhaitez vendre un «objet musical» ?</b>
         </p>
         <p>
         Venez le confier à ce stand pour la journée (reprise à 18h30 au plus tard). Indiquez le prix demandé ou/et un numéro de gsm où l'acheteur potentiel pourrait vous joindre.
-        André Deru et Thierry Legros accueilleront les dépôts avec la plus grande attention et veilleront de leur mieux à ce que ces objets ne subissent aucun dégât. 
+        André Deru et Thierry Legros accueilleront les dépôts avec la plus grande attention et veilleront de leur mieux à ce que ces objets ne subissent aucun dégât.
         Cependant, ils ne pourront être tenus pour responsables en cas de dégât ou de vol.
         </p>
         <p>
-        <b>Vous souhaitez acheter un «objet musical» ?</b> 
+        <b>Vous souhaitez acheter un «objet musical» ?</b>
         </p>
         <p>
         Acquittez-vous du prix demandé ou, s'il y a lieu, contactez le vendeur.
@@ -63,7 +63,7 @@ const i18n_strings = {
     },
     initiation: {
       title: "Introductory course épinette",
-      desc: "Instrument maker <b>Peter Verhoeven</b> proposes an introductory course on Sunday September 11th, hour to be specified",
+      desc: <span>Instrument maker <b>Peter Verhoeven</b> proposes an introductory course on Sunday September 11th, hour to be specified</span>,
     },
     bourse: {
       title: "Musical market",
@@ -73,7 +73,7 @@ const i18n_strings = {
          Two reliable musicians, <b>André Deru</b> et <b>Thierry Legros</b> (from the band Salon Ambroisine), propose this year a musical market in Marsinne.
         </p>
         <p>
-        <b>Do you wish to sell a musical instrument ? </b> 
+        <b>Do you wish to sell a musical instrument ? </b>
         </p>
         <p>
         Confide it to this stand for the day (taken back at 6:30 pm at the latest). Indicate the asking price or / and a mobile phone number where the potential buyer could contact you.
@@ -81,7 +81,7 @@ const i18n_strings = {
         However, they cannot be held responsible in case of damage or theft.
         </p>
         <p>
-        <b>do you wish to buy a musical instrument ?</b> 
+        <b>do you wish to buy a musical instrument ?</b>
         </p>
         <p>
         Pay the asking price or, if necessary, contact the seller.
@@ -106,7 +106,7 @@ const i18n_strings = {
     },
     initiation: {
       title: "Introductiecursus épinette",
-      desc: "Instrument maker <b>Peter Verhoeven</b> telt een introductiecursus op zondag 11 september, uur te specificeren",
+      desc: <span>Instrument maker <b>Peter Verhoeven</b> telt een introductiecursus op zondag 11 september, uur te specificeren</span>,
     },
     bourse: {
       title: "Muzikale markt",
@@ -116,7 +116,7 @@ const i18n_strings = {
          Twee betrouwbare muzikanten, <b>André Deru</b> et <b>Thierry Legros</b> (groep Salon Ambroisine) stellen dit jaar een muzikale markt in Marsinne.
          </p>
         <p>
-        <b>U wenst een muziekinstrument te verkopen ?</b> 
+        <b>U wenst een muziekinstrument te verkopen ?</b>
         </p>
         <p>
         Laat uw instrument op dit stand voor de dag (hervatting om 18u30 bij het laatste). Geef de vraagprijs of / en een GSM nummer waar de potentiële koper kan uw bellen.
@@ -124,7 +124,7 @@ const i18n_strings = {
         Ze kunnen echter niet verantwoordelijk worden gehouden in geval van schade of diefstal.
         </p>
         <p>
-        <b>U wenst een muziekinstrument te kopen ?</b> 
+        <b>U wenst een muziekinstrument te kopen ?</b>
         </p>
         <p>
         Betaal de vraagprijs of, indien nodig, neem contact op met de verkoper.
