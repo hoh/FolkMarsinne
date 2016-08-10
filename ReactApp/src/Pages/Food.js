@@ -37,6 +37,9 @@ const i18n_strings = {
           Crêpes salées et sucrées
           </p>
           <p>
+            Cornets de pâtes
+          </p>
+          <p>
           Glace artisanale
           </p>
           <p>
@@ -78,6 +81,9 @@ const i18n_strings = {
           Salted and sweet pancakes
           </p>
           <p>
+            Pasta in cones
+          </p>
+          <p>
           Home-made ice cream
           </p>
           <p>
@@ -117,6 +123,9 @@ const i18n_strings = {
           </p>
           <p>
           Zoute en zoete pannenkoeken
+          </p>
+          <p>
+            Pasta kegels
           </p>
           <p>
           Ambachtelijk ijs

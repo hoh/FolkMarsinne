@@ -53,6 +53,9 @@ const i18n_strings = {
         Peter Verhoeven (<a href="http://www.peterkyn.be">www.peterkyn.be</a>, épinette) : propose un cours d'initiation le dimanche 11 septembre, heure à préciser
         </p>
         <p>
+          Lutherie HAFFNER (<a href="http://lutherie-haffner.wix.com/lutherie">lutherie-haffner.wix.com/lutherie</a>, Epinettes des Vosges et dulcimers)
+        </p>
+        <p>
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
         </p>
        </div>
@@ -118,6 +121,9 @@ const i18n_strings = {
         Peter Verhoeven (<a href="http://www.peterkyn.be">www.peterkyn.be</a>, épinette) : proposes an introductory course on Sunday September 11th, hour to be specified
         </p>
         <p>
+          Lutherie HAFFNER (<a href="http://lutherie-haffner.wix.com/lutherie">lutherie-haffner.wix.com/lutherie</a>, Epinettes des Vosges et dulcimers)
+        </p>
+        <p>
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
         </p>
        </div>
@@ -181,6 +187,9 @@ const i18n_strings = {
         </p>
         <p>
         Peter Verhoeven (<a href="http://www.peterkyn.be">www.peterkyn.be</a>, épinette) : stelt een introductiecursus op zondag 11 september, uur te specificeren
+        </p>
+        <p>
+          Lutherie HAFFNER (<a href="http://lutherie-haffner.wix.com/lutherie">lutherie-haffner.wix.com/lutherie</a>, Epinettes des Vosges et dulcimers)
         </p>
         <p>
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
