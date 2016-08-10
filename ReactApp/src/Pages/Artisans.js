@@ -10,6 +10,20 @@ import EmailOutlineIcon from 'material-ui/svg-icons/communication/mail-outline';
 
 import CustomTitle from '../Cards/CustomTitle';
 
+
+class LinkedImage extends React.Component {
+  render() {
+    return (
+      <a href={this.props.src} target="_blank">
+        <img src={this.props.src}
+             height={this.props.height}
+             style={this.props.style}
+        />
+      </a>
+    );
+  }
+}
+
 const i18n_strings = {
   fr: {
     intro: {
@@ -19,7 +33,7 @@ const i18n_strings = {
     luthiers: {
       title: 'Marché des luthiers',
       text: (
-       <div>  
+       <div>
         <p>
         J-Cl Condi (<a href="http://www.nyckelharpa-condi.com">www.nyckelharpa-condi.com</a>, nyckelharpa, archets, cordes,...)
         </p>
@@ -40,7 +54,6 @@ const i18n_strings = {
         </p>
         <p>
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
-        <img src="/static/artisans/advertentie A4 kleur chrom_300 dpi.jpg"/>
         </p>
        </div>
       ),
@@ -50,7 +63,7 @@ const i18n_strings = {
       text: (
        <div>
         <p>
-         Chaque été, <b>MAINS UNIES</b> propose des <b>séjours participatifs</b> dans des <b>sites naturels</b>. 
+         Chaque été, <b>MAINS UNIES</b> propose des <b>séjours participatifs</b> dans des <b>sites naturels</b>.
          Accompagnés par des bénévoles, 50 à 80 participants organisent les activités.
          </p>
          <p>
@@ -60,6 +73,20 @@ const i18n_strings = {
          Sous tente ou en gîte, une formule qui séduira les amateurs d'authenticité et de rencontres !
          </p>
        </div>
+      ),
+    },
+    accordeons_viseur: {
+      title: 'Accordéons Viseur',
+      text: (
+        <div>
+          <p>
+            Iwein Jacobs, accordéoniste passionné à l'origine de la création
+            de “Accordéons Viseur, Magasin spécialiste de l’accordéon ainsi que de l’harmonica.
+          </p>
+          <LinkedImage src="/static/artisans/accordeons-viseur-poster1.jpg?v=2" height="250px"
+               style={{marginRight: 5}} />
+          <LinkedImage src="/static/artisans/accordeons-viseur-poster3.jpg" height="250px" />
+        </div>
       ),
     },
   },
@@ -92,7 +119,6 @@ const i18n_strings = {
         </p>
         <p>
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
-        <img src="/static/artisans/advertentie A4 kleur chrom_300 dpi.jpg"/>
         </p>
        </div>
       ),
@@ -102,7 +128,7 @@ const i18n_strings = {
       text: (
        <div>
          <p>
-         Every summer, <b>MAINS UNIES</b> organises <b>participative stays</b> in <b>natural sites</b>. 
+         Every summer, <b>MAINS UNIES</b> organises <b>participative stays</b> in <b>natural sites</b>.
          Accompanied by volunteers, 50 to 80 participants organize the activities.
          </p>
          <p>
@@ -112,6 +138,20 @@ const i18n_strings = {
          Whether lodging in a tent or a holiday home, this experience will seduce those seeking authenticity and genuine encounters !
          </p>
        </div>
+      ),
+    },
+    accordeons_viseur: {
+      title: 'Accordéons Viseur',
+      text: (
+        <div>
+          <p>
+            Following a passion for accordeon, <i>Accordeons Viseur</i> -
+            specialist in accordions and harmonicas, was created in 2003.
+          </p>
+          <LinkedImage src="/static/artisans/accordeons-viseur-poster1.jpg?v=2" height="250px"
+               style={{marginRight: 5}} />
+          <LinkedImage src="/static/artisans/accordeons-viseur-poster3.jpg" height="250px" />
+        </div>
       ),
     },
   },
@@ -144,7 +184,6 @@ const i18n_strings = {
         </p>
         <p>
         Iwein Jacobs (<a href="http://www.accordeons-viseur.com">www.accordeons-viseur.com</a>)
-        <img src="/static/artisans/advertentie A4 kleur_300 dpi.jpg"/>
         </p>
        </div>
       ),
@@ -154,16 +193,30 @@ const i18n_strings = {
       text: (
        <div>
         <p>
-        Elke zomer biedt <b>MAINS UNIES participatieve uitstapjes </b> aan in een mooi natuurkader. 
+        Elke zomer biedt <b>MAINS UNIES participatieve uitstapjes </b> aan in een mooi natuurkader.
         Begeleid door vrijwilligers kunnen 50 tot 80 deelnemers verschillende activiteiten organizeren.
         </p>
         <p>
-        <b>En iedere avond volksbal !</b> Klein en groot kan dan deelnemen met het dansen onder leiding van ervaren muzikanten en animators. 
+        <b>En iedere avond volksbal !</b> Klein en groot kan dan deelnemen met het dansen onder leiding van ervaren muzikanten en animators.
         </p>
         <p>
         Onder tent of in vakantiehuis, een formule die de liefhebbers van authenticiteit en vergaderingen !
         </p>
        </div>
+      ),
+    },
+    accordeons_viseur: {
+      title: 'Accordéons Viseur',
+      text: (
+        <div>
+          <p>
+            Vanuit een passie voor het accordeon, ontstond in 2003 “Accordeons Viseur”,
+            de speciaalzaak in accordeons en mondharmonica’s.
+          </p>
+          <LinkedImage src="/static/artisans/accordeons-viseur-poster1.jpg?v=2" height="250px"
+               style={{marginRight: 5}} />
+          <LinkedImage src="/static/artisans/accordeons-viseur-poster2.jpg" height="250px" />
+        </div>
       ),
     },
   },
@@ -189,6 +242,7 @@ export default class ArtisansPage extends React.Component {
           </CardText>
         </Card>
         <p/>
+
         <Card>
           <CardTitle title={strings.mainsunies.title}
                      subtitle="" />
@@ -200,8 +254,28 @@ export default class ArtisansPage extends React.Component {
           <RaisedButton label="mainsunies.be" secondary={true}
                         style={{margin: 12}} href="http://www.mainsunies.be/"
                         linkButton={true} />
-                      <RaisedButton label="02 / 344 46 53" primary={true}
-            style={{margin: 12}} href="tel:+3223444653" linkButton={true} />
+          <RaisedButton label="02 / 344 46 53" primary={true}
+                        style={{margin: 12}} href="tel:+3223444653"
+                        linkButton={true} />
+        </Card>
+
+        <p/>
+
+        <Card>
+          <CardTitle title={strings.accordeons_viseur.title}
+                     subtitle="" />
+          <CardText>
+            {strings.accordeons_viseur.text}
+          </CardText>
+          <RaisedButton label="accordeons-viseur.com" secondary={true}
+                        style={{margin: 12}} href="http://www.accordeons-viseur.com/"
+                        linkButton={true} />
+          <RaisedButton label="email" secondary={true}
+                        style={{margin: 12}} href="mailto:info@accordeons-viseur.com"
+                        linkButton={true} />
+          <RaisedButton label="(+32) 03 / 866 47 57" primary={true}
+                        style={{margin: 12}} href="tel:+3238664757"
+                        linkButton={true} />
         </Card>
 
       </div>
