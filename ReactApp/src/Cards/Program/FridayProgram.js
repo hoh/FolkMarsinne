@@ -35,9 +35,9 @@ const fridayBands = [
     kind: 'bal',
     from: 'Belgique - Wallonie',
     members: [
-      {name: 'Martin de Roos', instrument: 'accordéon diatonique'},
-      {name: 'Emile Postic', instrument: 'clarinette'},
-      {name: 'François Postic', instrument: 'saxophone baryton'},
+      {name: 'Martin de Roos', instruments: ['accordéon diatonique']},
+      {name: 'Emile Postic', instruments: ['clarinette']},
+      {name: 'François Postic', instruments: ['saxophone baryton']},
     ],
     links: [
       'https://soundcloud.com/baila-tocamos',
@@ -48,8 +48,8 @@ const fridayBands = [
     kind: 'concert',
     from: 'France / Belgique - Wallonie',
     members: [
-      {name: 'Sophie Cavez', instrument: 'accordéon diatonique'},
-      {name: 'Baltazar Montanaro', instrument: 'violon'},
+      {name: 'Sophie Cavez', instruments: ['accordéon diatonique']},
+      {name: 'Baltazar Montanaro', instruments: ['violon']},
     ],
     links: [
       'http://www.duomontanarocavez.sitew.com/',
@@ -62,8 +62,8 @@ const fridayBands = [
     kind: 'bal',
     from: 'Belgique - Flandre',
     members: [
-      {name: 'Jeroen Knapen', instrument: 'guitare'},
-      {name: 'Wouter Vandenabeele', instrument: 'violon'},
+      {name: 'Jeroen Knapen', instruments: ['guitare']},
+      {name: 'Wouter Vandenabeele', instruments: ['violon']},
     ],
     links: [
       'http://www.woutervandenabeele.be',
@@ -76,8 +76,8 @@ const fridayBands = [
     kind: 'bal',
     from: 'France',
     members: [
-      {name: 'Amélie Denarié', instrument: 'accordéon diatonique'},
-      {name: 'Anne Guinot', instrument: 'accordéon chromatique'},
+      {name: 'Amélie Denarié', instruments: ['accordéon diatonique']},
+      {name: 'Anne Guinot', instruments: ['accordéon chromatique']},
     ],
     links: [
       'http://leszeoles.net/',

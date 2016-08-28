@@ -118,6 +118,172 @@ const sundayPlan = [
 
 
 const sundayBands = [
+  {
+    name: 'Atelier danse: Vendée',
+    kind: 'learn',
+    from: 'France',
+    members: [
+      {name: 'Valérie Imbert', instruments: ['chant']},
+      {name: 'Brigitte Kloareg', instruments: ['chant']},
+    ],
+    links: [
+      'https://www.youtube.com/watch?v=RbrA4pb_ON4',
+      'https://www.youtube.com/watch?v=QCb6P7NkqS4',
+      'https://www.youtube.com/watch?v=EkMHfaA5P',
+    ]
+  },
+  {
+    name: 'Dames de nage',
+    kind: 'bal',
+    from: 'France',
+    members: [
+      {name: 'Valérie Imbert', instruments: ['chant']},
+      {name: 'Brigitte Kloareg', instruments: ['chant']},
+    ],
+    links: [
+      'https://www.youtube.com/watch?v=RbrA4pb_ON4',
+      'https://www.youtube.com/watch?v=QCb6P7NkqS4',
+      'https://www.youtube.com/watch?v=EkMHfaA5P',
+    ]
+  },
+  {
+    name: 'Grand Air',
+    kind: 'concert',
+    from: 'Belgique - Wallonie',
+    members: [
+      {name: 'Catherine Blanjean', instruments: ['violon','alto']},
+      {name: 'Pierre Brasseur', instruments: ['mandoline', 'clarinette']},
+      {name: 'Michel Jacqmain', instruments: ['cistre','guitare']},
+      {name: 'Julien Maréchal', instruments: ['violon']},
+      {name: 'Patrick Van Uffelen', instruments: ['bodhran', 'tin whistle']},
+    ],
+    links: [
+      '',
+    ]
+  },
+  {
+    name: 'Atelier de danse: Suède',
+    kind: 'learn',
+    from: 'Suède',
+    members: [
+      {name: 'Olov Johansson', instruments: ['nyckelharpa']},
+      {name: 'Mickael Marin', instruments: ['alto']},
+      {name: 'Roger Tallroch', instruments: ['guitare']},
+      {name: 'Aurélie Gier', instruments: ['']},
+    ],
+    links: [
+      'http://www.aureliegiet.be',
+      'http://www.vasen.se/',
+    ]
+  },
+  {
+    name: 'Väsen',
+    kind: 'concert',
+    from: 'Suède',
+    members: [
+      {name: 'Olov Johansson', instruments: ['nyckelharpa']},
+      {name: 'Mickael Marin', instruments: ['alto']},
+      {name: 'Roger Tallroch', instruments: ['guitare']},
+    ],
+    links: [
+      'http://www.vasen.se/',
+      'https://www.youtube.com/watch?v=tWorsJwzycw',
+      'https://www.youtube.com/watch?v=770ig9bYZYM',
+      'https://www.youtube.com/watch?v=7gWLH7ZrMgw',
+      'https://www.youtube.com/watch?v=FcYliDfOQ6Q ',
+    ]
+  },
+  {
+    name: 'Zim Boum Trad',
+    kind: 'bal pour enfants',
+    from: 'Belgique - Wallonie',
+    members: [
+      {name: 'Etienne Evrats', instruments: ['']},
+      {name: 'Marinette Bonnert', instruments: ['accordéon diatonique']},
+      {name: 'Pierre Challe', instruments: ['guitare']},
+    ],
+    links: [
+      'http://zimboumtrad.weebly.com/?',
+      'https://www.facebook.com/zimboumtrad',
+      'https://youtu.be/PP2hRVRCK4Q',
+    ]
+  },
+  {
+    name: 'Boutons & Ficelles',
+    kind: 'bal',
+    from: 'Belgique - Wallonie',
+    members: [
+      {name: 'Vincent Jadot', instruments: ['guitares']},
+      {name: 'Benoît Marthus', instruments: ['accordéon diatonique', 'mandoline']},
+      {name: 'Pierre Matagne', instruments: ['guitares']},
+      {name: 'Frédéric Nicolas', instruments: ['cornemuse', 'flûtes', 'bodhran']},
+      {name: 'Joël Schallenbergh', instruments: ['guitare', 'bouzouki', 'banjo']},
+      {name: 'Alexandre Warnant', instruments: ['djembé']},
+    ],
+    links: [
+      'https://www.facebook.com/boutonsetficelles/ ',
+    ]
+  },
+  {
+    name: 'Grand boeuf du 25e',
+    kind: 'bal',
+    from: '',
+    members: [
+      {name: '-', instruments: ['']},
+    ],
+    links: [
+      'https://www.dropbox.com/sh/ksddlq7haz7e2me/AAA63LHOorATzDAyBZOZMaTMa?dl=0 ',
+    ]
+  },
+  {
+    name: 'Duo McGowan - Munnelly',
+    kind: 'concert',
+    from: 'Irlande',
+    members: [
+      {name: 'Shane mc Gowan', instruments: ['guitare']},
+      {name: 'David Munnelly', instruments: ['accordéon diatonique']},
+    ],
+    links: [
+      'http://davidmunnelly.com/munnelly-mcgowan/',
+      'https://www.youtube.com/watch?v=0ByfCReKTfA&feature=share',
+      'https://youtu.be/NHYISawoY3c',
+      'https://youtu.be/7vy7nJ-FcAo',
+      'https://youtu.be/tIugpzTj9p4',
+    ]
+  },
+  {
+    name: 'Carré Manchot',
+    kind: 'bal - fest-noz',
+    from: 'France',
+    members: [
+      {name: 'Yannig Alory', instruments: ['flûte traversière en bois']},
+      {name: 'Loïc Bléjean', instruments: ['uileann pipes', 'low whistles']},
+      {name: 'Yann-Loïc Joly', instruments: ['accordéon diatonique']},
+      {name: 'Gilbert Le Pennec', instruments: ['guitare']},
+      {name: 'Patrick Marie', instruments: ['chant']},
+    ],
+    links: [
+      'http://www.carremanchot.fr/',
+      'https://youtu.be/XytH9QHIojE',
+      'https://youtu.be/APXkRtxw2wA',
+    ]
+  },
+  {
+    name: 'Duo Bottasso',
+    kind: 'bal',
+    from: 'Italie',
+    members: [
+      {name: 'Nicolò Bottasso', instruments: ['violon']},
+      {name: 'Simone Bottasso', instruments: ['accordéon diatonique']},
+    ],
+    links: [
+      'http://www.duobottasso.com',
+      'https://www.youtube.com/watch?feature=player_embedded&v=c82PUHf7hww',
+      'https://www.youtube.com/watch?v=NBJTqHFA6h8',
+      'https://youtu.be/ELMpLOHkQbk',
+    ]
+  },
+
 ]
 
 
