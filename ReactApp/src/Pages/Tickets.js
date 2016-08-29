@@ -14,7 +14,7 @@ const i18n_strings = {
       <RaisedButton label="Sur place" linkButton={true} href="#onsite"
                     primary={true} />
       &nbsp;
-      et en
+      (voir plus bas) et en
       &nbsp;
       <RaisedButton label="Prévente" linkButton={true} href="#presales"
                     primary={true} />
@@ -22,11 +22,31 @@ const i18n_strings = {
   },
   en: {
     title: 'Tickets',
-    desc: 'On site and pre sales',
+    desc: <span>
+      Tickets are available
+      &nbsp;
+      <RaisedButton label="On site" linkButton={true} href="#onsite"
+                    primary={true} />
+      &nbsp;
+      (see below) and on
+      &nbsp;
+      <RaisedButton label="Pre Sales" linkButton={true} href="#presales"
+                    primary={true} />
+    </span>,
   },
   nl: {
     title: 'Tickets',
-    desc: 'Ter plaatse / Voorverkoop',
+    desc: <span>
+      Tickets zijn verkrijgbaar
+      &nbsp;
+      <RaisedButton label="Ter plaatse" linkButton={true} href="#onsite"
+                    primary={true} />
+      &nbsp;
+      (zie hieronder) en
+      &nbsp;
+      <RaisedButton label="Voorverkoop" linkButton={true} href="#presales"
+                    primary={true} />
+    </span>,
   },
 }
 
