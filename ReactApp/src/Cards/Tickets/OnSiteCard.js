@@ -101,7 +101,7 @@ const i18n_strings = {
 		title: 'Ter plaatse',
 		intro: (<div>
 			<p>
-				<b>Een dag</b> tickets zijn rechtstreeks op de site te kopen. 
+				<b>Een dag</b> tickets zijn rechtstreeks op de site te kopen.
 				De <b>3 dagen Pass</b> zullen daar ook beschikbaar zijn maar op hooger prijs dan in voorverkoop.
 			</p>
 			<p>
@@ -122,7 +122,7 @@ const i18n_strings = {
 		notes: (
 			<ul>
 				<li>
-					Heb je geen ticket in voorverkoop kunnen nemen, dan kan je tickets ter 
+					Heb je geen ticket in voorverkoop kunnen nemen, dan kan je tickets ter
 					plaatse kopen op tarief hierboven vermeld - er zullen er voor iedereen beschikbaar zijn!
 				</li>
 				<li>
@@ -149,7 +149,7 @@ export default class EventsCard extends React.Component {
 
 		return (
       <Card>
-        <CardTitle title={strings.title} />
+        <CardTitle title={strings.title} id="onsite" />
         <CardText>
 
 					{strings.intro}

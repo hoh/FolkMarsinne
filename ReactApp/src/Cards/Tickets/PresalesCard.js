@@ -102,7 +102,7 @@ export default class PresalesCard extends React.Component {
 
 		return (
       <Card style={{marginBottom: '1em'}}>
-        <CardTitle title={strings.title} />
+        <CardTitle title={strings.title} id="presales" />
         <CardText>
 
           {strings.text}

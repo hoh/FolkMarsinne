@@ -3,11 +3,22 @@ import React, { Component } from 'react';
 import CustomTitle from '../Cards/CustomTitle';
 import PresalesCard from '../Cards/Tickets/PresalesCard';
 import OnSiteCard from '../Cards/Tickets/OnSiteCard';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const i18n_strings = {
   fr: {
     title: 'Tickets',
-    desc: 'Sur place et Préventes',
+    desc: <span>
+      Les tickets sont disponibles
+      &nbsp;
+      <RaisedButton label="Sur place" linkButton={true} href="#onsite"
+                    primary={true} />
+      &nbsp;
+      et en
+      &nbsp;
+      <RaisedButton label="Prévente" linkButton={true} href="#presales"
+                    primary={true} />
+    </span>,
   },
   en: {
     title: 'Tickets',
