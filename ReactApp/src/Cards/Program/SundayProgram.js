@@ -169,7 +169,7 @@ const sundayBands = [
       {name: 'Olov Johansson', instruments: ['nyckelharpa']},
       {name: 'Mickael Marin', instruments: ['alto']},
       {name: 'Roger Tallroch', instruments: ['guitare']},
-      {name: 'Aurélie Gier', instruments: ['']},
+      {name: 'Aurélie Giet', instruments: ['']},
     ],
     links: [
       'http://www.aureliegiet.be',
