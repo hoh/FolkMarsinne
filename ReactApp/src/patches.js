@@ -1,7 +1,7 @@
 /* Add Object.assign by monkey patching if the function does not exist */
 
 export default function patch_object_assign() {
-  if (Object.assign === undefined) {
+  if (true || Object.assign === undefined) {
     Object.assign = function (target) {
       for (var i=1; i < arguments.length; i++) {
         var source = arguments[i];
