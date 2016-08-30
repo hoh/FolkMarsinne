@@ -264,7 +264,7 @@ const saturdayBands = [
     kind: 'bal',
     from: '',
     members: [
-      {name: 'Michel Jacqumain', instruments: ['cistre', 'guitare']},
+      {name: 'Michel Jacqmain', instruments: ['cistre', 'guitare']},
       {name: 'Catherine Blanjean', instruments: ['Violon', 'contrebasse']},
       {name: 'Marinette Bonnert', instruments: ['accordéon diatonique']},
       {name: 'Pierre Brasseur', instruments: ['mandoline', 'clarinette']},
