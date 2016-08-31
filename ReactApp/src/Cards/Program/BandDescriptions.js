@@ -10,6 +10,11 @@ const instruments = {
     en: 'diatonic accordion',
     nl: 'diatonische accordeon',
   },
+  'accordéon chromatique': {
+    fr: 'accordéon chromatique',
+    en: 'chromatic accordion',
+    nl: 'chromatisch accordeon',
+  },
   'clarinette': {
     fr: 'clarinette',
     en: 'clarinet',
@@ -25,6 +30,51 @@ const instruments = {
     en: 'guitar',
     nl: 'gitaar',
   },
+  'guitares': {
+    fr: 'guitares',
+    en: 'guitars',
+    nl: 'gitaars',
+  },
+  'banjo': {
+    fr: 'banjo',
+    en: 'banjo',
+    nl: 'banjo',
+  },
+  'bouzouki': {
+    fr: 'bouzouki',
+    en: 'bouzouki',
+    nl: 'bouzouki',
+  },
+  'cornemuse': {
+    fr: 'cornemuse',
+    en: 'bagpipe',
+    nl: 'doedelzak',
+  },
+  'cornemuses': {
+    fr: 'cornemuses',
+    en: 'bagpipes',
+    nl: 'doedelzaks',
+  },
+  'flûtes irlandaises': {
+    fr: 'flûtes irlandaises',
+    en: 'whistles',
+    nl: 'whistles',
+  },
+  'vielle à roue': {
+    fr: 'vielle à roue',
+    en: 'hurdy gurdy',
+    nl: '',
+  },
+  'nickelharpa': {
+    fr: 'nickelharpa',
+    en: 'nickelharpa',
+    nl: 'nickelharpa',
+  },
+  'bodhran': {
+    fr: 'bodhran',
+    en: 'bodhran',
+    nl: 'bodhran',
+  },
 };
 
 
@@ -34,7 +84,45 @@ const origins = {
     en: 'Belgium - Wallonia',
     nl: 'België - Wallonië',
   },
+  'France': {
+    fr: 'France',
+    en: 'France',
+    nl: 'Frankrijk',
+  },
+  'Suède': {
+    fr: 'France',
+    en: 'Sweden',
+    nl: 'Zweden',
+  },
+  'italie': {
+    fr: 'Italie',
+    en: 'Italy',
+    nl: 'Italië',
+  },
 };
+
+const kinds = {
+  'learn': {
+    fr: 'Atelier',
+    en: 'Workshop',
+    nl: 'Workshop',
+  },
+  'concert': {
+    fr: 'Concert',
+    en: 'Concert',
+    nl: 'Concert',
+  },
+  'bal': {
+    fr: 'Bal',
+    en: 'Bal',
+    nl: 'Bal',
+  },
+  'bal - fest-noz': {
+    fr: 'Bal - Fest-Noz',
+    en: 'Bal - Fest-Noz',
+    nl: 'Bal - Fest-Noz',
+  },
+}
 
 
 const i18n_strings = {
@@ -65,6 +153,7 @@ function translator(catalog) {
 
 var translate_instrument = translator(instruments);
 var translate_origin = translator(origins);
+var translate_kind = translator(kinds);
 
 function i18n_instrument(instrument, lang) {
   if (instruments[instrument])
@@ -111,11 +200,11 @@ export class BandDescriptions extends React.Component {
     return (
       <div>
         {this.props.bands.map((band) =>
-          <div>
+          <div key={band.name + band.from}>
             <h2 style={{color: red500}} id={'band/' + band.name}>{band.name}</h2>
             <p>
               <i>
-                {band.kind} {strings.from}&nbsp;
+                {translate_kind(band.kind, this.props.lang)} {band.from ? strings.from : ''}&nbsp;
                 {translate_origin(band.from, this.props.lang)}
               </i>
             </p>
@@ -126,6 +215,11 @@ export class BandDescriptions extends React.Component {
                   <li key={member.name}>
                     {member.name}
                     &nbsp;—&nbsp;
+                    {member.instruments.map((instrument) =>
+                      <span key={instrument}>{
+                          translate_instrument(instrument, this.props.lang)}
+                      </span>
+                    )}
                     {translate_instrument(member.instrument, this.props.lang)}
                   </li>
                 )}
