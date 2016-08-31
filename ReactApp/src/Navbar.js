@@ -77,6 +77,7 @@ class Navbar extends React.Component {
         onRequestChange={this.props.onRequestChange}
         >
         <MenuItem onTouchTap={() => this.props.onPageChange('index')}
+                  href='#'
                   leftIcon={<img src="/static/musicians_black.png"
                                  alt="Logo of the Festival" />}
                   style={{color: '#999'}} >Marsinne Festival</MenuItem>
@@ -90,11 +91,11 @@ class Navbar extends React.Component {
         </div>
         <Divider />
 
-        <MenuItem onTouchTap={() => this.props.onPageChange('tickets')} leftIcon={<AddShoppingCart />}>{strings.tickets}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('tickets')} href='#tickets' leftIcon={<AddShoppingCart />}>{strings.tickets}</MenuItem>
         <Divider />
-        <MenuItem onTouchTap={() => this.props.onPageChange('program')} leftIcon={<AvQueueMusic />}>{strings.program}</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('activities')} leftIcon={<RemoveRedEye />}>{strings.activities}</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('food')} leftIcon={<LocalDining />}>{strings.food}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('program')} href='#program' leftIcon={<AvQueueMusic />}>{strings.program}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('activities')} href='#activities' leftIcon={<RemoveRedEye />}>{strings.activities}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('food')} href='#food' leftIcon={<LocalDining />}>{strings.food}</MenuItem>
           <MenuItem
               primaryText={strings.artisans}
               leftIcon={<ThumbsUpDown />}
@@ -114,10 +115,10 @@ class Navbar extends React.Component {
                   />]}
           />
         <Divider />
-        <MenuItem onTouchTap={() => this.props.onPageChange('access')} leftIcon={<Directions />}>{strings.access}</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('accomodation')} leftIcon={<LocalHotel />}>{strings.accomodation}</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('volunteer')} leftIcon={<PersonOutline />}>{strings.volunteer}</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('contact')} leftIcon={<ChatBubble />}>{strings.contact}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('access')} href='#access' leftIcon={<Directions />}>{strings.access}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('accomodation')} href='#accomodation' leftIcon={<LocalHotel />}>{strings.accomodation}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('volunteer')} href='#volunteer' leftIcon={<PersonOutline />}>{strings.volunteer}</MenuItem>
+        <MenuItem onTouchTap={() => this.props.onPageChange('contact')} href='#contact' leftIcon={<ChatBubble />}>{strings.contact}</MenuItem>
         <Divider />
         <img src='/static/danseurs2016.png' style={{width: '70%', padding: '15%', paddingTop: '10%', paddingBottom: '5%'}} />
       </Drawer>
