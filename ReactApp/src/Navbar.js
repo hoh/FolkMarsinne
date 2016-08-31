@@ -3,6 +3,7 @@ import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import Divider from 'material-ui/Divider';
 import FlatButton from 'material-ui/FlatButton';
+import {List, ListItem, MakeSelectable} from 'material-ui/List';
 
 import AvQueueMusic from 'material-ui/svg-icons/av/queue-music';
 import RemoveRedEye from 'material-ui/svg-icons/image/remove-red-eye';
@@ -14,6 +15,8 @@ import PersonOutline from 'material-ui/svg-icons/social/person-outline';
 import ChatBubble from 'material-ui/svg-icons/communication/chat-bubble';
 import LocalHotel from 'material-ui/svg-icons/maps/local-hotel';
 import LocalDining from 'material-ui/svg-icons/maps/local-dining';
+import AvMusicVideo from 'material-ui/svg-icons/av/music-video';
+import ContentGesture from 'material-ui/svg-icons/content/gesture';
 
 const i18n_strings = {
   fr: {
@@ -21,6 +24,8 @@ const i18n_strings = {
     program: 'Programmation',
     activities: 'Animations',
     artisans: 'Artisans',
+    luthiers: 'Luthiers',
+    other_artisans: 'Autres',
     food: 'Restauration',
     access: 'Accès',
     accomodation: 'Hébergement',
@@ -32,6 +37,8 @@ const i18n_strings = {
     program: 'Program',
     activities: 'Entertainment',
     artisans: 'Artisans',
+    luthiers: 'Instrument makers',
+    other_artisans: 'Anderen',
     food: 'Catering',
     access: 'Access',
     accomodation: 'Accomodation',
@@ -43,6 +50,8 @@ const i18n_strings = {
     program: 'Programma',
     activities: 'Animaties',
     artisans: 'Ambachtslieden',
+    luthiers: 'Instrument makers',
+    other_artisans: 'Other',
     food: 'Eten',
     access: 'Toegang',
     accomodation: 'Logeren',
@@ -85,8 +94,25 @@ class Navbar extends React.Component {
         <Divider />
         <MenuItem onTouchTap={() => this.props.onPageChange('program')} leftIcon={<AvQueueMusic />}>{strings.program}</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('activities')} leftIcon={<RemoveRedEye />}>{strings.activities}</MenuItem>
-        <MenuItem onTouchTap={() => this.props.onPageChange('artisans')} leftIcon={<ThumbsUpDown />}>{strings.artisans}</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('food')} leftIcon={<LocalDining />}>{strings.food}</MenuItem>
+          <MenuItem
+              primaryText={strings.artisans}
+              leftIcon={<ThumbsUpDown />}
+              primaryTogglesNestedList={true}
+              nestedItems={[
+                <MenuItem
+                  primaryText={strings.luthiers}
+                  href="#/artisans/luthiers"
+                  leftIcon={<AvMusicVideo />}
+                  onTouchTap={() => this.props.onPageChange('luthiers')}
+                />,
+                <ListItem
+                  primaryText={strings.other_artisans}
+                  href="#/artisans/others"
+                  leftIcon={<ContentGesture />}
+                  onTouchTap={() => this.props.onPageChange('artisans')}
+                  />]}
+          />
         <Divider />
         <MenuItem onTouchTap={() => this.props.onPageChange('access')} leftIcon={<Directions />}>{strings.access}</MenuItem>
         <MenuItem onTouchTap={() => this.props.onPageChange('accomodation')} leftIcon={<LocalHotel />}>{strings.accomodation}</MenuItem>
