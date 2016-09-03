@@ -246,7 +246,7 @@ const saturdayBands = [
     ]
   },
   {
-    name: 'Elles s y promènes',
+    name: 'Elles s\'y promènent',
     kind: 'concert',
     from: 'Belgique - Wallonie',
     members: [
