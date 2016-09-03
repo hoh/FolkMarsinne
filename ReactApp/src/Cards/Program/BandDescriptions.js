@@ -216,7 +216,7 @@ export class BandDescriptions extends React.Component {
                     {member.name}
                     &nbsp;—&nbsp;
                     {member.instruments.map((instrument) =>
-                      <span key={instrument}>{
+                      <span key={instrument} className="comma_separated">{
                           translate_instrument(instrument, this.props.lang)}
                       </span>
                     )}
