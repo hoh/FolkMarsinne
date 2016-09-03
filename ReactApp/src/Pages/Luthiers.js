@@ -184,16 +184,6 @@ export default class LuthiersPage extends React.Component {
                      desc={strings.intro.text} />
 
         <Card>
-          <CardTitle title={strings.luthiers.title}
-                     subtitle="" />
-          <CardText>
-              {strings.luthiers.text}
-          </CardText>
-        </Card>
-
-        <p/>
-
-        <Card>
           <CardTitle title={strings.accordeons_viseur.title}
                      subtitle="" />
           <CardText>
@@ -208,6 +198,16 @@ export default class LuthiersPage extends React.Component {
           <RaisedButton label="(+32) 03 / 866 47 57" primary={true}
                         style={{margin: 12}} href="tel:+3238664757"
                         linkButton={true} />
+        </Card>
+
+        <p/>
+
+        <Card>
+          <CardTitle title={strings.luthiers.title}
+                     subtitle="" />
+          <CardText>
+              {strings.luthiers.text}
+          </CardText>
         </Card>
 
       </div>
