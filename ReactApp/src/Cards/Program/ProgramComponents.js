@@ -98,12 +98,6 @@ export class DayProgram extends React.Component {
 
     return(
       <div>
-        <CardText>
-          <RaisedButton label={strings.all_details} secondary={true}
-            labelColor='white' linkButton={true}
-            style={{marginLeft: 'auto'}}
-            href="/static/all-details.html" />
-        </CardText>
         <table style={programTableStyle}>
           <tbody>
             <tr style={programRowStyle}>
