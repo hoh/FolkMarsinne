@@ -31,6 +31,7 @@ const programCellStyle = {
   backgroundColor: blue100,
   padding: '0.4em',
   textAlign: 'center',
+  fontSize: '0.9em',
 };
 
 const eventColors = {
