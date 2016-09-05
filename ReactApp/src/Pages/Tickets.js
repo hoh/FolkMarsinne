@@ -58,9 +58,9 @@ export default class TicketsPage extends React.Component {
     return (
       <div>
         <CustomTitle title={strings.title} desc={strings.desc} />
-        <PresalesCard lang={this.props.lang} />
-        <p/>
         <OnSiteCard lang={this.props.lang} />
+        <p/>
+        <PresalesCard lang={this.props.lang} />
       </div>
     );
   }
